@@ -1,11 +1,15 @@
 /* start custom scss snippet */
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-/* end custom scss snippet */
+/* Container that wraps header and content */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
-/* Increase the site's container width */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
 .navigation a {
     font-size: 18px; /* Adjust as needed */
     font-weight: bold;
 }
+/* end custom scss snippet */
