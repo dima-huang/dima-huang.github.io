@@ -5,16 +5,26 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
-body {
-    font-family: 'Quicksand', sans-serif;
-}
 .navigation a {
     font-size: 18px; /* Adjust as needed */
     font-weight: bold;
 }
 html {
-    overflow-y: scroll;
+    overflow-y: scroll; /* forces a vertical scrollbar to always appear on the webpage, regardless of whether the content exceeds the height of the viewport.
+*/
 }
+body {
+  padding-top: 70px; /* Adjust this based on your header height */
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional */
+}
+
 
 /* end custom scss snippet */
 
