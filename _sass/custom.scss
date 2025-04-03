@@ -1,3 +1,11 @@
 /* start custom scss snippet */
-
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 /* end custom scss snippet */
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+/* Increase the site's container width */
+.navigation a {
+    font-size: 18px; /* Adjust as needed */
+    font-weight: bold;
+}
