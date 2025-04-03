@@ -1,10 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-header {
-  font-size: 2rem;  /* Increase text size */
-  padding: 20px;    /* Add more space */
-}
+
 @import
 
     "skins/{{ site.text_skin | default: site.data.variables.default.text_skin }}",
