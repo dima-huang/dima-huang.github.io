@@ -1,52 +1,42 @@
 header:
   - titles:
       # @start locale config
-      en      : &EN       Archive
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  归档
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  歸檔
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       아카이브
-      ko-KR   : *KO
-      fr      : &FR       Archives
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      tr      : &TR       Arşivdekiler
-      # @end locale config
-    url: /archive.html
+      en      : Home
+    # @end locale config
+    url: /Home.html
 
   - titles:
       # @start locale config
-      en      : &EN       About
-      en-GB   : *EN
-      en-US   : *EN
-      en-CA   : *EN
-      en-AU   : *EN
-      zh-Hans : &ZH_HANS  关于
-      zh      : *ZH_HANS
-      zh-CN   : *ZH_HANS
-      zh-SG   : *ZH_HANS
-      zh-Hant : &ZH_HANT  關於
-      zh-TW   : *ZH_HANT
-      zh-HK   : *ZH_HANT
-      ko      : &KO       소개
-      ko-KR   : *KO
-      fr      : &FR       À propos
-      fr-BE   : *FR
-      fr-CA   : *FR
-      fr-CH   : *FR
-      fr-FR   : *FR
-      fr-LU   : *FR
-      tr      : &TR       Hakkında
-      # @end locale config
-    url: /about.html
+      en      : News
+    # @end locale config
+    url: /News.html
+
+  - titles:
+      # @start locale config
+      en      : About
+    # @end locale config
+    url: /About.html
+
+  - titles:
+      # @start locale config
+      en      : Team
+    # @end locale config
+    url: /Team.html
+
+  - titles:
+      # @start locale config
+      en      : Publications
+    # @end locale config
+    url: /Publications.html
+
+  - titles:
+      # @start locale config
+      en      : Resources
+    # @end locale config
+    url: /Resources.html
+
+  - titles:
+      # @start locale config
+      en: Contact
+    # @end locale config
+    url: /Contact.html
