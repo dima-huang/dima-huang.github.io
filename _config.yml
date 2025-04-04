@@ -24,81 +24,81 @@ defaults:
 text_skin: ocean
 highlight_theme: tomorrow-night-blue
 url: https://dima-huang.github.io/
-baseurl: 
+baseurl:
 description: 'The DH Lab
 
 '
-lang: 
+lang:
 author:
-  type: 
+  type:
   name: Your Name
-  url: 
-  avatar: 
+  url:
+  avatar:
   bio: I am an amazing person.
-  email: 
-  facebook: 
-  twitter: 
-  weibo: 
-  googleplus: 
-  telegram: 
-  medium: 
-  zhihu: 
-  douban: 
-  linkedin: 
-  github: 
-  npm: 
+  email:
+  facebook:
+  twitter:
+  weibo:
+  googleplus:
+  telegram:
+  medium:
+  zhihu:
+  douban:
+  linkedin:
+  github:
+  npm:
 repository: dima-huang/dima-huang.github.io
 repository_tree: main
 paths:
-  root: 
-  home: 
-  archive: 
-  rss: 
+  root:
+  home:
+  archive:
+  rss:
 excerpt_separator: "<!--more-->"
 license: CC-BY-NC-4.0
 toc:
-  selectors: 
-mathjax: 
-mathjax_autoNumber: 
-mermaid: 
-chart: 
+  selectors:
+mathjax:
+mathjax_autoNumber:
+mermaid:
+chart:
 paginate: 8
 paginate_path: "/page:num"
-sources: 
+sources:
 sharing:
   provider: false
   addthis:
-    id: 
+    id:
 comments:
   provider: false
   disqus:
-    shortname: 
+    shortname:
   gitalk:
-    clientID: 
-    clientSecret: 
-    repository: 
-    owner: 
-    admin: 
+    clientID:
+    clientSecret:
+    repository:
+    owner:
+    admin:
   valine:
-    app_id: 
-    app_key: 
-    placeholder: 
-    visitor: 
-    meta: 
+    app_id:
+    app_key:
+    placeholder:
+    visitor:
+    meta:
 pageview:
   provider: false
   leancloud:
-    app_id: 
-    app_key: 
-    app_class: 
+    app_id:
+    app_key:
+    app_class:
 search:
   provider: default
   google:
-    custom_search_engine_id: 
+    custom_search_engine_id:
 analytics:
   provider: false
   google:
-    tracking_id: 
+    tracking_id:
     anonymize_ip: false
 markdown: kramdown
 highlighter: rouge

@@ -24,7 +24,14 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional */
 }
+// Custom styling for header and pagination
+.layout--home .article__header {
+  margin-top: 20px; // Adjust as necessary
+}
 
+.pagination {
+  margin-top: 20px; // Adjust to align with home page
+}
 
 /* end custom scss snippet */
 
