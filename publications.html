@@ -25,6 +25,13 @@ layout: page
 
             <!-- Excerpt -->
             <p>{{ post.excerpt }}</p>
+
+            <!-- Date Badge -->
+            <p>
+              <span class="date-badge">
+                {{ post.date | date: "%m/%d/%Y" }} <!-- Render date in MM/DD/YYYY format -->
+              </span>
+            </p>
           </div>
 
           <!-- Right Side: TOC Image (If available) -->
@@ -39,3 +46,18 @@ layout: page
     {% endfor %}
   </ul>
 </div>
+
+<style>
+  /* Date Badge Style */
+  .date-badge {
+      display: inline-block;
+      background-color: #6aa84f; /* Muted green background */
+      color: white; /* White text color */
+      font-family: 'Varela Round', sans-serif; /* Custom font */
+      font-size: 18px; /* Slightly smaller font */
+      padding: 2px 7px; /* Padding for a balanced look */
+      border-radius: 25px; /* Rounded corners */
+      text-align: center; /* Centered text */
+      margin-top: 1.6px; /* Add some spacing from other content */
+  }
+</style>
