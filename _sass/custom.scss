@@ -95,7 +95,7 @@ body {
 .publication-content {
   display: flex;
   align-items: center; /* Align text and image vertically */
-  gap: 15px; /* Space between text and TOC image */
+  gap: 25px; /* Space between text and TOC image */
 }
 
 .publication-text {
@@ -110,5 +110,17 @@ body {
   height: auto;
   border-radius: 5px; /* Optional: rounded corners */
 }
+/* Date Badge Style */
+.date-badge {
+  display: inline-block;
+  background-color: #6aa84f; /* Muted green background */
+  color: white; /* White text color */
+  font-size: 18px; /* Slightly smaller font */
+  padding: 2px 7px; /* Padding for a balanced look */
+  border-radius: 25px; /* Rounded corners */
+  text-align: center; /* Centered text */
+  margin-top: 1.6px; /* Add some spacing from other content */
+}
+
 /* end custom scss snippet */
 
