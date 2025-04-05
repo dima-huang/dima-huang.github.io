@@ -1,10 +1,6 @@
 /* start custom scss snippet */
 /* Container that wraps header and content */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
-body {
-    font-family: 'Quicksand', sans-serif;
-}
 .navigation a {
     font-size: 18px; /* Adjust as needed */
     font-weight: bold;
@@ -24,14 +20,95 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional */
 }
-// Custom styling for header and pagination
-.layout--home .article__header {
-  margin-top: 20px; // Adjust as necessary
+.home-container {
+  display: flex;
+  align-items: flex-start;
+}
+.home-main {
+  flex: 1;
+  max-width: 100%; /* Adjust width */
+}
+.home-sidebar {
+  width: 30%;
+  margin-top: 0px;
+  margin-left: 20px; /* increase the margin between home-main and home-sidebar*/
+  padding: 15px;
+  background: $header-background;
+  border: 1px solid #ddd; /* Border on all sides */
+  border-radius: 10px; /* Rounded corners */
+}
+.home-sidebar ul {
+  list-style-type: none; /* Removes the default bullets */
+  padding-left: 0; /* Removes the left padding that often comes with the list */
+}
+.home-sidebar li {
+  margin-bottom: 10px; /* Adds space between list items if necessary */
+}
+.home-sidebar h3 {
+  margin-top: 0; /* Remove extra spacing */
+  padding: 0; /* Optional: Adjust spacing inside the box */
+}
+.link-button {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 0.1em 0.8em;
+  background: #0073e6;
+  color: white!important;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.news-link:hover {
+  background: #005bb5;
+}
+.layout--home {
+  text-align: justify;
+}
+.center-image {
+  display: block;         /* Makes the image a block element */
+  margin-left: auto;      /* Auto margin centers the block horizontally */
+  margin-right: auto;     /* Auto margin centers the block horizontally */
+  width: 80%;             /* Optional: Set width to 80% of container */
+  height: auto;           /* Maintain aspect ratio */
+}
+.articles-text {
+  text-align: justify;
+  line-height: 1.6; /* Optional: Adjust line height for readability */
+  margin-bottom: 1.5em; /* Optional: Add space below the paragraph */
+}
+.articles-text ol {
+  list-style-position: inside; /* Ensures numbers stay inside the list item */
+  margin-left: 0; /* Optional: Adjust the left margin to reduce the space */
+  padding-left: 0px; /* Optional: Control the indentation of the list */
+}
+.articles-text ol li {
+  text-align: justify; /* Justify text inside list items */
+}
+.publication-title {
+  color: $main-color-1; /* Use the main color defined in your SCSS */
 }
 
-.pagination {
-  margin-top: 20px; // Adjust to align with home page
+.publication-item {
+  list-style: none;
+  margin-bottom: 20px;
 }
 
+.publication-content {
+  display: flex;
+  align-items: center; /* Align text and image vertically */
+  gap: 15px; /* Space between text and TOC image */
+}
+
+.publication-text {
+  flex: 1; /* Takes available space */
+  text-align: justify; /* 👈 Make text justified */
+  hyphens: auto;       /* 👈 Optional: improves word wrapping */
+  font-size: map-get($base, font-size)
+}
+
+.publication-image img {
+  max-width: 350px; /* Adjust as needed */
+  height: auto;
+  border-radius: 5px; /* Optional: rounded corners */
+}
 /* end custom scss snippet */
 

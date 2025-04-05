@@ -1,0 +1,19 @@
+---
+title: News from the lab
+layout: page
+---
+
+<div class="page-text">
+  <h2>Updates</h2>
+
+  <ul>
+    {% assign sorted_news = site.news | sort: "date" | reverse %}
+    {% for post in sorted_news %}
+      <li>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

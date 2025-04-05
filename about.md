@@ -1,72 +1,44 @@
 ---
-layout: article
-titles:
-  en: About
-  en-GB: About
-  en-US: About
-  en-CA: About
-  en-AU: About
-  zh-Hans: 关于
-  zh: 关于
-  zh-CN: 关于
-  zh-SG: 关于
-  zh-Hant: 關於
-  zh-TW: 關於
-  zh-HK: 關於
-  ko: 소개
-  ko-KR: 소개
-  fr: À propos
-  fr-BE: À propos
-  fr-CA: À propos
-  fr-CH: À propos
-  fr-FR: À propos
-  fr-LU: À propos
-key: page-about
+titles: Our goal
+layout: Custom
 ---
+# Our goal
+### We address challenges related to the separation of critical materials, as well as environmental remediation.
+**The overarching goal** of this research is to meet the urgent need for sustainable
+recovery of critical materials essential for advanced electronics and chip
+manufacturing. Central to the research program is **the challenge of rethinking
+the canonical design principles of extractants used in metallurgy**.
+This effort is motivated by the poor selectivity of metal extractants when
+separating neighboring elements, particularly in complex substrates such as
+modern e-waste. The extractants currently used in most e-waste recycling
+processes are typically designed to target metal cations. However, the role of
+counter anions is often underappreciated. In material leachates, high
+concentrations of anions (e.g., chloride, nitrate) are known to associate with
+metal ions, affecting their apparent stability (Figure 1a). On the other hand,
+complexation within confined spaces can generate unique coordination modes with
+unrecognized potential for separations (Figure 1b). We believe that receptors
+exploiting these anion-metal interactions and constrained complexation will
+enhance selectivity in separations and reduce secondary waste generation.
+The targeted elements include Li, Mn, Co, Ni, and the lanthanides (Ln).
 
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
+Additionally, we aim to **explore novel mechanisms for achieving catch-and-release
+of critical materials**. For quite some time, complexation and decomplexation of
+bound ions have been achieved primarily through pH adjustments. However, this
+strategy limits receptor designs to ionic or amine-based scaffolds and has
+resulted in insufficient separation efficiencies between neighboring elements.
+Alternatives are needed. Stimuli-responsive receptors are particularly appealing
+because they enable different coordination modes to be mediated in response to
+specific stimuli, thereby facilitating the catch-and-release of targeted ions
+(Figure 1c). We believe that such receptors can expand the toolbox of receptor
+designs relevant to separation sciences.
 
-TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
+![Alt text](/assets/images/AboutProject.svg){:class="center-image"}
+<div align="left">
+<b>Figure 1</b>. Overview of projects in the DH-lab: (a) complex speciation and counter anions, (b) complexation in confined spaces, and (c) separation under external stimuli. (charge omitted).
+</div>
+On this basis, three projects are proposed and outlined as follows:
+1. Leveraging anion coordination for separations
+2. Complexation in confined spaces
+3. Stimuli-responsive receptors in extractive metallurgy
 
-```javascript
-(() => console.log('Hello, World!'))();
-```
-
-## Features
-
-- Responsive
-- Semantic HTML
-- Skins
-- Highlight Theme
-- Internationalization
-- Search
-- Table of contents
-- Authors
-- Additional styles (alert, tag, image, icon, button, grid, etc)
-- Extensions (audios, videos, slides, demos)
-- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
-- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
-- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
-- Pageview ([LeanCloud](https://leancloud.cn/))
-- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
-- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
-
-## Skins
-
-TeXt has 6 built-in skins, you can also set up your own skin.
-
-| `default` | `dark` | `forest` |
-| --- |  --- | --- |
-| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
-
-| `ocean` | `chocolate` | `orange` |
-| --- |  --- | --- |
-| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
-
-### Highlight Theme
-
-TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
-
-| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
-| --- |  --- | --- | --- |  --- |
-| ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
+I applaud your patience if you have made it thus far! Interested students are encouraged to get in touch with Dr. Huang.

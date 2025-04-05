@@ -6,23 +6,7 @@ titles:
   en-US: Home
   en-CA: Home
   en-AU: Home
-  zh-Hans: 主页
-  zh: 主页
-  zh-CN: 主页
-  zh-SG: 主页
-  zh-Hant: 主頁
-  zh-TW: 主頁
-  zh-HK: 主頁
-  ko: 홈
-  ko-KR: 홈
-  fr: Accueil
-  fr-BE: Accueil
-  fr-CA: Accueil
-  fr-CH: Accueil
-  fr-FR: Accueil
-  fr-LU: Accueil
-  tr: Ana Sayfa
-show_title: false
+show_title: true
 articles:
   data_source: paginator.posts
   article_type: BlogPosting
@@ -33,10 +17,52 @@ articles:
 ---
 
 <div class="layout--home">
-  {%- include paginator.html -%}
+  <div class="home-container">
+
+    <!-- Main Content (Left Side) -->
+    <div class="home-main">
+      {%- include paginator.html -%}
+      {{ content }}
+    </div>
+
+    <!-- Sidebar (Right Side) -->
+    <aside class="home-sidebar">
+      <!-- Updated News Section -->
+      <h3>News</h3>
+      <ul>
+        {% assign sorted_news = site.news | sort: "date" | reverse | slice: 0, 2 %}
+        {% for post in sorted_news %}
+          <li>
+            <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+            <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <a href="{{ '/news' | relative_url }}" class="link-button">Go to News</a>
+
+      <!-- Add a margin space -->
+      <div style="margin-top: 30px;"></div>
+
+      <!-- Updated Publications Section (Only 1 post with title linked to its source URL and excerpt) -->
+      <h3>Publications</h3>
+      <ul>
+        {% assign sorted_publications = site.publications | sort: "date" | reverse | slice: 0, 2 %}
+        {% for post in sorted_publications %}
+          <li>
+            <!-- Link to the publication's actual URL stored in source_url -->
+            <h4><a href="{{ post.source_url }}" target="_blank">{{ post.title }}</a></h4>
+            <p>{{ post.excerpt }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="{{ '/publications' | relative_url }}" class="link-button">Go to Publications</a>
+    </aside>
+
+  </div>
 </div>
+
 <script>
   {%- include scripts/home.js -%}
 </script>
 
-{{ content }}

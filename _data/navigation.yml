@@ -9,7 +9,7 @@ header:
       # @start locale config
       en      : News
     # @end locale config
-    url: /News.html
+    url: /news.html
 
   - titles:
       # @start locale config
@@ -27,7 +27,7 @@ header:
       # @start locale config
       en      : Publications
     # @end locale config
-    url: /Publications.html
+    url: /publications.html
 
   - titles:
       # @start locale config
