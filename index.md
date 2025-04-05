@@ -16,6 +16,6 @@ More importantly, perhaps, is what we actually do in the lab. We design, synthes
 
 For more details about the projects, please click the button below!
 
-<a href="About.md" class="link-button">More about us</a>
+<a href="About" class="link-button">More about us</a>
 
 Thanks for visiting!
