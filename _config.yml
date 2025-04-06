@@ -2,15 +2,15 @@
 title: DH@NCKU-Chemistry
 timezone: UTC
 collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
   news:
     output: true
   publications:
+    output: true
+  PI:
+    output: true
+  Lab-Members:
+    output: true
+  Alumni:
     output: true
 defaults:
   - scope:

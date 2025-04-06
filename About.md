@@ -1,5 +1,4 @@
 ---
-titles: Our goal
 layout: Custom
 ---
 # Our goal

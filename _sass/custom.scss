@@ -1,90 +1,110 @@
-/* start custom scss snippet */
-/* Container that wraps header and content */
-
+/* Navigation */
 .navigation a {
-    font-size: 18px; /* Adjust as needed */
-    font-weight: bold;
+  font-size: 18px; /* Adjust as needed */
+  font-weight: bold;
 }
+
+/* General Styling */
 html {
-    overflow-y: scroll; /* forces a vertical scrollbar to always appear on the webpage, regardless of whether the content exceeds the height of the viewport.
-*/
+  overflow-y: scroll; /* Forces a vertical scrollbar */
 }
+
 body {
-  padding-top: 70px; /* Adjust this based on your header height */
+  padding-top: 70px; /* Adjust based on header height */
 }
+
+/* Header */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Home Layout */
 .home-container {
   display: flex;
   align-items: flex-start;
 }
+
 .home-main {
   flex: 1;
-  max-width: 100%; /* Adjust width */
+  max-width: 100%;
 }
+
 .home-sidebar {
   width: 30%;
-  margin-top: 0px;
-  margin-left: 20px; /* increase the margin between home-main and home-sidebar*/
+  margin-left: 20px;
   padding: 15px;
   background: $header-background;
-  border: 1px solid #ddd; /* Border on all sides */
-  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
+
 .home-sidebar ul {
-  list-style-type: none; /* Removes the default bullets */
-  padding-left: 0; /* Removes the left padding that often comes with the list */
+  list-style-type: none;
+  padding-left: 0;
 }
+
 .home-sidebar li {
-  margin-bottom: 10px; /* Adds space between list items if necessary */
+  margin-bottom: 10px;
 }
+
 .home-sidebar h3 {
-  margin-top: 0; /* Remove extra spacing */
-  padding: 0; /* Optional: Adjust spacing inside the box */
+  margin-top: 0;
+  padding: 0;
 }
+
+/* Link Button */
 .link-button {
   display: inline-block;
   margin-top: 2px;
   padding: 0.1em 0.8em;
   background: #0073e6;
-  color: white!important;
+  color: white !important;
   text-decoration: none;
   border-radius: 10px;
 }
+
 .news-link:hover {
   background: #005bb5;
 }
+
+/* Layout Styling */
 .layout--home {
   text-align: justify;
 }
+
 .center-image {
-  display: block;         /* Makes the image a block element */
-  margin-left: auto;      /* Auto margin centers the block horizontally */
-  margin-right: auto;     /* Auto margin centers the block horizontally */
-  width: 80%;             /* Optional: Set width to 80% of container */
-  height: auto;           /* Maintain aspect ratio */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
 }
+
+/* Article Styling */
 .articles-text {
   text-align: justify;
-  line-height: 1.6; /* Optional: Adjust line height for readability */
-  margin-bottom: 1.5em; /* Optional: Add space below the paragraph */
+  line-height: 1.6;
+  margin-bottom: 1.5em;
 }
+
 .articles-text ol {
-  list-style-position: inside; /* Ensures numbers stay inside the list item */
-  margin-left: 0; /* Optional: Adjust the left margin to reduce the space */
-  padding-left: 0px; /* Optional: Control the indentation of the list */
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 0;
 }
+
 .articles-text ol li {
-  text-align: justify; /* Justify text inside list items */
+  text-align: justify;
 }
+
+/* Publication Styling */
 .publication-title {
-  color: $main-color-1; /* Use the main color defined in your SCSS */
+  color: $main-color-1;
 }
 
 .publication-item {
@@ -94,33 +114,152 @@ body {
 
 .publication-content {
   display: flex;
-  align-items: center; /* Align text and image vertically */
-  gap: 25px; /* Space between text and TOC image */
+  align-items: center;
+  gap: 25px;
 }
 
 .publication-text {
-  flex: 1; /* Takes available space */
-  text-align: justify; /* 👈 Make text justified */
-  hyphens: auto;       /* 👈 Optional: improves word wrapping */
-  font-size: map-get($base, font-size)
+  flex: 1;
+  text-align: justify;
+  hyphens: auto;
+  font-size: map-get($base, font-size);
 }
 
 .publication-image img {
-  max-width: 350px; /* Adjust as needed */
+  max-width: 350px;
   height: auto;
-  border-radius: 5px; /* Optional: rounded corners */
-}
-/* Date Badge Style */
-.date-badge {
-  display: inline-block;
-  background-color: #6aa84f; /* Muted green background */
-  color: white; /* White text color */
-  font-size: 18px; /* Slightly smaller font */
-  padding: 2px 7px; /* Padding for a balanced look */
-  border-radius: 25px; /* Rounded corners */
-  text-align: center; /* Centered text */
-  margin-top: 1.6px; /* Add some spacing from other content */
+  border-radius: 5px;
 }
 
-/* end custom scss snippet */
+/* Date Badge */
+.date-badge {
+  display: inline-block;
+  background-color: #6aa84f;
+  color: white;
+  font-size: 18px;
+  padding: 2px 7px;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 1.6px;
+}
+
+/* Footer */
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+  max-width: map-get($layout, content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px 0;
+}
+
+/* Team Table */
+.team-table-wrapper {
+  max-width: map-get($layout, content-max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.team-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.team-table th, .team-table td {
+  padding: 10px;
+  border: none; /*  border: 1px solid #ccc; -> Visible borders */
+  text-align: left;
+  vertical-align: top;
+}
+
+.team-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.team-table img {
+  max-width: 220px;
+  height: auto;
+  width: 100%;
+}
+
+.team-table td:nth-child(2) {
+  width: 220px;
+  padding-left: 0;
+}
+
+.team-table td:nth-child(1) {
+  width: 300px; /* Set width on the td itself */
+  padding: 5px; /* Remove padding from the first column */
+}
+
+.team-table td:nth-child(1) h3 {
+  color: $main-color-1 !important;
+  padding: 5px;
+}
+
+.team-table td:nth-child(3) {
+  width: auto;
+  padding-left: 35px;
+    text-align: justify; /* Justify text in the third column */
+}
+
+/* PI Page Layout */
+.pi-page-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pi-page-main {
+  flex: 1;
+  max-width: 100%;
+}
+
+.pi-page-sidebar {
+  width: 30%;
+  margin-right: 30px;
+  padding: 20px;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: justify; /* Ensures all content inside is left-aligned */
+}
+
+.pi-page-sidebar h3.role {
+  text-align: center; /* Centers the role text */
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Image within Sidebar */
+.pi-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Social Links Styling */
+.social-links {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  display: flex;
+  gap: 10px; /* Add space between icons */
+}
+
+.social-link {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+
+
 

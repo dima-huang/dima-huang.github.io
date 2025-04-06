@@ -30,7 +30,11 @@ articles:
         {% for post in sorted_news %}
           <li>
             <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-            <p><small>{{ post.date | date: "%B %d, %Y" }}</small></p>
+            <p>
+              <span class="date-badge">
+                {{ post.date | date: "%m/%d/%Y" }} <!-- Render date in MM/DD/YYYY format -->
+              </span>
+            </p>
           </li>
         {% endfor %}
       </ul>
@@ -49,6 +53,11 @@ articles:
             <!-- Link to the publication's actual URL stored in source_url -->
             <h4><a href="{{ post.source_url }}" target="_blank">{{ post.title }}</a></h4>
             <p>{{ post.excerpt }}</p>
+            <p>
+              <span class="date-badge">
+                {{ post.date | date: "%m/%d/%Y" }} <!-- Render date in MM/DD/YYYY format -->
+              </span>
+            </p>
           </li>
         {% endfor %}
       </ul>
