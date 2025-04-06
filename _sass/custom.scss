@@ -399,6 +399,7 @@ img {
     -webkit-user-select: none; /* Prevent selection of phone numbers in Webkit browsers */
     -ms-user-select: none; /* Prevent selection in IE */
     user-select: none; /* Prevent selection in general */
+
   }
 
   /* Ensure page numbers or any numbers aren't automatically turned into clickable phone numbers */
@@ -407,6 +408,8 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-weight: normal !important;  /* Ensure no bold text on mobile */
+
   }
 
   /* Prevent 'tel:' links from being active */
