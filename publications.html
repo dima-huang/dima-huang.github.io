@@ -24,7 +24,8 @@ layout: page
             </h3>
 
             <!-- Excerpt -->
-            <p>{{ post.excerpt }}</p>
+            <p>{{ post.excerpt | replace: 'Page: <a', 'Page: <span' | replace: '</a>', '</span>' }}</p>
+            <!-- This replaces any link within page numbers (assuming "Page:" prefix exists) -->
 
             <!-- Date Badge -->
             <p>

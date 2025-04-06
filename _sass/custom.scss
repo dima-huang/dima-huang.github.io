@@ -361,4 +361,9 @@ img {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  /* Ensure the address block text is left-aligned on all screen sizes */
+  .address-block {
+    text-align: left !important;
+  }
 }
