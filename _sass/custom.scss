@@ -234,7 +234,7 @@ body {
   background: #f4f4f4;
   border: 1px solid #ddd;
   border-radius: 10px;
-  text-align: justify;
+  text-align: justify; /* Ensures that text is justified inside the sidebar */
 }
 
 .pi-page-sidebar h3.role {
@@ -267,7 +267,15 @@ body {
   height: 32px;
   display: inline-block;
 }
+/* Ordered List Styling */
+.pi-page-main ol {
+  list-style-position: inside; /* Keeps the numbers inside */
 
+}
+
+.pi-page-main ol li {
+  text-align: justify; /* Justify text inside the list item */
+}
 /* Accessible Focus Styles */
 a:focus,
 button:focus {
