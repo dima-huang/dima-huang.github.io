@@ -267,15 +267,16 @@ body {
   height: 32px;
   display: inline-block;
 }
+
 /* Ordered List Styling */
 .pi-page-main ol {
   list-style-position: inside; /* Keeps the numbers inside */
-
 }
 
 .pi-page-main ol li {
   text-align: justify; /* Justify text inside the list item */
 }
+
 /* Accessible Focus Styles */
 a:focus,
 button:focus {
@@ -288,6 +289,23 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* ================================
+   Prevent phone number links and align text in address block
+   ================================ */
+
+/* Prevent phone number links from appearing */
+.publication-text {
+  -webkit-touch-callout: none; /* Disable the "call" action in Webkit browsers */
+  -webkit-user-select: none; /* Prevent selection of the phone number */
+  -ms-user-select: none; /* Prevent selection in IE */
+  user-select: none; /* Prevent selection in general */
+}
+
+/* Ensure the address block text is left-aligned on all screen sizes */
+.address-block {
+  text-align: left !important;
 }
 
 /* ================================
@@ -360,6 +378,11 @@ img {
   .social-links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  /* Prevent clickable numbers in ordered lists on mobile */
+  .pi-page-main ol li {
+    pointer-events: none; /* Disable interaction */
   }
 
   /* Ensure the address block text is left-aligned on all screen sizes */
