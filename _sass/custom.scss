@@ -292,8 +292,16 @@ img {
 }
 
 /* ================================
-   Prevent phone number links and align text in address block
+   Prevent phone number links from being clickable on mobile
    ================================ */
+
+@media (max-width: 768px) {
+  .pi-page-sidebar a[href^="tel:"] {
+    pointer-events: none;  /* Disable click/tap */
+    cursor: default; /* Change cursor to default */
+    color: inherit; /* Prevent link color */
+  }
+}
 
 /* Prevent phone number links from appearing */
 .publication-text {
@@ -311,7 +319,6 @@ img {
 /* ================================
    Responsive Styling for Mobile
    ================================ */
-
 @media (max-width: 768px) {
   .home-container,
   .pi-page-container {
@@ -378,11 +385,6 @@ img {
   .social-links {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  /* Prevent clickable numbers in ordered lists on mobile */
-  .pi-page-main ol li {
-    pointer-events: none; /* Disable interaction */
   }
 
   /* Ensure the address block text is left-aligned on all screen sizes */
