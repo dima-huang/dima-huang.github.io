@@ -37,6 +37,13 @@ header:
 
   - titles:
       # @start locale config
+      en: Life
+    # @end locale config
+    url: /Life.html
+
+  - titles:
+      # @start locale config
       en: Contact
     # @end locale config
     url: /Contact.html
+

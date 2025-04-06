@@ -1,0 +1,18 @@
+---
+layout: Custom
+title: Life
+---
+
+<div class="photo-gallery">
+  {% for photo in site.data.photos %}
+    <div class="photo-item">
+      <div class="photo-image">
+        <img src="/assets/photos/{{ photo.file }}" alt="{{ photo.description }}" />
+      </div>
+      <p class="photo-date">
+        <i class="fas fa-calendar-alt"></i> {{ photo.date }}
+      </p>
+      <p class="photo-description">{{ photo.description }}</p>
+    </div>
+  {% endfor %}
+</div>

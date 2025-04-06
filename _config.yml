@@ -71,7 +71,7 @@ mathjax:
 mathjax_autoNumber:
 mermaid:
 chart:
-paginate: 8
+paginate: 6
 paginate_path: "/page:num"
 sources:
 sharing:
