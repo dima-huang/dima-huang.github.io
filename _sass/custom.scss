@@ -299,23 +299,92 @@ img {
    ================================ */
 
 @media (max-width: 768px) {
-  .pi-page-sidebar a[href^="tel:"] {
-    pointer-events: none;  /* Disable click/tap */
-    cursor: default; /* Change cursor to default */
-    color: inherit; /* Prevent link color */
+  /* Home Layout - Stack items on mobile */
+  .home-container,
+  .pi-page-container {
+    flex-direction: column;
   }
-}
 
-/* Prevent phone number recognition on mobile devices */
-@media only screen and (max-width: 768px) {
+  /* Sidebar adjustments */
+  .home-sidebar,
+  .pi-page-sidebar {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 1rem;
+  }
+
+  /* Main content adjustments */
+  .home-main,
+  .pi-page-main {
+    width: 100%;
+  }
+
+  /* Navigation */
+  .navigation a {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  /* Header adjustments */
+  .header {
+    position: static;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Body adjustments */
+  body {
+    padding-top: 0;
+  }
+
+  /* Table Styling */
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .team-table td:nth-child(1),
+  .team-table td:nth-child(2),
+  .team-table td:nth-child(3) {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .team-table td:nth-child(1),
+  .team-table td:nth-child(2) {
+    padding-left: 0;
+  }
+
+  /* Publication Content - Adjust to column layout */
+  .publication-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Social Links */
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Ensure address block is left-aligned */
+  .address-block {
+    text-align: left !important;
+  }
+
+  /* Prevent phone number recognition on mobile */
   .publication-text {
-    -webkit-touch-callout: none; /* Disable "call" action in Webkit browsers */
-    -webkit-user-select: text; /* Allow selection of text */
-    -ms-user-select: text; /* Allow selection in IE */
-    user-select: text; /* Allow selection in general */
+    -webkit-touch-callout: none;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
   }
 
-  /* Ensure page numbers or any numbers aren't automatically turned into clickable phone numbers */
+  /* Ensure page numbers are not converted to clickable phone numbers */
   .publication-text p {
     -webkit-touch-callout: none;
     -webkit-user-select: text;
@@ -323,11 +392,11 @@ img {
     user-select: text;
   }
 
-  /* Prevent 'tel:' links from being active */
+  /* Disable 'tel:' links on mobile */
   .publication-text a[href^="tel:"] {
-    pointer-events: none;  /* Disable click/tap */
-    cursor: default; /* Change cursor to default */
-    color: inherit; /* Prevent link color */
-    text-decoration: none; /* Prevent underline */
+    pointer-events: none;
+    cursor: default;
+    color: inherit;
+    text-decoration: none;
   }
 }
