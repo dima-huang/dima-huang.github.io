@@ -392,3 +392,28 @@ img {
     text-align: left !important;
   }
 }
+/* Prevent phone number recognition on mobile devices */
+@media only screen and (max-width: 768px) {
+  .publication-text {
+    -webkit-touch-callout: none; /* Disable "call" action in Webkit browsers */
+    -webkit-user-select: none; /* Prevent selection of phone numbers in Webkit browsers */
+    -ms-user-select: none; /* Prevent selection in IE */
+    user-select: none; /* Prevent selection in general */
+  }
+
+  /* Ensure page numbers or any numbers aren't automatically turned into clickable phone numbers */
+  .publication-text p {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Prevent 'tel:' links from being active */
+  .publication-text a[href^="tel:"] {
+    pointer-events: none;  /* Disable click/tap */
+    cursor: default; /* Change cursor to default */
+    color: inherit; /* Prevent link color */
+    text-decoration: none; /* Prevent underline */
+  }
+}

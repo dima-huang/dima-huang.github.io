@@ -79,9 +79,9 @@ free to reach out again! Line also works if you prefer.
 
 ## Reference
 
-1. Prof. Jonathan L. Sessler (Chemistry, University of Texas at Austin), sessler@cm.utexas.edu, + 512-471-5009, https://www.sessler.cm.utexas.edu/
-2. Prof. Valérie C. Pierre (Chemistry, University of Utah), *Moved since 2024. v.pierre@utah.edu + 801-587-3185, https://www.vcplab.com/
-3. Prof. Zachariah A. Page (Chemistry, University of Texas at Austin), zpage@utexas.edu + 512-232-2462, https://www.zpagegroup.com/
-4. R&D Staff Vyacheslav S. Bryantsev (ORNL, Oak Ridge, TN), bryantsevv@ornl.gov +865-576-4272 https://www.ornl.gov/staff-profile/vyacheslav-bryantsev
+1. Prof. Jonathan L. Sessler (Chemistry, University of Texas at Austin), sessler@cm.utexas.edu, https://www.sessler.cm.utexas.edu/
+2. Prof. Valérie C. Pierre (Chemistry, University of Utah), *Moved since 2024. v.pierre@utah.edu, https://www.vcplab.com/
+3. Prof. Zachariah A. Page (Chemistry, University of Texas at Austin), zpage@utexas.edu, https://www.zpagegroup.com/
+4. R&D Staff Vyacheslav S. Bryantsev (ORNL, Oak Ridge, TN), bryantsevv@ornl.gov, https://www.ornl.gov/staff-profile/vyacheslav-bryantsev
 
 
