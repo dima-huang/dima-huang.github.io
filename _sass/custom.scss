@@ -1,16 +1,23 @@
+/* Global Box Sizing Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* Navigation */
 .navigation a {
-  font-size: 18px; /* Adjust as needed */
+  font-size: 1.125rem; /* 18px → rem */
   font-weight: bold;
 }
 
 /* General Styling */
 html {
-  overflow-y: scroll; /* Forces a vertical scrollbar */
+  overflow-y: scroll;
 }
 
 body {
-  padding-top: 70px; /* Adjust based on header height */
+  padding-top: 70px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Header */
@@ -66,6 +73,7 @@ body {
   color: white !important;
   text-decoration: none;
   border-radius: 10px;
+  transition: background 0.3s ease;
 }
 
 .news-link:hover {
@@ -122,7 +130,7 @@ body {
   flex: 1;
   text-align: justify;
   hyphens: auto;
-  font-size: map-get($base, font-size);
+  font-size: 1rem;
 }
 
 .publication-image img {
@@ -136,7 +144,7 @@ body {
   display: inline-block;
   background-color: #6aa84f;
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 2px 7px;
   border-radius: 25px;
   text-align: center;
@@ -147,7 +155,7 @@ body {
 .footer-info {
   text-align: center;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #777;
   max-width: map-get($layout, content-max-width);
   margin-left: auto;
@@ -171,7 +179,7 @@ body {
 
 .team-table th, .team-table td {
   padding: 10px;
-  border: none; /*  border: 1px solid #ccc; -> Visible borders */
+  border: none;
   text-align: left;
   vertical-align: top;
 }
@@ -193,8 +201,8 @@ body {
 }
 
 .team-table td:nth-child(1) {
-  width: 300px; /* Set width on the td itself */
-  padding: 5px; /* Remove padding from the first column */
+  width: 300px;
+  padding: 5px;
 }
 
 .team-table td:nth-child(1) h3 {
@@ -205,7 +213,7 @@ body {
 .team-table td:nth-child(3) {
   width: auto;
   padding-left: 35px;
-    text-align: justify; /* Justify text in the third column */
+  text-align: justify;
 }
 
 /* PI Page Layout */
@@ -226,11 +234,11 @@ body {
   background: #f4f4f4;
   border: 1px solid #ddd;
   border-radius: 10px;
-  text-align: justify; /* Ensures all content inside is left-aligned */
+  text-align: justify;
 }
 
 .pi-page-sidebar h3.role {
-  text-align: center; /* Centers the role text */
+  text-align: center;
   margin-top: 0;
   padding: 0;
 }
@@ -247,7 +255,7 @@ body {
   margin-top: 10px;
   margin-bottom: 0px;
   display: flex;
-  gap: 10px; /* Add space between icons */
+  gap: 10px;
 }
 
 .social-link {
@@ -260,6 +268,89 @@ body {
   display: inline-block;
 }
 
+/* Accessible Focus Styles */
+a:focus,
+button:focus {
+  outline: 2px dashed $main-color-1;
+  outline-offset: 3px;
+}
 
+/* Make all images responsive */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
+/* ================================
+   Responsive Styling for Mobile
+   ================================ */
 
+@media (max-width: 768px) {
+  .home-container,
+  .pi-page-container {
+    flex-direction: column;
+  }
+
+  .home-sidebar,
+  .pi-page-sidebar {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 1rem;
+  }
+
+  .home-main,
+  .pi-page-main {
+    width: 100% !important;
+  }
+
+  .navigation a {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  .header {
+    position: static;
+    padding: 10px;
+    text-align: center;
+  }
+
+  body {
+    padding-top: 0;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .team-table td:nth-child(1),
+  .team-table td:nth-child(2),
+  .team-table td:nth-child(3) {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .team-table td:nth-child(3) {
+    padding-left: 0;
+  }
+
+  .publication-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .publication-image img {
+    max-width: 100%;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
