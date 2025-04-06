@@ -1,8 +1,7 @@
 ---
+title: Some useful resources
 layout: Custom
 ---
-# Some useful resources
-
 ## NMR-related
 
 #### What are relaxation, CEST, spin-spin coupling, asymmetric satellite peaks, etc.?

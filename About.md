@@ -1,7 +1,7 @@
 ---
+Title: Our goal
 layout: Custom
 ---
-# Our goal
 ### We address challenges related to the separation of critical materials, as well as environmental remediation.
 **The overarching goal** of this research is to meet the urgent need for sustainable
 recovery of critical materials essential for advanced electronics and chip

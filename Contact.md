@@ -1,5 +1,5 @@
 ---
-layout: Custom
+title: Contact us
+layout: page
 ---
-# Contact us
 ## Location
