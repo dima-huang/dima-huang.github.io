@@ -131,6 +131,9 @@ body {
   text-align: justify;
   hyphens: auto;
   font-size: 1rem;
+  -webkit-user-select: text; /* Allow text selection */
+  -ms-user-select: text; /* Allow text selection in IE */
+  user-select: text; /* Allow text selection */
 }
 
 .publication-image img {
@@ -303,113 +306,21 @@ img {
   }
 }
 
-/* Prevent phone number links from appearing */
-.publication-text {
-  -webkit-touch-callout: none; /* Disable the "call" action in Webkit browsers */
-  -webkit-user-select: none; /* Prevent selection of the phone number */
-  -ms-user-select: none; /* Prevent selection in IE */
-  user-select: none; /* Prevent selection in general */
-}
-
-/* Ensure the address block text is left-aligned on all screen sizes */
-.address-block {
-  text-align: left !important;
-}
-
-/* ================================
-   Responsive Styling for Mobile
-   ================================ */
-@media (max-width: 768px) {
-  .home-container,
-  .pi-page-container {
-    flex-direction: column;
-  }
-
-  .home-sidebar,
-  .pi-page-sidebar {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-top: 1rem;
-  }
-
-  .home-main,
-  .pi-page-main {
-    width: 100% !important;
-  }
-
-  .navigation a {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 1rem;
-  }
-
-  .header {
-    position: static;
-    padding: 10px;
-    text-align: center;
-  }
-
-  body {
-    padding-top: 0;
-  }
-
-  table {
-    display: block;
-    overflow-x: auto;
-    width: 100%;
-  }
-
-  .team-table td:nth-child(1),
-  .team-table td:nth-child(2),
-  .team-table td:nth-child(3) {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .team-table td:nth-child(3) {
-    padding-left: 0;
-  }
-
-  .publication-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .publication-image img {
-    max-width: 100%;
-  }
-
-  .social-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  /* Ensure the address block text is left-aligned on all screen sizes */
-  .address-block {
-    text-align: left !important;
-  }
-}
 /* Prevent phone number recognition on mobile devices */
 @media only screen and (max-width: 768px) {
   .publication-text {
     -webkit-touch-callout: none; /* Disable "call" action in Webkit browsers */
-    -webkit-user-select: none; /* Prevent selection of phone numbers in Webkit browsers */
-    -ms-user-select: none; /* Prevent selection in IE */
-    user-select: none; /* Prevent selection in general */
-
+    -webkit-user-select: text; /* Allow selection of text */
+    -ms-user-select: text; /* Allow selection in IE */
+    user-select: text; /* Allow selection in general */
   }
 
   /* Ensure page numbers or any numbers aren't automatically turned into clickable phone numbers */
   .publication-text p {
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-weight: normal !important;  /* Ensure no bold text on mobile */
-
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
   }
 
   /* Prevent 'tel:' links from being active */
