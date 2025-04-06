@@ -163,8 +163,16 @@ body {
   max-width: map-get($layout, content-max-width);
   margin-left: auto;
   margin-right: auto;
-  padding: 2px 0;
+  padding: 0px 0;
 }
+
+.footer-info p {
+/*  padding-left: 8px;*/      // Keep padding-left for the second line
+  padding: 0 0 0 8px;
+  margin-top: 0px;         // Reduce space between lines (this applies to the second <p>)
+  line-height: 1.2;        // Adjust line-height to reduce vertical space between lines
+}
+
 
 /* Team Table */
 .team-table-wrapper {
