@@ -501,13 +501,13 @@ img {
 }
 
 .photo-description {
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: #777;
 }
 
 /* Date Styling (with calendar icon) */
 .photo-date {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
 /*  color: $main-color-1;*/
   color: #6aa84f;
@@ -517,7 +517,7 @@ img {
   gap: 8px;
 }
 .photo-date i {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 /*  color: #555;*/
 /*  color: #6aa84f; /* Green color for the calendar icon */
   color: $main-color-1;
