@@ -1,5 +1,5 @@
 ---
-title: The Dima Huang Lab
+title: The DH Lab
 layout: home
 paginate: 8
 ---
