@@ -20,7 +20,17 @@ body {
   overflow-wrap: break-word;
 }
 
-/* Header */
+$bold-text-color: rgba(#333333, 1); // Darker color for bold text
+strong, b {
+  color: $bold-text-color;  // Use a color that stands out, or modify the existing one
+  font-weight: bold;        // Ensures the text stays bold
+/*  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);*/ // Optional: adds a subtle shadow for better contrast
+}
+
+// Define your gradient colors
+
+
+// Base header styling
 .header {
   position: fixed;
   top: 0;
@@ -173,7 +183,6 @@ body {
   line-height: 1.2;        // Adjust line-height to reduce vertical space between lines
 }
 
-
 /* Team Table */
 .team-table-wrapper {
   max-width: map-get($layout, content-max-width);
@@ -195,10 +204,10 @@ body {
   vertical-align: top;
 }
 
-.team-table th {
+/*.team-table th {
   background-color: #f4f4f4;
   font-weight: bold;
-}
+}*/
 
 .team-table img {
   max-width: 220px;
@@ -465,7 +474,7 @@ img {
     padding: 10px;
   }
 }
-
+/*Life*/
 /* Photo Gallery Styles */
 .photo-gallery {
   display: flex;
@@ -499,7 +508,9 @@ img {
 /* Date Styling (with calendar icon) */
 .photo-date {
   font-size: 1rem;
-  color: #555;
+  font-weight: bold;
+/*  color: $main-color-1;*/
+  color: #6aa84f;
   margin-top: 1em;
   display: inline-flex;
   align-items: center;
@@ -507,8 +518,9 @@ img {
 }
 .photo-date i {
   font-size: 1.2rem;
-  color: #555;
+/*  color: #555;*/
 /*  color: #6aa84f; /* Green color for the calendar icon */
+  color: $main-color-1;
 }
 /* Responsive Styles */
 @media screen and (max-width: 768px) {

@@ -69,3 +69,9 @@ $npm-color:        #fff;
 // highlight colors
 @import "skins/highlight/tomorrow-night-blue";
 
+// Apply gradient only if no inline background style is passed
+$custom-gradient-start: #E4F3E3;
+$custom-gradient-end: #f1f8ff;
+.header:not([style]) {
+  background: linear-gradient(to right, custom-gradient-start, $custom-gradient-end);
+}
