@@ -602,7 +602,7 @@ img {
     padding: 10px;
   }
 }
-/*Life*/
+
 /* Photo Gallery Styles */
 .photo-gallery {
   display: flex;
@@ -628,32 +628,37 @@ img {
   object-fit: cover;
 }
 
+/* Description Styling */
 .photo-description {
-  font-size: 1.2em;
+  font-size: 1.2em; /* Default font size */
   color: #777;
 }
 
 /* Date Styling (with calendar icon) */
 .photo-date {
-  font-size: 1.3rem;
+  font-size: 1.3rem; /* Default font size */
   font-weight: bold;
-/*  color: $main-color-1;*/
-  color: #6aa84f;
+  color: #6aa84f; /* Green color */
   margin-top: 1em;
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
+
+/* Icon font size */
 .photo-date i {
-  font-size: 1.3rem;
-/*  color: #555;*/
-/*  color: #6aa84f; /* Green color for the calendar icon */
-  color: $main-color-1;
+  font-size: 1.3rem; /* Keep the icon size consistent with the date */
+  color: #007bff; /* Blue color for the calendar icon */
 }
-/* Responsive Styles */
+
+/* Responsive Font Size for Description and Date */
 @media screen and (max-width: 768px) {
-  .photo-item {
-    width: calc(50% - 13.33px); /* 2 photos per row on medium screens */
+  .photo-description {
+    font-size: 1.1rem; /* Slightly smaller font size for medium screens */
+  }
+
+  .photo-date {
+    font-size: 1.1rem; /* Slightly smaller font size for medium screens */
   }
 }
 
@@ -661,9 +666,33 @@ img {
   .photo-item {
     width: 100%; /* 1 photo per row on small screens */
   }
+
+  .photo-description {
+    font-size: 1rem; /* Slightly smaller font size for small screens */
+  }
+
   .photo-date {
-    font-size: 0.9rem; /* Slightly smaller date text for small screens */
+    font-size: 1.0rem; /* Slightly smaller font size for small screens */
   }
 }
 
+/* Adjust space before and after the page title */
+.page-title {
+  margin-top: 0rem; /* Reduce the space above the title */
+  margin-bottom: 0rem; /* Reduce the space below the title */
+  padding-top: 0; /* Optional: remove padding if any */
+  padding-bottom: 0; /* Optional: remove padding if any */
+}
+@media (max-width: 768px) {
+  .page-title {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
 
+@media (max-width: 480px) {
+  .page-title {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
