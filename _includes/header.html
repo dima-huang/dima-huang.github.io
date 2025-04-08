@@ -9,7 +9,7 @@
       <div class="header__title">
         <div class="header__brand">
           {%- include svg/logo.svg -%}
-          {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
+          {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
           {%- if site.title -%}
             <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>
@@ -18,9 +18,12 @@
         {%- if site.search.provider -%}
           <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>
         {%- endif -%}
+        <button class="button button--secondary button--circle menu-toggle js-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
       {%- if site.data.navigation.header -%}
-      <nav class="navigation">
+      <nav class="navigation js-navigation">
         <ul>
           {%- for _item in site.data.navigation.header -%}
             {%- include snippets/get-nav-url.html path=_item.url -%}
@@ -42,3 +45,18 @@
       {%- endif -%}
     </div>
   </header>
+
+
+<!-- JavaScript for Toggling Menu -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.js-menu-toggle'); // The toggle button (now using favicon)
+  const navigation = document.querySelector('.navigation');     // The navigation sidebar
+
+  // Toggle open classes on click
+  menuToggle.addEventListener('click', function() {
+    navigation.classList.toggle('navigation--open'); // Slide sidebar in/out
+    menuToggle.classList.toggle('open');             // Rotate or animate the favicon button
+  });
+});
+</script>

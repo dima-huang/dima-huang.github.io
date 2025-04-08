@@ -3,11 +3,129 @@
   box-sizing: border-box;
 }
 
+
 /* Navigation */
 .navigation a {
   font-size: 1.125rem; /* 18px → rem */
   font-weight: bold;
 }
+
+/* For screens larger than 768px (desktop view) */
+@media (min-width: 768px) {
+  .js-menu-toggle {
+    display: none; /* Hide hamburger icon on larger screens */
+  }
+
+  .navigation {
+    display: block; /* Always show navigation menu on larger screens */
+    position: static; /* Reset any position properties */
+    background-color: transparent; /* Set background to transparent on large screens */
+  }
+
+  .search-button {
+    display: inline-block; /* Make sure the search button is visible */
+  }
+
+  .navigation ul {
+    display: flex; /* Display navigation items horizontally on larger screens */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation .navigation__item {
+    margin-right: 20px; /* Spacing between items horizontally */
+  }
+}
+
+/* For screens smaller than 768px (mobile view) */
+@media (max-width: 768px) {
+  /* Initially hide the sidebar off-screen */
+  .navigation {
+    position: fixed; /* Fix the navigation to the screen */
+    top: 0;
+    left: -250px; /* Start off-screen (adjust the width as needed) */
+    height: 100%; /* Full height of the screen */
+    width: auto; /* Let the sidebar width auto-adjust based on content */
+    background-color: #333; /* Choose a background color */
+    transition: left 0.3s ease; /* Slide in transition */
+    z-index: 9999; /* Ensure it's above other content */
+    padding-top: 3rem; /* Space out the menu at the top */
+  }
+
+  .navigation.navigation--open {
+    left: 0; /* Slide in to the left side when open */
+  }
+
+  /* Stack the navigation items vertically inside the sidebar */
+  .navigation ul {
+    list-style-type: none; /* Remove list styling */
+    padding: 0;
+    margin: 0;
+    height: auto; /* Allow the height to adjust based on content */
+    display: flex; /* Stack the links vertically */
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .navigation .navigation__item {
+    border-bottom: 1px solid #444; /* Optional: add a border for separation */
+    width: auto; /* Let the item width auto-adjust based on content */
+    margin: 0; /* Remove margin to minimize space */
+  }
+
+  /* Style the links inside the sidebar */
+  .navigation .navigation__item a {
+    color: white; /* Set link color */
+    padding: 0.5rem 1rem; /* Reduced padding for minimal space */
+    display: block;
+    text-align: left; /* Align text to the left */
+    border: none; /* Remove border for a cleaner look */
+    width: auto; /* Make the width auto-adjust to the content */
+  }
+
+  /* Make sure the search button is hidden on mobile */
+  .search-button {
+    display: none;
+  }
+
+/* Show menu toggle button on mobile */
+.js-menu-toggle {
+  display: block;
+  position: relative;
+  z-index: 10000;
+  width: 31px;
+  height: 31px;
+  background-color: #f1f8ff; /* Same background as the search icon */
+  border-radius: 50%;         /* Circular button */
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s ease; /* Smooth rotate animation */
+}
+
+/* Rotate the button 45 degrees when open */
+.js-menu-toggle.open {
+  transform: rotate(45deg);
+  transform-origin: center center;
+}
+
+
+
+
+  /* Additional styling for the navigation icon changes */
+  .navigation .navigation__item a {
+    color: white; /* Set link color */
+    padding: 0.5rem 1rem; /* Reduced padding for minimal space */
+    display: block;
+    text-align: left; /* Align text to the left */
+    border: none; /* Remove border for a cleaner look */
+    width: auto; /* Make the width auto-adjust to the content */
+  }
+}
+
+
+
+
 
 /* General Styling */
 html {
