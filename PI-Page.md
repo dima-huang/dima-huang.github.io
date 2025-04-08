@@ -8,8 +8,8 @@ permalink: /PI-Page/
 bio: |
   Dr. Huang is the Principal Investigator of the DH Lab. His research focuses on X, Y, and Z.
 email: dilmahuk@gmail.com
-phone_1: "+1 (612) 206-0398"
-phone_2: "+1 (612) 206-0398"
+phone_1: NA
+phone_2: NA
 office: XXX
 address:
   department: The Department of Chemistry

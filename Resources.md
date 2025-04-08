@@ -1,5 +1,5 @@
 ---
-title: Some useful resources
+title: Useful resources
 layout: Custom
 ---
 

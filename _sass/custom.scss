@@ -38,28 +38,28 @@
   }
 }
 
-/* For screens smaller than 768px (mobile view) */
 @media (max-width: 768px) {
-  /* Initially hide the sidebar off-screen */
+  /* Navigation sidebar (hidden by default) */
   .navigation {
-    position: fixed; /* Fix the navigation to the screen */
+    position: fixed;
     top: 0;
-    left: -250px; /* Start off-screen (adjust the width as needed) */
-    height: 100%; /* Full height of the screen */
-    width: auto; /* Let the sidebar width auto-adjust based on content */
-    background-color: #333; /* Choose a background color */
-    transition: left 0.3s ease; /* Slide in transition */
-    z-index: 9999; /* Ensure it's above other content */
-    padding-top: 3rem; /* Space out the menu at the top */
+    left: -250px;
+    height: 100%;
+    width: auto;
+    background-color: #333;
+    padding-top: 3rem;
+    transition: left 0.3s ease;
+    z-index: 9999;
   }
 
+  /* Sidebar when open */
   .navigation.navigation--open {
-    left: 0; /* Slide in to the left side when open */
+    left: 0;
   }
 
-  /* Stack the navigation items vertically inside the sidebar */
+  /* Navigation items stacked vertically */
   .navigation ul {
-    list-style-type: none; /* Remove list styling */
+    list-style: none;
     padding: 0;
     margin: 0;
     height: auto; /* Allow the height to adjust based on content */
@@ -68,7 +68,7 @@
   }
 
   .navigation .navigation__item {
-    border-bottom: 1px solid #444; /* Optional: add a border for separation */
+    border-bottom: 1px solid #444;
     width: auto; /* Let the item width auto-adjust based on content */
     margin: 0; /* Remove margin to minimize space */
   }
@@ -83,43 +83,43 @@
     width: auto; /* Make the width auto-adjust to the content */
   }
 
-  /* Make sure the search button is hidden on mobile */
-  .search-button {
-    display: none;
+  /* Header title layout */
+  .header__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 4rem;
   }
 
-/* Show menu toggle button on mobile */
-.js-menu-toggle {
-  display: block;
-  position: relative;
-  z-index: 10000;
-  width: 31px;
-  height: 31px;
-  background-color: #f1f8ff; /* Same background as the search icon */
-  border-radius: 50%;         /* Circular button */
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  transition: transform 0.3s ease; /* Smooth rotate animation */
-}
+  /* Search button (left of menu toggle) */
+  .search-button {
 
-/* Rotate the button 45 degrees when open */
-.js-menu-toggle.open {
-  transform: rotate(45deg);
-  transform-origin: center center;
-}
+  display: none !important; /* Hide the button on smaller screens */
+/*    position: absolute;
+    top: 0.75rem;
+    right: 3.5rem;
+    z-index: 10000; */
+  }
 
+  /* Hamburger menu toggle */
+  .menu-toggle {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    width: 31px;
+    height: 31px;
+    background-color: #f1f8ff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10001;
+    transition: transform 0.3s ease;
+  }
 
-
-
-  /* Additional styling for the navigation icon changes */
-  .navigation .navigation__item a {
-    color: white; /* Set link color */
-    padding: 0.5rem 1rem; /* Reduced padding for minimal space */
-    display: block;
-    text-align: left; /* Align text to the left */
-    border: none; /* Remove border for a cleaner look */
-    width: auto; /* Make the width auto-adjust to the content */
+  .menu-toggle.open {
+    transform: rotate(90deg);
   }
 }
 

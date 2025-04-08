@@ -20,7 +20,7 @@ defaults:
     values:
      header:
   #    background: "linear-gradient(to right, #E4F3E3, #f1f8ff)" #lignt green, too light
-      background: "linear-gradient(to right, #A3D8A3, #f1f8ff)"
+  #    background: "linear-gradient(to right, #A3D8A3, #f1f8ff)"
   - scope:
       path: ''
       type: posts
