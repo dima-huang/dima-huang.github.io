@@ -109,7 +109,7 @@ pageview:
     app_key:
     app_class:
 search:
-  provider: default
+  provider: false
   google:
     custom_search_engine_id:
 analytics:

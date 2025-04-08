@@ -90,38 +90,41 @@
     align-items: center;
     position: relative;
     padding-right: 4rem;
+    padding-left: 1rem; /* Ensure space for the menu toggle */
   }
 
   /* Search button (left of menu toggle) */
   .search-button {
-
-  display: none !important; /* Hide the button on smaller screens */
-/*    position: absolute;
-    top: 0.75rem;
-    right: 3.5rem;
-    z-index: 10000; */
+    display: none !important; /* Hide the button on smaller screens */
   }
 
   /* Hamburger menu toggle */
-  .menu-toggle {
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    width: 31px;
-    height: 31px;
-    background-color: #f1f8ff;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10001;
-    transition: transform 0.3s ease;
-  }
-
+.menu-toggle {
+  position: absolute;
+  top: 50%; /* Align vertically with the header */
+  right: 1rem; /* Align to the right, next to the logo */
+  width: 31px;
+  height: 31px;
+  background-color: #f1f8ff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10001;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition for color change */
+  margin-top: -15px; /* Center the toggle button vertically relative to the header */
+}
+/* Change color when the menu opens */
+  .menu-toggle:hover {
+  background-color: #93c47d; /* Change to your preferred color */
+}
   .menu-toggle.open {
     transform: rotate(90deg);
   }
+
 }
+
+
 
 
 
@@ -461,16 +464,23 @@ img {
     font-size: 1rem;
   }
 
-  /* Header adjustments */
+/* Header adjustments for screens smaller than 768px */
   .header {
-    position: static;
-    padding: 10px;
-    text-align: center;
+    position: fixed;  /* Keep the header fixed */
+    top: 0;           /* Position it at the top */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  /* Body adjustments */
+  /* Ensure the body content doesn't get hidden behind the fixed header */
   body {
-    padding-top: 0;
+    padding-top: 70px;
+  }
+  /* Adjust other header-related elements if necessary */
+  .header__title {
+    padding-right: 4rem;  /* Keep the title aligned if needed */
   }
 
   /* Table Styling */
