@@ -90,7 +90,7 @@
     align-items: center;
     position: relative;
     padding-right: 4rem;
-    padding-left: 1rem; /* Ensure space for the menu toggle */
+    padding-left: 0; /* Ensure space for the menu toggle */
   }
 
   /* Search button (left of menu toggle) */
@@ -102,7 +102,7 @@
 .menu-toggle {
   position: absolute;
   top: 50%; /* Align vertically with the header */
-  right: 1rem; /* Align to the right, next to the logo */
+  right: 0rem; /* Align to the right, next to the logo */
   width: 31px;
   height: 31px;
   background-color: #f1f8ff;
