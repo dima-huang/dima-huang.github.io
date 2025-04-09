@@ -369,7 +369,7 @@ strong, b {
 }
 
 .pi-page-sidebar {
-  width: 30%;
+  width: 300px; /* Fixed width for the sidebar */
   margin-right: 30px;
   padding: 20px;
   background: $header-background;
@@ -432,10 +432,6 @@ img {
   height: auto;
 }
 
-/* ================================
-   Prevent phone number links from being clickable on mobile
-   ================================ */
-
 @media (max-width: 768px) {
   /* Home Layout - Stack items on mobile */
   .home-container,
@@ -446,9 +442,8 @@ img {
   /* Sidebar adjustments */
   .home-sidebar,
   .pi-page-sidebar {
-    width: 100% !important;
-    margin: 0 !important;
-    margin-top: 1rem;
+    width: 300px !important; /* Keep fixed width for sidebar */
+    margin: 1rem auto 0 auto !important; /* Center align the sidebar */
   }
 
   /* Main content adjustments */
@@ -464,7 +459,7 @@ img {
     font-size: 1rem;
   }
 
-/* Header adjustments for screens smaller than 768px */
+  /* Header adjustments for screens smaller than 768px */
   .header {
     position: fixed;  /* Keep the header fixed */
     top: 0;           /* Position it at the top */
@@ -478,6 +473,7 @@ img {
   body {
     padding-top: 70px;
   }
+
   /* Adjust other header-related elements if necessary */
   .header__title {
     padding-right: 4rem;  /* Keep the title aligned if needed */
@@ -545,6 +541,9 @@ img {
     text-decoration: none;
   }
 }
+
+
+
 /* Styling for map container */
 .contact-container {
   display: flex; /* Align items side by side */
@@ -611,7 +610,7 @@ img {
 }
 
 .photo-item {
-  width: calc(33.333% - 13.33px);
+  width: calc(33.333% - 13.33px); /* Default: 3 per row */
   text-align: center;
 }
 
@@ -630,15 +629,15 @@ img {
 
 /* Description Styling */
 .photo-description {
-  font-size: 1.2em; /* Default font size */
+  font-size: 1.2em;
   color: #777;
 }
 
 /* Date Styling (with calendar icon) */
 .photo-date {
-  font-size: 1.3rem; /* Default font size */
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #6aa84f; /* Green color */
+  color: #6aa84f;
   margin-top: 1em;
   display: inline-flex;
   align-items: center;
@@ -647,34 +646,43 @@ img {
 
 /* Icon font size */
 .photo-date i {
-  font-size: 1.3rem; /* Keep the icon size consistent with the date */
-  color: #007bff; /* Blue color for the calendar icon */
+  font-size: 1.3rem;
+  color: #007bff;
 }
 
 /* Responsive Font Size for Description and Date */
 @media screen and (max-width: 768px) {
   .photo-description {
-    font-size: 1.1rem; /* Slightly smaller font size for medium screens */
+    font-size: 1.1rem;
   }
 
   .photo-date {
-    font-size: 1.1rem; /* Slightly smaller font size for medium screens */
+    font-size: 1.1rem;
   }
 }
 
+/* Medium screens: 2 photos per row */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .photo-item {
+    width: calc(50% - 10px);
+  }
+}
+
+/* Small screens: 1 photo per row */
 @media screen and (max-width: 480px) {
   .photo-item {
-    width: 100%; /* 1 photo per row on small screens */
+    width: 100%;
   }
 
   .photo-description {
-    font-size: 1rem; /* Slightly smaller font size for small screens */
+    font-size: 1rem;
   }
 
   .photo-date {
-    font-size: 1.0rem; /* Slightly smaller font size for small screens */
+    font-size: 1.0rem;
   }
 }
+
 
 /* Adjust space before and after the page title */
 .page-title {
