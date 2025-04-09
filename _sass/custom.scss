@@ -395,7 +395,7 @@ strong, b {
 }
 
 .team-table td:nth-child(1) h3 {
-  color: $main-color-1 !important;
+/*  color: $main-color-1 !important; the deep blue color might be confusing*/
   padding: 5px;
 }
 
@@ -521,7 +521,7 @@ img {
   }
 
   .pi-page-sidebar {
-    width: 80%; /* Adjust sidebar width */
+    width: 100%; /* Adjust sidebar width */
     max-width: 300px; /* Ensure it doesn't exceed original size */
     margin: 1rem auto 0 auto;
   }
