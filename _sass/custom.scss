@@ -126,10 +126,6 @@
 
 
 
-
-
-
-
 /* General Styling */
 html {
   overflow-y: scroll;
@@ -193,6 +189,19 @@ strong, b {
 .home-sidebar h3 {
   margin-top: 0;
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-sidebar {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 /* Link Button */
@@ -360,24 +369,28 @@ strong, b {
 /* PI Page Layout */
 .pi-page-container {
   display: flex;
+  justify-content: center; /* Center the content horizontally */
   align-items: flex-start;
+  gap: 30px; /* Space between sidebar and main */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .pi-page-main {
   flex: 1;
-  max-width: 100%;
+  max-width: 800px;
+  min-width: 300px;
 }
 
 .pi-page-sidebar {
-  width: 300px; /* Fixed width for the sidebar */
-  margin-right: 30px;
+  width: 300px; /* Fixed width */
   padding: 20px;
   background: $header-background;
   border: 1px solid #ddd;
   border-radius: 10px;
-  text-align: justify; /* Ensures that text is justified inside the sidebar */
+  text-align: justify;
 }
 
+/* Sidebar title */
 .pi-page-sidebar h3.role {
   text-align: center;
   margin-top: 0;
@@ -394,9 +407,11 @@ strong, b {
 /* Social Links Styling */
 .social-links {
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-link {
@@ -411,11 +426,11 @@ strong, b {
 
 /* Ordered List Styling */
 .pi-page-main ol {
-  list-style-position: inside; /* Keeps the numbers inside */
+  list-style-position: inside;
 }
 
 .pi-page-main ol li {
-  text-align: justify; /* Justify text inside the list item */
+  text-align: justify;
 }
 
 /* Accessible Focus Styles */
@@ -432,24 +447,48 @@ img {
   height: auto;
 }
 
+/* Publication Section Layout */
+.publication-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.publication-text {
+  flex: 1;
+  text-align: justify;
+}
+
+.publication-image {
+  flex-shrink: 0;
+  max-width: 200px;
+  width: 100%;
+}
+
+.publication-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  /* Home Layout - Stack items on mobile */
-  .home-container,
   .pi-page-container {
     flex-direction: column;
+    align-items: center; /* Center stack on small screens */
   }
 
-  /* Sidebar adjustments */
-  .home-sidebar,
   .pi-page-sidebar {
-    width: 300px !important; /* Keep fixed width for sidebar */
-    margin: 1rem auto 0 auto !important; /* Center align the sidebar */
+    width: 300px !important; /* Keep sidebar width fixed */
+    margin: 1rem auto 0 auto;
   }
 
-  /* Main content adjustments */
-  .home-main,
   .pi-page-main {
     width: 100%;
+    max-width: 800px;
   }
 
   /* Navigation */
@@ -459,27 +498,24 @@ img {
     font-size: 1rem;
   }
 
-  /* Header adjustments for screens smaller than 768px */
+  /* Header fixed position on mobile */
   .header {
-    position: fixed;  /* Keep the header fixed */
-    top: 0;           /* Position it at the top */
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  /* Ensure the body content doesn't get hidden behind the fixed header */
   body {
     padding-top: 70px;
   }
 
-  /* Adjust other header-related elements if necessary */
   .header__title {
-    padding-right: 4rem;  /* Keep the title aligned if needed */
+    padding-right: 4rem;
   }
 
-  /* Table Styling */
   table {
     display: block;
     overflow-x: auto;
@@ -499,25 +535,25 @@ img {
     padding-left: 0;
   }
 
-  /* Publication Content - Adjust to column layout */
+  /* Publication Layout for Small Screens */
   .publication-content {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  /* Social Links */
-  .social-links {
-    flex-wrap: wrap;
-    justify-content: center;
+  .publication-image {
+    max-width: 100%;
   }
 
-  /* Ensure address block is left-aligned */
+  .publication-image img {
+    width: 100%;
+  }
+
   .address-block {
     text-align: left !important;
   }
 
-  /* Prevent phone number recognition on mobile */
   .publication-text {
     -webkit-touch-callout: none;
     -webkit-user-select: text;
@@ -525,7 +561,6 @@ img {
     user-select: text;
   }
 
-  /* Ensure page numbers are not converted to clickable phone numbers */
   .publication-text p {
     -webkit-touch-callout: none;
     -webkit-user-select: text;
@@ -533,7 +568,6 @@ img {
     user-select: text;
   }
 
-  /* Disable 'tel:' links on mobile */
   .publication-text a[href^="tel:"] {
     pointer-events: none;
     cursor: default;
@@ -541,6 +575,7 @@ img {
     text-decoration: none;
   }
 }
+
 
 
 
