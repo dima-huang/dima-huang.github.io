@@ -329,8 +329,14 @@ strong, b {
   margin-top: 0px;         // Reduce space between lines (this applies to the second <p>)
   line-height: 1.2;        // Adjust line-height to reduce vertical space between lines
 }
+/*This part is for news*/
+/* Remove bullet points from the list */
+.page-text ul {
+  list-style-type: none;  /* Removes the default bullet points */
+  padding-left: 0;  /* Removes indentation */
+}
 
-/* Team Table */
+/* This part is for Team: Team Table */
 .team-table-wrapper {
   max-width: map-get($layout, content-max-width);
   margin: 0 auto;
