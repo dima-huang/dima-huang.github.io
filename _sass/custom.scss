@@ -123,6 +123,19 @@
   }
 
 }
+/*make footer screen responsive*/
+@media (max-width: 768px) {
+  .footer-info {
+    font-size: 0.75rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .footer-info p {
+    padding: 0 8px;
+    line-height: 1.4;
+  }
+}
 
 
 
@@ -190,7 +203,11 @@ strong, b {
   margin-top: 0;
   padding: 0;
 }
+.align-left {
+  text-align: left !important;
+}
 
+/*This part is for Home on Smaller Screens*/
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column;
@@ -229,7 +246,7 @@ strong, b {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -379,6 +396,7 @@ strong, b {
   flex: 1;
   max-width: 800px;
   min-width: 300px;
+  text-align: justify;
 }
 
 .pi-page-sidebar {
@@ -487,35 +505,17 @@ img {
   }
 
   .pi-page-main {
-    width: 100%;
-    max-width: 800px;
+  flex: 1;
+  min-width: 0; /* Prevent overflow due to min-width: 300px */
+  width: 100%;
+  text-align: justify;
+  }
+  /* Align the department text to the left on small screens */
+  .pi-page-sidebar .address {
+    text-align: left !important;
   }
 
-  /* Navigation */
-  .navigation a {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 1rem;
-  }
-
-  /* Header fixed position on mobile */
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  body {
-    padding-top: 70px;
-  }
-
-  .header__title {
-    padding-right: 4rem;
-  }
-
+/* This part is for the Team on Smaller Screens*/
   table {
     display: block;
     overflow-x: auto;
@@ -535,7 +535,7 @@ img {
     padding-left: 0;
   }
 
-  /* Publication Layout for Small Screens */
+/* Publication Layout for Small Screens */
   .publication-content {
     flex-direction: column;
     align-items: flex-start;
@@ -550,11 +550,6 @@ img {
     width: 100%;
   }
 
-
-  /* Align the department text to the left on small screens */
-  .pi-page-sidebar .address {
-    text-align: left !important;
-  }
   .publication-text {
     -webkit-touch-callout: none;
     -webkit-user-select: text;
@@ -576,9 +571,6 @@ img {
     text-decoration: none;
   }
 }
-
-
-
 
 /* Styling for map container */
 .contact-container {

@@ -25,9 +25,9 @@ signal: |
   https://signal.me/#eu/2Rvb0UOshHc8GBFLY8Hzykj9QnGZQfPU8w6OwW3BcHJdbtwiKXVOMYMsrqyuI_Ow
 
 ---
-
-## Dr. Sheng-Yin Dima Huang
-
+<div class="align-left">
+<h2>Dr. Sheng-Yin Dima Huang</h2>
+</div>
 Dr. Huang is an Assistant Professor in the Department of Chemistry,
 Physical Chemistry Division, at NCKU. He earned his B.S. in Chemical Engineering
 from NCKU in 2011 and his M.S. in Chemistry from NTU in 2013 under the
