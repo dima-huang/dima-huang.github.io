@@ -382,7 +382,7 @@ strong, b {
 }
 
 .pi-page-sidebar {
-  width: 300px; /* Fixed width */
+  width: 300px; /* Default width */
   padding: 20px;
   background: $header-background;
   border: 1px solid #ddd;
@@ -473,7 +473,6 @@ img {
   border-radius: 8px;
 }
 
-
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .pi-page-container {
@@ -482,7 +481,8 @@ img {
   }
 
   .pi-page-sidebar {
-    width: 300px !important; /* Keep sidebar width fixed */
+    width: 80%; /* Adjust sidebar width */
+    max-width: 300px; /* Ensure it doesn't exceed original size */
     margin: 1rem auto 0 auto;
   }
 
@@ -550,10 +550,11 @@ img {
     width: 100%;
   }
 
-  .address-block {
+
+  /* Align the department text to the left on small screens */
+  .pi-page-sidebar .address {
     text-align: left !important;
   }
-
   .publication-text {
     -webkit-touch-callout: none;
     -webkit-user-select: text;
