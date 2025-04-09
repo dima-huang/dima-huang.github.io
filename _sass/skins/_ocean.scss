@@ -4,11 +4,11 @@
 $main-color-1:     #0366d6;
 $text-color-1:     #fff;
 
-$main-color-2:     #a5917f;
+$main-color-2:     #a5917f;/*#a5917f;*/
 $text-color-2:     #fff;
 
-$main-color-3:     #f1f8ff;
-$text-color-3:     #0366d6;
+$main-color-3:     #e6f2ff; /*original #f1f8ff; #E0F0FF e6f2ff are good alternatives*/
+$text-color-3:     #0366d6; /*->dark blue*/
 
 $main-color-theme-light: rgba(#000, .9);
 $main-color-theme-dark:  rgba(#fff, .9);
@@ -18,7 +18,7 @@ $background-color: #fff;
 
 // text colors
 $text-color-theme-light-d: rgba(#000, .95);
-$text-color-theme-light:   rgba(#434343, .85);
+$text-color-theme-light:   rgba(#434343, 1);/*original rgba(#434343, .85);*/
 $text-color-theme-light-l: rgba(#000, .5);
 
 $text-color-theme-dark-d:  #fff;

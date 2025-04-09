@@ -143,7 +143,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
-
+/*Increase contrast for bold text*/
 $bold-text-color: rgba(#333333, 1); // Darker color for bold text
 strong, b {
   color: $bold-text-color;  // Use a color that stands out, or modify the existing one
