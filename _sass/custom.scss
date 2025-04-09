@@ -1,3 +1,12 @@
+/*Some general Formatting*/
+.align-left {
+  text-align: left;
+}
+.justify-text {
+  text-align: justify;
+}
+
+
 /* Navigation */
 .navigation a {
   font-size: 1.125rem; /* 18px → rem */
@@ -197,9 +206,6 @@ strong, b {
   margin-top: 0;
   padding: 0;
 }
-.align-left {
-  text-align: left !important;
-}
 
 /*This part is for Home on Smaller Screens*/
 @media (max-width: 768px) {
@@ -328,6 +334,22 @@ strong, b {
 .page-text ul {
   list-style-type: none;  /* Removes the default bullet points */
   padding-left: 0;  /* Removes indentation */
+}
+
+/*This part is for the news posts*/
+/* Override date + icon style in article info */
+.article__info .right-col li {
+  color: #6aa84f; /* Your preferred blue for both icon + text */
+  font-size: map-get($base, font-size); /* Or whatever you prefer */
+  font-weight: map-get($base, font-weight-bold);
+}
+
+/* Optional: target the icon specifically */
+.article__info .right-col li i {
+  color: #007bff;
+  font-size: map-get($base, font-size);
+  font-weight: map-get($base, font-weight-bold);
+  margin-right: 4px;
 }
 
 /* This part is for Team: Team Table */
@@ -711,24 +733,3 @@ img {
   }
 }
 
-
-/* Adjust space before and after the page title */
-.page-title {
-  margin-top: 0rem; /* Reduce the space above the title */
-  margin-bottom: 0rem; /* Reduce the space below the title */
-  padding-top: 0; /* Optional: remove padding if any */
-  padding-bottom: 0; /* Optional: remove padding if any */
-}
-@media (max-width: 768px) {
-  .page-title {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .page-title {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-}

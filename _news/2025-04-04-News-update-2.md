@@ -5,6 +5,7 @@ excerpt: "Are you interested in synthesizing ligands or receptors for metals, gr
 !🧪🧪🧪"
 layout: article
 ---
+<div class="justify-text">
 Are you interested in synthesizing ligands or receptors for metals,
 growing crystals, conducting spectroscopic analysis of host-guest interactions,
-or developing functionalized materials? If so, come join us!
+or developing functionalized materials? If so, come join us!</div>
