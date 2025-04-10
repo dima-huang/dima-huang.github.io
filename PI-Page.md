@@ -37,10 +37,6 @@ of Professor Valérie C. Pierre, and he graduated in 2021. After completing his
 postdoctoral research with Professor Jonathan L. Sessler at the University of
 Texas at Austin (2021–2025), he joined the Chemistry Department at NCKU.
 
-The quickest way to reach me is via email. While I strive to respond as quickly
-as possible, if you have not heard back from me within a couple of hours, feel
-free to reach out again! Line also works if you prefer.
-
 ## Research Interests
 
 1. Physical chemistry
