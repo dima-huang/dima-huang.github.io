@@ -2,7 +2,7 @@
 layout: CV
 name: Dr. Sheng-Yin Dima Huang
 role: Assistant Professor Physical Chemistry
-image: /assets/images/Team/PI/DH.gif
+image: /assets/images/Team/PI/DH.jpg
 ContactMe: The quickest way to reach me is via email. While I strive to respond as quickly as possible, if you have not heard back from me within a couple of hours, feel free to reach out again! Line also works if you prefer
 permalink: /PI-Page/
 bio: |

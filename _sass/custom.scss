@@ -174,8 +174,8 @@ strong, b {
   margin-left: 20px;
   padding: 15px;
   background: $header-background;
-  border: 1px solid #ddd;
   border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); // subtle and modern shadow; original: border: 1px solid #ddd;
 }
 
 .home-sidebar ul {
@@ -378,6 +378,8 @@ strong, b {
   max-width: 220px;
   height: auto;
   width: 100%;
+  border-radius: 10px; // makes the corners rounded
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); // subtle and modern shadow; original->border: 1px solid #ddd;
 }
 
 .team-table td:nth-child(2) {
@@ -421,7 +423,7 @@ strong, b {
   width: 300px; /* Default width */
   padding: 20px;
   background: $header-background;
-  border: 1px solid #ddd;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); // subtle and modern shadow; original->border: 1px solid #ddd;
   border-radius: 10px;
   text-align: justify;
 }
@@ -433,11 +435,16 @@ strong, b {
   padding: 0;
 }
 
+.pi-page-sidebar .address {
+    text-align: left;
+}
 /* Image within Sidebar */
 .pi-image {
-  width: 100%;
+  width: 85%;
   height: auto;
   border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Social Links Styling */
@@ -527,10 +534,6 @@ img {
   min-width: 0; /* Prevent overflow due to min-width: 300px */
   width: 100%;
   text-align: justify;
-  }
-  /* Align the department text to the left on small screens */
-  .pi-page-sidebar .address {
-    text-align: left !important;
   }
 
 /* This part is for the Team on Smaller Screens*/
@@ -665,6 +668,8 @@ img {
   aspect-ratio: 3 / 4;
   overflow: hidden;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // subtle and modern shadow; original->border: 1px solid #ddd;
+
 }
 
 .photo-image img {
