@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); /* Replace with the font link you choose */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); /* Updated to Varela Round */
 
 body {
-  font-family: 'Nunito', sans-serif; /* Replace 'Nunito' with any font you like */
+  font-family: 'Varela Round', sans-serif; /* Using Varela Round font */
 }
+
 $base: (
-  font-family: ('Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif),
+  font-family: ('Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif),
   font-family-code: (Menlo, Monaco, Consolas, Andale Mono, lucida console, Courier New, monospace),
+
 
   font-size-root:         16px,
   font-size-root-sm:      14px,

@@ -10,7 +10,7 @@ title: Some Fun
         <img src="/assets/photos/{{ photo.file }}" alt="{{ photo.description }}" />
       </div>
       <p class="photo-date">
-        <i class="fas fa-calendar-alt"></i> {{ photo.date }}
+        <i class="fas fa-calendar-alt"></i> {{ photo.date | date: "%B %d, %Y" }}
       </p>
       <p class="photo-description">{{ photo.description }}</p>
     </div>

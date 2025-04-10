@@ -237,6 +237,18 @@ strong, b {
   background: #005bb5;
 }
 
+/* News post date styling */
+.news-date {
+  color: #6aa84f; /* Match your desired style */
+  font-size: map-get($base, font-size); /* Adjust as needed */
+  font-weight: map-get($base, font-weight-bold);
+}
+
+.news-date i {
+  color: #007bff; /* Optional: icon color */
+  margin-right: 4px;
+}
+
 /* Layout Styling */
 .layout--home {
   text-align: justify;
