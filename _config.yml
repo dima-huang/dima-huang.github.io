@@ -38,7 +38,7 @@ defaults:
       type: pages  # This targets static pages like the home page
     values:
       layout: article  # Replace 'home' with your custom layout if you have one
-text_skin: ocean
+text_skin: Dima
 highlight_theme: tomorrow-night-blue
 url: https://dima-huang.github.io/
 baseurl:
