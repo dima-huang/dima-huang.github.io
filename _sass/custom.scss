@@ -126,19 +126,7 @@
   }
 
 }
-/*make footer screen responsive*/
-@media (max-width: 768px) {
-  .footer-info {
-    font-size: 0.75rem;
-    padding: 0 10px;
-    text-align: center;
-  }
 
-  .footer-info p {
-    padding: 0 8px;
-    line-height: 1.4;
-  }
-}
 
 
 
@@ -159,9 +147,6 @@ strong, b {
   font-weight: bold;        // Ensures the text stays bold
 /*  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);*/ // Optional: adds a subtle shadow for better contrast
 }
-
-// Define your gradient colors
-
 
 // Base header styling
 .header {
@@ -327,8 +312,7 @@ strong, b {
 .footer-info {
   text-align: center;
   margin-top: 20px;
-  font-size: 0.875rem;
-  color: #777;
+  font-size: map-get($base,font-size);
   max-width: map-get($layout, content-max-width);
   margin-left: auto;
   margin-right: auto;
@@ -744,4 +728,3 @@ img {
     font-size: 1.0rem;
   }
 }
-
