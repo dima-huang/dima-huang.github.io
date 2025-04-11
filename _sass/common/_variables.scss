@@ -74,8 +74,8 @@ $spacers: (
   1:                      map-get($base, spacer) * .25,
   2:                      map-get($base, spacer) * .5,
   3:                      map-get($base, spacer),
-  4:                      map-get($base, spacer) * 0, // It was 1.5
-  5:                      map-get($base, spacer) * 2 //It was 3
+  4:                      map-get($base, spacer) * 1.5, // It was 1.5
+  5:                      map-get($base, spacer) * 3 //It was 3
 );
 
 $z-indexes: (
