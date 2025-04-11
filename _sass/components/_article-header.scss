@@ -2,7 +2,7 @@
   margin-top: map-get($spacers, 5);
   margin-bottom: map-get($spacers, 4);
   @include media-breakpoint-down(md) {
-    margin-top: map-get($spacers, 4);
+    margin-top: map-get($spacers, 5); //it was 4
   }
   header, h1 {
     display: inline;
