@@ -66,7 +66,7 @@
   & > svg {
     width: map-get($base, font-size-h4) * 1.6;
     height: map-get($base, font-size-h4) * 1.6;
-    margin-right: map-get($spacers, 3);
+    margin-right: map-get($spacers, 1); // it was 3
     vertical-align: middle;
     @include media-breakpoint-down(md) {
       width: map-get($base, font-size-h4) * 1.2;
@@ -116,9 +116,9 @@
 }
 .navigation__item--active {
   a {
-    @include link-colors($main-color-1, $main-color-1);
+    @include link-colors(#fff, #fff);//it was $main-color-1
   }
   &::after {
-    @include split-line(bottom, 4px, $main-color-1);
+    @include split-line(bottom, 4px, #fff);//it was $main-color-1
   }
 }

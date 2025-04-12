@@ -21,6 +21,11 @@ exploiting these anion-metal interactions and constrained complexation will
 enhance selectivity in separations and reduce secondary waste generation.
 The targeted elements include Li, Mn, Co, Ni, and the lanthanides (Ln).
 
+![Alt text](/assets/images/AboutProject.svg){:class="center-image"}
+<div align="left">
+<b>Figure 1</b>. Overview of projects in the DH-lab: (a) complex speciation and counter anions, (b) complexation in confined spaces, and (c) separation under external stimuli. (charge omitted).
+</div>
+
 Additionally, we aim to **explore novel mechanisms for achieving catch-and-release
 of critical materials**. For quite some time, complexation and decomplexation of
 bound ions have been achieved primarily through pH adjustments. However, this
@@ -32,10 +37,6 @@ specific stimuli, thereby facilitating the catch-and-release of targeted ions
 (Figure 1c). We believe that such receptors can expand the toolbox of receptor
 designs relevant to separation sciences.
 
-![Alt text](/assets/images/AboutProject.svg){:class="center-image"}
-<div align="left">
-<b>Figure 1</b>. Overview of projects in the DH-lab: (a) complex speciation and counter anions, (b) complexation in confined spaces, and (c) separation under external stimuli. (charge omitted).
-</div>
 On this basis, three projects are proposed and outlined as follows:
 1. Leveraging anion coordination for separations
 2. Complexation in confined spaces
