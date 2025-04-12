@@ -10,11 +10,14 @@ $text-color-2:     #fff;
 $main-color-3:     #fff2cc; /*original #f1f8ff; #E0F0FF e6f2ff are good alternatives; fff8e1, fff2cc, fff5d3 are light yellow*/
 $text-color-3:     #0366d6; /*->dark blue*/
 
+$gradient-color-3: linear-gradient(to right, #509FD8, #3C78D8);
+$background-box: #FFF9F0; //Soft ivory-white, subtle warmth
+
 $main-color-theme-light: rgba(#000, .9);
 $main-color-theme-dark:  rgba(#fff, .9);
 
 // page background
-$background-color: #fff;
+$background-color: #FFFDF8; //very warm white
 
 // text colors
 $text-color-theme-light-d: rgba(#000, .95);
@@ -32,11 +35,11 @@ $text-color-l:     $text-color-theme-light-l;
 $text-background-color: rgba(#000, .05);
 
 // header and footer colors
-$header-text-color: $text-color-3;
-$header-background: $main-color-3;
+$header-text-color: $text-color-1;//-> white
+$header-background: $gradient-color-3;//->gradient
 
 $footer-text-color: $text-color-3;
-$footer-background: $main-color-3;
+$footer-background: #F2F2F2; //->light grey
 
 // border and shadow colors
 $border-color:     mix(#000, $background-color, 20%);
@@ -67,8 +70,8 @@ $github-color:     #000;
 $npm-color:        #fff;
 
 // Apply gradient only if no inline background style is passed
-//$custom-gradient-start: #E4F3E3;
-//$custom-gradient-end: #f1f8ff;
+//$custom-gradient-start: #509FD8;
+//$custom-gradient-end: #3C78D8;
 //.header:not([style]) {
 //  background: linear-gradient(to right, $custom-gradient-start, $custom-gradient-end);
 //}

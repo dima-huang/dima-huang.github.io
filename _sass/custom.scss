@@ -180,7 +180,7 @@ strong, b {
   width: 30%;
   margin-left: 20px;
   padding: 15px;
-  background: $header-background;
+  background: $background-box;
   border-radius: 10px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); // subtle and modern shadow; original: border: 1px solid #ddd;
 }
@@ -250,7 +250,7 @@ strong, b {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 85%;
   height: auto;
 //  border-radius: 10px; /* makes the corners rounded */
 // subtle and modern shadow; original: border: 1px solid #ddd; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
@@ -379,6 +379,13 @@ strong, b {
   vertical-align: top;
 }
 
+.inline-icon {
+  height: 1em;         /* Matches the current font size */
+  width: auto;         /* Keeps the aspect ratio */
+  vertical-align: middle; /* Aligns nicely with text */
+  margin-left: 0.3em;  /* Optional: space between text and icon */
+}
+
 /*.team-table th {
   background-color: #f4f4f4;
   font-weight: bold;
@@ -432,12 +439,17 @@ strong, b {
 .pi-page-sidebar {
   width: 300px; /* Default width */
   padding: 20px;
-  background: $header-background;
+  background: $background-box; //warm egg shell theme
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); // subtle and modern shadow; original->border: 1px solid #ddd;
   border-radius: 10px;
   text-align: justify;
 }
-
+// Apply gradient only if no inline background style is passed
+//$custom-gradient-start: #509FD8;
+//$custom-gradient-end: #3C78D8;
+//.header:not([style]) {
+//  background: linear-gradient(to right, #509FD8, #3C78D8);
+//}
 /* Sidebar title */
 .pi-page-sidebar h3.role {
   text-align: center;
