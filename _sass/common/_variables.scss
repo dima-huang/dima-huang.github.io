@@ -75,7 +75,7 @@ $spacers: (
   2:                      map-get($base, spacer) * .5,
   3:                      map-get($base, spacer),
   4:                      map-get($base, spacer) * 1.5, // It was 1.5
-  5:                      map-get($base, spacer) * 2.5 //It was 3
+  5:                      map-get($base, spacer) * 3 //It was 3
 );
 
 $z-indexes: (
@@ -86,8 +86,8 @@ $z-indexes: (
 );
 
 $layout: (
-  header-height:          5rem,
-  header-height-sm:       4rem, /*it was 3 rem*/
+  header-height:          4rem, /*It was 5rem*/
+  header-height-sm:       3.5rem, /*it was 3 rem*/
   content-max-width:      1100px,
   sidebar-width:          250px,
   sidebar-header-height:  3rem,

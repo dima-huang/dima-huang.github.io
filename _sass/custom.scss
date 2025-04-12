@@ -107,6 +107,7 @@ p {
     display: none !important; /* Hide the button on smaller screens */
   }
 
+
   /* Hamburger menu toggle */
 .menu-toggle {
   position: absolute;
@@ -320,7 +321,7 @@ strong, b {
 /* Footer */
 .footer-info {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px; //it was 20px
   font-size: map-get($base,font-size);
   max-width: map-get($layout, content-max-width);
   margin-left: auto;

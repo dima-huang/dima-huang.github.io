@@ -1,8 +1,8 @@
 .article__header {
-  margin-top: map-get($spacers, 5);
+  margin-top: map-get($spacers, 3);
   margin-bottom: 0;//Original:   margin-bottom: map-get($spacers, 4)
   @include media-breakpoint-down(md) {
-    margin-top: map-get($spacers, 5); // Original: margin-top: map-get($spacers, 4)
+    margin-top: map-get($spacers, 2); // Original: margin-top: map-get($spacers, 4)
   }
   header, h1 {
     display: inline;
