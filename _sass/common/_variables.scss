@@ -32,7 +32,7 @@ $base: (
   font-size-h5-lg:        1.25rem,
   font-size-h6-lg:        1.25rem,
 
-  font-size-h1:           2.5rem,
+  font-size-h1:           2.25rem, //Original:   font-size-h1:           2.5rem,
   font-size-h2:           1.9rem,
   font-size-h3:           1.5rem,
   font-size-h4:           1.2rem,
@@ -75,7 +75,7 @@ $spacers: (
   2:                      map-get($base, spacer) * .5,
   3:                      map-get($base, spacer),
   4:                      map-get($base, spacer) * 1.5, // It was 1.5
-  5:                      map-get($base, spacer) * 3 //It was 3
+  5:                      map-get($base, spacer) * 2.5 //It was 3
 );
 
 $z-indexes: (
