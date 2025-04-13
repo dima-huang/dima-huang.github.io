@@ -1,9 +1,12 @@
 ---
-title: Hellow and Welcome
 layout: home
 paginate: 8
 message: 🧪🧪Accepting new members!
 ---
+
+<div style="text-align: center;">
+  <h1 class="gradient-title">Hello and welcome</h1>
+</div>
 The Dima Huang Lab develops sustainable methods for recovering and
 separating critical materials — elements that are vital to modern
 technologies, yet are in limited supply and lack easy substitutes.

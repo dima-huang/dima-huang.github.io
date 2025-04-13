@@ -161,7 +161,7 @@ strong, b {
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);   /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
-
+//Home
 .layout--home {
   text-align: justify;
 }
@@ -195,6 +195,16 @@ strong, b {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 //  margin-top: 10px;
 //  margin-bottom: 10px;
+}
+.gradient-title {
+  font-size: clamp(2.5rem, 5vw, 4rem); /* responsive between 2.5rem and 4rem */
+  font-weight: bold;
+  background: linear-gradient(to right, #6fdb4e, #3dbb94, #2b97b5, #3689d6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .home-image {
@@ -241,8 +251,6 @@ strong, b {
   margin-bottom: 10px;
 }
 
-
-
 /* Link Button */
 .link-button {
   display: inline-block;
@@ -271,32 +279,6 @@ strong, b {
   margin-right: 4px;
 }
 
-/* Layout Styling */
-.layout--home {
-  text-align: justify;
-}
-
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%; /* Default width for larger screens */
-  height: auto;
-  }
-@media (max-width: 768px) {
-  .center-image {
-    width: 100%; /* Full width on smaller screens */
-  }
-}
-.center-image2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: auto;
-  border-radius: 10px; /* makes the corners rounded */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /*subtle and modern shadow; original: border: 1px solid #ddd; */
-}
 // About us
 .about-images-wrapper {
   display: flex;
