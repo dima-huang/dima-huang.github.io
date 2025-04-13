@@ -11,7 +11,6 @@ articles:
   show_readmore: true
   show_info: true
 ---
-
 <div class="layout--home">
   <div class="home-container">
 
@@ -23,45 +22,46 @@ articles:
 
     <!-- Sidebar (Right Side) -->
     <aside class="home-sidebar">
-      <!-- Updated News Section -->
-      <h3>News</h3>
-      <ul>
-        {% assign sorted_news = site.news | sort: "date" | reverse | slice: 0, 2 %}
-        {% for post in sorted_news %}
-          <li>
-            <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-            <p>
-              <span class="date-badge">
-                {{ post.date | date: "%m/%d/%Y" }} <!-- Render date in MM/DD/YYYY format -->
-              </span>
-            </p>
-          </li>
-        {% endfor %}
-      </ul>
 
-      <a href="{{ '/news' | relative_url }}" class="link-button">Go to News</a>
+      <!-- News Box -->
+      <div class="sidebar-box">
+        <h3>News</h3>
+        <ul>
+          {% assign sorted_news = site.news | sort: "date" | reverse | slice: 0, 2 %}
+          {% for post in sorted_news %}
+            <li>
+              <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+              <p>
+                <span class="date-badge">
+                  {{ post.date | date: "%m/%d/%Y" }}
+                </span>
+              </p>
+            </li>
+          {% endfor %}
+        </ul>
+        <a href="{{ '/news' | relative_url }}" class="link-button">Go to News</a>
+      </div>
 
-      <!-- Add a margin space -->
-      <div style="margin-top: 30px;"></div>
+      <!-- Publications Box -->
+      <div class="sidebar-box">
+        <h3>Publications</h3>
+        <ul>
+          {% assign sorted_publications = site.publications | sort: "date" | reverse | slice: 0, 2 %}
+          {% for post in sorted_publications %}
+            <li>
+              <h4><a href="{{ post.source_url }}" target="_blank">{{ post.title }}</a></h4>
+              <p>{{ post.excerpt }}</p>
+              <p>
+                <span class="date-badge">
+                  {{ post.date | date: "%m/%d/%Y" }}
+                </span>
+              </p>
+            </li>
+          {% endfor %}
+        </ul>
+        <a href="{{ '/publications' | relative_url }}" class="link-button">Go to Publications</a>
+      </div>
 
-      <!-- Updated Publications Section (Only 1 post with title linked to its source URL and excerpt) -->
-      <h3>Publications</h3>
-      <ul>
-        {% assign sorted_publications = site.publications | sort: "date" | reverse | slice: 0, 2 %}
-        {% for post in sorted_publications %}
-          <li>
-            <!-- Link to the publication's actual URL stored in source_url -->
-            <h4><a href="{{ post.source_url }}" target="_blank">{{ post.title }}</a></h4>
-            <p>{{ post.excerpt }}</p>
-            <p>
-              <span class="date-badge">
-                {{ post.date | date: "%m/%d/%Y" }} <!-- Render date in MM/DD/YYYY format -->
-              </span>
-            </p>
-          </li>
-        {% endfor %}
-      </ul>
-      <a href="{{ '/publications' | relative_url }}" class="link-button">Go to Publications</a>
     </aside>
 
   </div>
@@ -70,4 +70,3 @@ articles:
 <script>
   {%- include scripts/home.js -%}
 </script>
-

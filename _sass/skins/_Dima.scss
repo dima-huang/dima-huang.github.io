@@ -10,14 +10,15 @@ $text-color-2:     #fff;
 $main-color-3:     #fff2cc; /*original #f1f8ff; #E0F0FF e6f2ff are good alternatives; fff8e1, fff2cc, fff5d3 are light yellow*/
 $text-color-3:     #0366d6; /*->dark blue*/
 
-$gradient-color-3: linear-gradient(to right, #509FD8, #0366d6);
+$gradient-color-3: linear-gradient(to right, #50A2DA, #3C6DB3); /*Fedora header color*/
 $background-box: #FFF9F0; //Soft ivory-white, subtle warmth
 
 $main-color-theme-light: rgba(#000, .9);
 $main-color-theme-dark:  rgba(#fff, .9);
 
 // page background
-$background-color: #FFFDF8; //very warm white
+$background-color: #FFFDF8; //#FFFDF8 very warm whiteE4F3E3 -> D2E7F4
+
 
 // text colors
 $text-color-theme-light-d: rgba(#000, .95);

@@ -165,41 +165,51 @@ strong, b {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);   /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
 
-/* Home Layout */
+/* Main container: horizontal flex layout */
 .home-container {
   display: flex;
   align-items: flex-start;
 }
 
+/* Main content */
 .home-main {
   flex: 1;
   max-width: 100%;
 }
 
+/* Sidebar container */
 .home-sidebar {
   width: 30%;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Ensures sidebar boxes fill 100% width of sidebar */
+  gap: 20px;
+}
+
+/* Each box inside the sidebar */
+.sidebar-box {
+  width: 100%;
   padding: 15px;
   background: $background-box;
   border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); // subtle and modern shadow; original: border: 1px solid #ddd;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
-.home-sidebar ul {
+.sidebar-box h3 {
+  margin-top: 0;
+}
+
+.sidebar-box ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-.home-sidebar li {
+.sidebar-box li {
   margin-bottom: 10px;
 }
 
-.home-sidebar h3 {
-  margin-top: 0;
-  padding: 0;
-}
-
-/*This part is for Home on Smaller Screens*/
+/* Responsive layout for mobile */
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column;
@@ -212,6 +222,7 @@ strong, b {
     margin-top: 20px;
   }
 }
+
 
 /* Link Button */
 .link-button {
@@ -254,6 +265,16 @@ strong, b {
   height: auto;
 //  border-radius: 10px; /* makes the corners rounded */
 // subtle and modern shadow; original: border: 1px solid #ddd; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.center-image2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* makes the corners rounded */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /*subtle and modern shadow; original: border: 1px solid #ddd; */
 }
 
 /* Article Styling */

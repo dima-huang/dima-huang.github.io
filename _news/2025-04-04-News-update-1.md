@@ -1,7 +1,8 @@
 ---
 title: "The DH lab website is up and running! 🎉🎉"
 date: 2025-04-04
-excerpt: "After a lot of struggle with Github pages, our website is finally published🎉🎉🎉!!!"
+excerpt: "After a lot of struggle with Github pages and Jekyll theme our
+website is finally published🎉🎉🎉!!!"
 layout: article
 ---
 <div class="justify-text">

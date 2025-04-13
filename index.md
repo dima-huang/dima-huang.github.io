@@ -9,12 +9,9 @@ paginate: 8
 The Dima Huang Lab develops sustainable methods for recovering and
 separating critical materials — elements that are vital to modern
 technologies, yet are in limited supply and lack easy substitutes.
-We design selective receptors and receptor-functionalized materials
-to target specific ions, enabling efficient catch-and-release in
-heterogeneous systems. By using stimuli-responsive triggers (e.g.,
-pH, electrochemical potential, or light), we optimize
-reversible binding and minimize secondary waste, enhancing overall
-sustainability.
+We design selective receptors and functionalized materials to target
+these elements, enabling efficient catch-and-release in heterogeneous
+systems.
 
 ![Alt text](/assets/images/AboutDHLab.svg){:class="center-image"}
 <div align="center">
@@ -27,9 +24,8 @@ to address complex challenges—examining thermodynamics, growing
 crystals, and conducting spectroscopic titrations. We also
 collaborate with experts in computational chemistry and
 electrochemistry to further our fundamental insights.
-For more details about the projects, please click the button below!
+For more details about the projects, please click the button below, and
+thanks for visiting!
 
-<a href="About" class="link-button">More about us</a>
-
-Thanks for visiting!
+<a href="About" class="link-button">More about us</a><br>
 
