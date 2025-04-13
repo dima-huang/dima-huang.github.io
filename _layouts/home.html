@@ -1,7 +1,7 @@
 ---
 layout: page
-titles:
-  en: Home
+titles: Hellow and Welcome
+<!--  en: Home -->
 show_title: true
 articles:
   data_source: paginator.posts
@@ -14,16 +14,15 @@ articles:
 <div class="layout--home">
   <div class="home-container">
 
-    <!-- Main Content (Left Side) -->
+    <!-- Main Content -->
     <div class="home-main">
       {%- include paginator.html -%}
       {{ content }}
     </div>
 
-    <!-- Sidebar (Right Side) -->
-    <aside class="home-sidebar">
-
-      <!-- News Box -->
+    <!-- Bottom Flex Container for News and Publications -->
+    <div class="home-bottom-flex">
+      <!-- News Section -->
       <div class="sidebar-box">
         <h3>News</h3>
         <ul>
@@ -31,18 +30,15 @@ articles:
           {% for post in sorted_news %}
             <li>
               <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-              <p>
-                <span class="date-badge">
-                  {{ post.date | date: "%m/%d/%Y" }}
-                </span>
-              </p>
+              <p>{{ post.excerpt }}</p>
+              <p><span class="date-badge">{{ post.date | date: "%m/%d/%Y" }}</span></p>
             </li>
           {% endfor %}
         </ul>
         <a href="{{ '/news' | relative_url }}" class="link-button">Go to News</a>
       </div>
 
-      <!-- Publications Box -->
+      <!-- Publications Section -->
       <div class="sidebar-box">
         <h3>Publications</h3>
         <ul>
@@ -51,19 +47,14 @@ articles:
             <li>
               <h4><a href="{{ post.source_url }}" target="_blank">{{ post.title }}</a></h4>
               <p>{{ post.excerpt }}</p>
-              <p>
-                <span class="date-badge">
-                  {{ post.date | date: "%m/%d/%Y" }}
-                </span>
-              </p>
+              <p><span class="date-badge">{{ post.date | date: "%m/%d/%Y" }}</span></p>
             </li>
           {% endfor %}
         </ul>
         <a href="{{ '/publications' | relative_url }}" class="link-button">Go to Publications</a>
       </div>
 
-    </aside>
-
+    </div>
   </div>
 </div>
 

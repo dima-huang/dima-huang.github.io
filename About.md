@@ -21,10 +21,14 @@ exploiting these anion-metal interactions and constrained complexation will
 enhance selectivity in separations and reduce secondary waste generation.
 The targeted elements include Li, Mn, Co, Ni, and the lanthanides (Ln).
 
-![Alt text](/assets/images/AboutProject.svg){:class="center-image"}
-<div align="left">
-<b>Figure 1</b>. Overview of projects in the DH-lab: (a) complex speciation and counter anions, (b) complexation in confined spaces, and (c) separation under external stimuli. (charge omitted).
+<div class="about-images-wrapper">
+
+  <img src="/assets/images/About1.svg" alt="About image 1">
+  <img src="/assets/images/About2.svg" alt="About image 2">
+  <img src="/assets/images/About3.svg" alt="About image 3">
+
 </div>
+<b>Figure 1</b>. Overview of projects in the DH-lab: (a) complex speciation and counter anions, (b) complexation in confined spaces, and (c) separation under external stimuli. (charge omitted).
 
 Additionally, we aim to **explore novel mechanisms for achieving catch-and-release
 of critical materials**. For quite some time, complexation and decomplexation of

@@ -1,11 +1,9 @@
 ---
-title: The DH Lab
+title: Hellow and Welcome
 layout: home
 paginate: 8
+message: 🧪🧪Accepting new members!
 ---
-
-## Hello and welcome
-
 The Dima Huang Lab develops sustainable methods for recovering and
 separating critical materials — elements that are vital to modern
 technologies, yet are in limited supply and lack easy substitutes.
@@ -13,7 +11,8 @@ We design selective receptors and functionalized materials to target
 these elements, enabling efficient catch-and-release in heterogeneous
 systems.
 
-![Alt text](/assets/images/AboutDHLab.svg){:class="center-image"}
+<img class="home-image" src="/assets/images/AboutDHLab.svg" alt="Home page image">
+
 <div align="center">
 Common critical materials seen in modern technology.
 </div>

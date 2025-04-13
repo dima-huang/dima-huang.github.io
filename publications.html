@@ -23,13 +23,13 @@ layout: page
               {% endif %}
             </h3>
 
-            <!-- Excerpt -->
-            <p>{{ post.excerpt }}</p>
+            <!-- Excerpt with default font size -->
+            <p class="publication-excerpt">{{ post.excerpt }}</p>
 
             <!-- Date Badge -->
             <p>
               <span class="date-badge">
-                {{ post.date | date: "%m/%d/%Y" }} <!-- Render date in MM/DD/YYYY format -->
+                {{ post.date | date: "%m/%d/%Y" }}
               </span>
             </p>
           </div>
