@@ -5,7 +5,7 @@ message: 🧪🧪Accepting new members!
 ---
 
 <div style="text-align: center;">
-  <h1 class="gradient-title">Hello and welcome</h1>
+  <h1 class="gradient-title">Welcome</h1>
 </div>
 The Dima Huang Lab develops sustainable methods for recovering and
 separating critical materials — elements that are vital to modern
