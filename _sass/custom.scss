@@ -131,6 +131,28 @@ p {
   .menu-toggle.open {
     transform: rotate(90deg);
   }
+.hamburger {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: transparent;
+  border: 2px solid #FDF8E4; /* Neon green border */
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 8px #FDF8E4, 0 0 12px #FDF8E4; /* Glow on border */
+}
+.hamburger span {
+  height: 3px;
+  width: 20px;
+  background-color: #FDF8E4;
+  border-radius: 2px;
+  box-shadow: 0 0 4px #FDF8E4, 0 0 6px #FDF8E4; /* Glow on bars */
+}
 
 }
 
