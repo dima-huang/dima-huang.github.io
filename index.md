@@ -7,7 +7,11 @@ message: 🧪🧪Accepting new members!
 <div style="text-align: center;">
   <h1 class="gradient-title">Welcome</h1>
 </div>
-The Dima Huang Lab develops sustainable methods for recovering and
+<div style="text-align: center;">
+  <h2 class="gradient-text">The DH Lab addresses challenges in separations of
+  critical materials</h2>
+</div>
+We aim to develop sustainable methods for recovering and
 separating critical materials — elements that are vital to modern
 technologies, yet are in limited supply and lack easy substitutes.
 We design selective receptors and functionalized materials to target

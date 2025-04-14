@@ -228,7 +228,16 @@ strong, b {
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
-
+.gradient-text {
+  font-size: clamp(1.35rem, 5vw, 1.8rem); /* responsive between 1.5rem and 4rem */
+  font-weight: bold;
+  background: linear-gradient(to right, #6fdb4e, #3dbb94, #2b97b5, #3689d6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
 .home-image {
   width: 100%; /* Full width on smaller screens */
   height: auto; /* Maintain aspect ratio */
@@ -393,7 +402,7 @@ strong, b {
 .footer-info {
   text-align: center;
   margin-top: 25px; //it was 20px
-  font-size: map-get($base,font-size);
+  font-size: map-get($base,font-size-lg);
   max-width: map-get($layout, content-max-width);
   margin-left: auto;
   margin-right: auto;
