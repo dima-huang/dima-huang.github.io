@@ -3,7 +3,7 @@ title: Our goal
 layout: Custom
 ---
 
-### We address challenges related to the separation of critical materials and environmental remediation.
+### We address challenges related to the separation of critical materials.
 **The overarching goal** of this research is to meet the urgent need for sustainable
 recovery of critical materials essential for advanced electronics and chip
 manufacturing. Central to the research program is **the challenge of rethinking

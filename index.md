@@ -8,8 +8,8 @@ message: 🧪🧪Accepting new members!
   <h1 class="gradient-title">Welcome</h1>
 </div>
 <div style="text-align: center;">
-  <h2 class="gradient-text">The DH Lab addresses challenges in separations of
-  critical materials</h2>
+  <h2 class="gradient-text">The DH Lab studies the separation science of
+critical materials</h2>
 </div>
 We aim to develop sustainable methods for recovering and
 separating critical materials — elements that are vital to modern
