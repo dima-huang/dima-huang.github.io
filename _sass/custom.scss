@@ -326,7 +326,7 @@ strong, b {
 
 /* News‑page only tweaks remain nested if you like… */
 .news-date {
-  color: #8ccf71;
+  color: #6aa84f;
   font-size: map-get($base, font-size);
   font-weight: map-get($base, font-weight-bold);
 }
@@ -788,7 +788,7 @@ img {
 .photo-date {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #8ccf71;
+  color: #6aa84f;//brighter green->#6aa84f
   margin-top: 1em;
   display: inline-flex;
   align-items: center;
