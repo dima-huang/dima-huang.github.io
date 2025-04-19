@@ -61,11 +61,17 @@
           {%- endif -%}
 
           {%- if _show_date -%}
-            <li>
-              {%- include snippets/get-locale-string.html key='ARTICLE_DATE_FORMAT' -%}
-              <i class="far fa-calendar-alt"></i> <span>{{ include.article.date | date: __return }}</span>
-            </li>
+          <li class="news-date">
+            <!-- Apply the news-date class to the li element -->
+            {%- include snippets/get-locale-string.html
+            key='ARTICLE_DATE_FORMAT' -%}
+            <span class="icon-calendar">
+      {% include svg/icon/calendar-days.svg %}
+    </span>
+            <span>{{ include.article.date | date: __return }}</span>
+          </li>
           {%- endif -%}
+
 
           {%- if _pageview -%}
             {%- if site.pageview.provider -%}

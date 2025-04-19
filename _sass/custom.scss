@@ -303,17 +303,27 @@ strong, b {
   background: #005bb5;
 }
 
-/* News post date styling */
+/* Global calendar‑icon sizing & color */
+.icon-calendar {
+  color: #007bff;          // blue stroke via currentColor
+  margin-right: 0.3em;
+
+  svg {
+    width:   1.2em;
+    height:  1.2em;
+    stroke:       currentColor;
+    stroke-width: 2;
+    vertical-align: -0.25em;
+  }
+}
+
+/* News‑page only tweaks remain nested if you like… */
 .news-date {
-  color: #6aa84f; /* Match your desired style */
-  font-size: map-get($base, font-size); /* Adjust as needed */
+  color: #8ccf71;
+  font-size: map-get($base, font-size);
   font-weight: map-get($base, font-weight-bold);
 }
 
-.news-date i {
-  color: #007bff; /* Optional: icon color */
-  margin-right: 4px;
-}
 
 // About us
 .about-images-wrapper {
@@ -340,9 +350,6 @@ strong, b {
     display: block;         /* Ensure the image is treated as a block element */
   }
 }
-
-
-
 
 /* Article Styling */
 .articles-text {
@@ -427,21 +434,7 @@ strong, b {
   padding-left: 0;  /* Removes indentation */
 }
 
-/*This part is for the news posts*/
-/* Override date + icon style in article info */
-.article__info .right-col li {
-  color: #6aa84f; /* Your preferred blue for both icon + text */
-  font-size: map-get($base, font-size); /* Or whatever you prefer */
-  font-weight: map-get($base, font-weight-bold);
-}
 
-/* Optional: target the icon specifically */
-.article__info .right-col li i {
-  color: #007bff;
-  font-size: map-get($base, font-size);
-  font-weight: map-get($base, font-weight-bold);
-  margin-right: 4px;
-}
 
 //* Team: Team Table */
 .team-table-wrapper {
@@ -505,7 +498,6 @@ strong, b {
   margin-left: 0.3em;
 }
 
-
 /* PI Page Layout */
 .pi-page-container {
   display: flex;
@@ -530,13 +522,7 @@ strong, b {
   border-radius: 10px;
   text-align: justify;
 }
-// Apply gradient only if no inline background style is passed
-//$custom-gradient-start: #509FD8;
-//$custom-gradient-end: #3C78D8;
-//.header:not([style]) {
-//  background: linear-gradient(to right, #509FD8, #3C78D8);
-//}
-/* Sidebar title */
+
 .pi-page-sidebar h3.role {
   text-align: center;
   margin-top: 0;
@@ -795,7 +781,7 @@ img {
 .photo-date {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #6aa84f;
+  color: #8ccf71;
   margin-top: 1em;
   display: inline-flex;
   align-items: center;

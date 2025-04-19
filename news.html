@@ -12,11 +12,13 @@ layout: page
       <li>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         <p class="news-date">
-          <i class="fas fa-calendar-alt"></i> {{ post.date | date: "%B %d, %Y" }}
+          <span class="icon-calendar">
+            {% include svg/icon/calendar-days.svg %}
+          </span>
+          {{ post.date | date: "%B %d, %Y" }}
         </p>
         <p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>
 </div>
-
