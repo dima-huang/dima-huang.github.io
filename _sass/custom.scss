@@ -95,8 +95,8 @@ p {
   /* Hamburger menu toggle */
 .menu-toggle {
   position: absolute;
-  top: 50%; /* Align vertically with the header */
-  right: 0rem; /* Align to the right, next to the logo */
+  top: 50%; // Align vertically with the header
+  right: map-get($spacers, 5); // Default: align with .main padding
   width: 31px;
   height: 31px;
   background-color: #f1f8ff;
@@ -105,9 +105,18 @@ p {
   cursor: pointer;
   padding: 0;
   z-index: 10001;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition for color change */
-  margin-top: -15px; /* Center the toggle button vertically relative to the header */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: -15px;
+
+  @include media-breakpoint-down(lg) {
+    right: map-get($spacers, 4);
+  }
+
+  @include media-breakpoint-down(md) {
+    right: map-get($spacers, 3);
+  }
 }
+
 /* Change color when the menu opens */
   .menu-toggle:hover {
   background-color: #d9ead3; /* Change to your preferred color */
@@ -115,7 +124,7 @@ p {
   .menu-toggle.open {
     transform: rotate(90deg);
   }
-.hamburger {
+  .hamburger {
   width: 35px;
   height: 35px;
   display: flex;
@@ -130,7 +139,7 @@ p {
   cursor: pointer;
 //  box-shadow: 0 0 8px #FDF8E4, 0 0 12px #FDF8E4; /* Glow on border */
 }
-.hamburger span {
+  .hamburger span {
   height: 3px;
   width: 20px;
   background-color: #FDF8E4;
@@ -157,7 +166,6 @@ strong, b {
   font-weight: bold;        // Ensures the text stays bold
 /*  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);*/ // Optional: adds a subtle shadow for better contrast
 }
-
 
 //Home
 .layout--home {
@@ -193,7 +201,6 @@ strong, b {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin: 4px 0;           // Small vertical margin (top/bottom: 4px, left/right: 0)
 }
-
 @keyframes gradientWave {
   0% {
     background-position: 0% 50%;
