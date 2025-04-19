@@ -10,7 +10,7 @@ $text-color-2:     #fff;
 $main-color-3:     #fff2cc; /*original #f1f8ff; #E0F0FF e6f2ff are good alternatives; fff8e1, fff2cc, fff5d3 are light yellow*/
 $text-color-3:     #0366d6; /*->dark blue*/
 
-$gradient-color-3: linear-gradient(to right, #50A2DA, #3C6DB3); /*Fedora header color*/
+//$gradient-color-3: linear-gradient(to right, #1155cc, #1155cc); /*Fedora header color*/
 $background-box: #FDF8E4; //Soft ivory-white, subtle warmth
 
 $main-color-theme-light: rgba(#000, .9);
@@ -37,10 +37,10 @@ $text-background-color: rgba(#000, .05);
 
 // header and footer colors
 $header-text-color: $text-color-1;//-> white
-$header-background: $gradient-color-3;//->gradient
+$header-background: #1155cc;
 
 $footer-text-color: $text-color-3;
-$footer-background: #F2F2F2; //->light grey
+$footer-background: #cfe2f3; //->f2f2f2light grey
 
 // border and shadow colors
 $border-color:     mix(#000, $background-color, 20%);
