@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: 🧪🧪Accepting new members!
+message: 🧪Accepting new members🧪
 ---
 
 <div style="text-align: center;">

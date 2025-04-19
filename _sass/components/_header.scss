@@ -1,10 +1,18 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background: $header-background;
+
   a {
     font-weight: map-get($base, font-weight-bold);
     text-decoration: none !important;
     @include link-colors($header-text-color, $main-color-1);
   }
+
   .main {
     @include flexbox();
     @include media-breakpoint-down(md) {
@@ -12,6 +20,7 @@
     }
   }
 }
+
 
 .header--dark {
   @extend .text--dark;

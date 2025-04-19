@@ -92,22 +92,6 @@ p {
     width: auto; /* Make the width auto-adjust to the content */
   }
 
-  /* Header title layout */
-  .header__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding-right: 4rem;
-    padding-left: 0; /* Ensure space for the menu toggle */
-  }
-
-  /* Search button (left of menu toggle) */
-  .search-button {
-    display: none !important; /* Hide the button on smaller screens */
-  }
-
-
   /* Hamburger menu toggle */
 .menu-toggle {
   position: absolute;
@@ -174,15 +158,7 @@ strong, b {
 /*  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);*/ // Optional: adds a subtle shadow for better contrast
 }
 
-// Base header styling
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);   /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
-}
+
 //Home
 .layout--home {
   text-align: justify;
@@ -208,16 +184,16 @@ strong, b {
 }
 
 .message-top-right {
-  display: inline-block; /* Shrinks to fit content */
-  font-size: map-get($base, font-size-sm);
+  display: inline-block;
+  font-size: map-get($base, font-size);
   color: #fff;
-  background-color: #3C6DB3; // dark blue
-  padding: 8px 12px;
+  background-color: #3C6DB3;
+  padding: 4px 8px;        // Smaller padding (top/bottom: 4px, left/right: 8px)
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-//  margin-top: 10px;
-//  margin-bottom: 10px;
+  margin: 4px 0;           // Small vertical margin (top/bottom: 4px, left/right: 0)
 }
+
 @keyframes gradientWave {
   0% {
     background-position: 0% 50%;
