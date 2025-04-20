@@ -222,7 +222,7 @@ strong, b {
     #6fdb4e
   );
   background-size: 200% 100%; /* Ensure looping effect */
-  animation: gradientWave 3s linear infinite;
+  animation: gradientWave 4s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -237,11 +237,8 @@ strong, b {
   font-weight: bold;
   background: linear-gradient(
     to right,
-    #6fdb4e,
-    #3dbb94,
-    #1155cc,
-    #3dbb94,
-    #6fdb4e
+    #6fdb4e, /* green */
+    #1155cc  /* blue */
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -249,6 +246,7 @@ strong, b {
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+
 
 .home-image {
   width: 100%; /* Full width on smaller screens */
