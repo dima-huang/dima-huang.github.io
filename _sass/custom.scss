@@ -209,29 +209,21 @@ strong, b {
     background-position: 200% 50%;
   }
 }
+
 .gradient-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: bold;
-  background: linear-gradient(90deg, #6fdb4e, #3dbb94, #1155cc); /* Green to Blue */
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: $text-color-theme-light-d;
   display: inline-block;
   white-space: nowrap;
 }
 
 .gradient-text {
-  font-size: clamp(1.35rem, 5vw, 1.8rem); /* responsive between 1.35rem and 1.8rem */
+  font-size: clamp(1.35rem, 5vw, 1.8rem);
   font-weight: bold;
-  background: linear-gradient(90deg, #6fdb4e, #3dbb94, #1155cc); /* Green to Blue */
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: $text-color-theme-light-d;
   display: inline-block;
 }
-
 
 .home-image {
   width: 100%; /* Full width on smaller screens */
