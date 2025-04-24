@@ -3,7 +3,7 @@ title: Contact us
 layout: Contact
 ---
 
-## Find us at:
+## - Find us at:
 
 The Department of Chemistry,
 No. 1, Dasyue Rd, East District, Tainan City, Taiwan 701

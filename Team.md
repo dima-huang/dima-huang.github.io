@@ -3,7 +3,7 @@ title: The Team
 layout: Custom
 ---
 
-## Meet the DH Lab
+## - Meet the DH Lab
 
 <!-- Wrapper to ensure consistent table width -->
 <div class="team-table-wrapper">

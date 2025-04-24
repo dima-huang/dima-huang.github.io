@@ -4,7 +4,7 @@ layout: Custom
 ---
 
 
-## NMR-related
+## - NMR-related
 
 #### What are relaxation, CEST, spin-spin coupling, asymmetric satellite peaks, etc.?
 
@@ -23,7 +23,7 @@ frequency ratio, and reference compound. The website maintained by
 the [Institute of Chemistry at the Hebrew University of Jerusalem](https://chem.ch.huji.ac.il/nmr/techniques/1d/multi.html)
 contains very useful information, presented in accordance with the periodic table.
 
-## MS-related
+## - MS-related
 
 ### Do I have the correct MS spectra?
 
