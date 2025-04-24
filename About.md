@@ -3,7 +3,9 @@ title: Our goal
 layout: Custom
 ---
 
-## We address challenges related to the separation of critical materials
+<h2 style="text-align: left;">
+Address challenges in critical materials separation🧪🧪⚗️⚗️
+</h2>
 **The overarching goal** of this research is to meet the urgent need for sustainable
 recovery of critical materials essential for advanced electronics and chip
 manufacturing. Central to the research program is **the challenge of rethinking
@@ -42,8 +44,9 @@ specific stimuli, thereby facilitating the catch-and-release of targeted ions
 designs relevant to separation sciences.
 
 On this basis, three projects are proposed and outlined as follows:
-1. Leveraging anion coordination for separations
-2. Complexation in confined spaces
-3. Stimuli-responsive receptors in extractive metallurgy
-
+<div class="align-left">
+1. Leveraging anion coordination for separations<br>
+2. Complexation in confined spaces<br>
+3. Stimuli-responsive receptors in extractive metallurgy<br>
+</div>
 I applaud your patience if you have made it thus far! Interested students are encouraged to get in touch with Dr. Huang.
