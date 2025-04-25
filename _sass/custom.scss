@@ -13,18 +13,17 @@ p {
   word-break: break-word;
 }
 
-/* Define the class for your heading */
+/* Define the class for your heading that appears below page title */
 .custom-heading {
   display: inline-block; /* Ensure the element's width is based on its content */
   text-align: left;
   color: green; /* Text color, I like this color */
   background-color: #e5f0d1;; /* light green */
   padding: 4px 8px; /* Smaller padding */
-  border-radius: 6px; /* Rounded corners */
+  border-radius: 16px; /* Rounded corners */
   margin: 4px 0; /* Small vertical margin */
 //  border: 1px solid $main-color-1; /* Border with same color as background */
 }
-
 
 /* Navigation */
 .navigation a {
@@ -336,7 +335,7 @@ strong, b {
 
 /* News‑page only tweaks remain nested if you like… */
 .news-date {
-  color: #6aa84f;
+  color: green;// it was #6aa84f
   font-size: map-get($base, font-size);
   font-weight: map-get($base, font-weight-bold);
 }
@@ -418,7 +417,7 @@ strong, b {
 /* Date Badge */
 .date-badge {
   display: inline-block;
-  background-color: #6aa84f;
+  background-color: #6aa84f;//it was #6aa84f
   color: white;
   font-size: 1.125rem;
   padding: 2px 7px;
@@ -806,7 +805,7 @@ img {
 .photo-date {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #6aa84f;//brighter green->#6aa84f
+  color: green;//brighter green->#6aa84f
   margin-top: 1em;
   display: inline-flex;
   align-items: center;
