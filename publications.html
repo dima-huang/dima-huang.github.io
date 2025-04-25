@@ -4,8 +4,9 @@ layout: page
 ---
 
 <div class="page-text">
-  <h2>- Updates</h2>
-
+  <h2 class="custom-heading">
+    💡- Updates
+  </h2>
   <ul>
     {% assign sorted_publications = site.publications | sort: "date" | reverse %}
     {% for post in sorted_publications %}

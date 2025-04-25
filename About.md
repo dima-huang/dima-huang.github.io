@@ -3,8 +3,8 @@ title: Our goal
 layout: Custom
 ---
 
-<h2 style="text-align: left;">
- - We address challenges in critical materials separation🧪🧪⚗️⚗️
+<h2 class="custom-heading">
+💡- We address challenges in critical materials separation
 </h2>
 **The overarching goal** of this research is to meet the urgent need for sustainable
 recovery of critical materials essential for advanced electronics and chip

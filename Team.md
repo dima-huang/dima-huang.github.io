@@ -2,9 +2,9 @@
 title: The Team
 layout: Custom
 ---
-
-## - Meet the DH Lab
-
+<h2 class="custom-heading">
+💡- Meet the DH Lab
+</h2>
 <!-- Wrapper to ensure consistent table width -->
 <div class="team-table-wrapper">
 

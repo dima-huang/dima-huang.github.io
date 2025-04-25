@@ -4,21 +4,22 @@ layout: page
 ---
 
 <div class="page-text">
-  <h2>- Updates (Clickable!)</h2>
-
+  <h2 class="custom-heading">
+    💡- Updates (Clickable!)
+  </h2>
   <ul>
     {% assign sorted_news = site.news | sort: "date" | reverse %}
     {% for post in sorted_news %}
-      <li>
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p class="news-date">
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="news-date">
           <span class="icon-calendar">
             {% include svg/icon/calendar-days.svg %}
           </span>
-          {{ post.date | date: "%B %d, %Y" }}
-        </p>
-        <p>{{ post.excerpt }}</p>
-      </li>
+        {{ post.date | date: "%B %d, %Y" }}
+      </p>
+      <p>{{ post.excerpt }}</p>
+    </li>
     {% endfor %}
   </ul>
 </div>

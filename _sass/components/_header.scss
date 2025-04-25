@@ -100,23 +100,25 @@
       content: "";
       position: absolute;
       bottom: -4px;
-      left: 0;
+      left: 50%;
       width: 0;
       height: 2px;
       background-color: #fff;
-      transition: width 0.3s ease;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: width 0.3s ease, opacity 0.3s ease;
     }
 
     &:hover {
       color: #fff;
 
       &::after {
-        width: 100%;
+        width: 100%; // full width underline
+        opacity: 1;
       }
     }
   }
 }
-
 
 .navigation {
   @include overflow(auto, "x");
@@ -155,22 +157,26 @@
       content: "";
       position: absolute;
       bottom: -4px;
-      left: 0;
+      left: 50%;
       width: 0;
       height: 2px;
       background-color: #fff; // underline color on hover
-      transition: width 0.3s ease;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: width 0.3s ease, opacity 0.3s ease;
     }
 
     &:hover {
       color: #fff;
 
       &::after {
-        width: 100%;
+        width: 100%; // full width underline
+        opacity: 1;
       }
     }
   }
 }
+
 
 .navigation__item--active {
   a {
