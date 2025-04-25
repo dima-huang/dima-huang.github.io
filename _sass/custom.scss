@@ -202,14 +202,16 @@ strong, b {
   gap: 20px;
 }
 .message-container {
-  text-align: right; /* Aligns the inner box to the right */
+  text-align: center; /* Aligns the inner box to the right */
 }
 
 .message-top-right {
-  display: inline-block;
+//  display: inline-block;
   font-size: map-get($base, font-size);
-  color: #fff;
-  background-color: #6aa84f;
+  color: green; /* Text color, I like this color */
+  background-color: #e5f0d1;; /* light green */
+//  color: #fff;
+//  background-color: #6aa84f;
   padding: 4px 8px;        // Smaller padding (top/bottom: 4px, left/right: 8px)
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
