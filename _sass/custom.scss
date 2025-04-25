@@ -684,27 +684,26 @@ img {
   }
 }
 
-/* Styling for map container */
+/* Styling for contact container */
 .contact-container {
   display: flex; /* Align items side by side */
   flex-wrap: wrap; /* Ensure they wrap on smaller screens */
   gap: 20px; /* Add spacing between the map and the text */
 }
 
+/* Styling for map container */
 .map-container {
   flex: 1; /* Allow the map container to take available space */
-  padding: 20px;
+  padding: 0 20px 20px 0; /* Keep right/bottom padding, zero out top/left */
   max-width: 50%; /* Ensure the map doesn't take up too much space */
 }
-
-
 
 /* Styling for embedded iframe map */
 .map-embed {
   width: 100%;
   max-width: 100%;
   aspect-ratio: 1 / 1;
-  margin-top: 16px; // Add spacing between <h2> and the map
+  margin-top: 16px; /* Add spacing between <h2> and the map */
 }
 
 .map-embed iframe {
@@ -715,29 +714,39 @@ img {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* Subtle modern shadow */
 }
 
-/* Styling for the text container */
+/* Styling for text container */
 .text-container {
   flex: 1; /* Allow the text container to take available space */
-  padding: 20px;
+  padding: 0 20px 20px 0; /* Keep right/bottom padding, zero out top/left */
+  margin-top: 0; /* Reset any margin that may have been applied */
   max-width: 50%; /* Ensure the text doesn't take too much space */
 }
 
 .text-container p {
   margin-bottom: 1rem;
-//  color: #333;
-//  font-size: 1rem;
+  // color: #333;
+  // font-size: 1rem;
 }
 
 /* Adjust layout on smaller screens */
 @media (max-width: 768px) {
   .contact-container {
-    flex-direction: column; /* Stack the map and text vertically */
-    align-items: center; /* Center the items when stacked */
+    flex-direction: column;   /* Stack vertically */
+    align-items: flex-start;  /* Align to the left */
   }
 
-  .map-container, .text-container {
-    max-width: 100%; /* Ensure both containers take full width on mobile */
-    padding: 10px;
+  /* Both map and text get only right/bottom padding */
+  .map-container,
+  .text-container {
+    max-width: 100%;           /* Full width */
+    width: 100%;
+    padding: 0 10px 10px 0;     /* top right bottom left */
+  }
+
+  /* Additional map-specific constraint */
+  .map-container {
+    max-width: 600px;          /* Prevent it from growing too large */
+    /* width: 100%; already inherited above */
   }
 }
 

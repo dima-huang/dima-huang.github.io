@@ -5,45 +5,48 @@ layout: page
 
 <div class="page-text">
   <h2 class="custom-heading">
-    📜- Updates
+  💡- Updates
   </h2>
   <ul>
-    {% assign sorted_publications = site.publications | sort: "date" | reverse %}
+    {% assign sorted_publications = site.publications | sort: "date" | reverse
+    %}
     {% for post in sorted_publications %}
-      <li class="publication-item">
-        <div class="publication-content">
+    <li class="publication-item">
+      <div class="publication-content">
 
-          <!-- Left Side: Publication Details -->
-          <div class="publication-text">
-            <!-- Title with Link (Only if source_url is available) -->
-            <h3 class="publication-title">
-              {% if post.source_url %}
-                <a href="{{ post.source_url }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
-              {% else %}
-                {{ post.title }}
-              {% endif %}
-            </h3>
+        <!-- Left Side: Publication Details -->
+        <div class="publication-text">
+          <!-- Title with Link (Only if source_url is available) -->
+          <h3 class="publication-title">
+            {% if post.source_url %}
+            <a href="{{ post.source_url }}" target="_blank"
+               rel="noopener noreferrer">{{ post.title }}</a>
+            {% else %}
+            {{ post.title }}
+            {% endif %}
+          </h3>
 
-            <!-- Excerpt with default font size -->
-            <p class="publication-excerpt">{{ post.excerpt }}</p>
+          <!-- Excerpt with default font size -->
+          <p class="publication-excerpt">{{ post.excerpt }}</p>
 
-            <!-- Date Badge -->
-            <p>
+          <!-- Date Badge -->
+          <p>
               <span class="date-badge">
                 {{ post.date | date: "%m/%d/%Y" }}
               </span>
-            </p>
-          </div>
-
-          <!-- Right Side: TOC Image (If available) -->
-          {% if post.toc_image %}
-            <div class="publication-image">
-              <img src="{{ post.toc_image | relative_url }}" alt="TOC for {{ post.title }}">
-            </div>
-          {% endif %}
-
+          </p>
         </div>
-      </li>
+
+        <!-- Right Side: TOC Image (If available) -->
+        {% if post.toc_image %}
+        <div class="publication-image">
+          <img src="{{ post.toc_image | relative_url }}"
+               alt="TOC for {{ post.title }}">
+        </div>
+        {% endif %}
+
+      </div>
+    </li>
     {% endfor %}
   </ul>
 </div>
