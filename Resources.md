@@ -4,7 +4,9 @@ layout: Custom
 ---
 
   <h2 class="custom-heading">
-💡- NMR-related
+  <span class="icon-title">
+    {% include svg/icon/info-circle.svg %}
+  </span> NMR-related
   </h2>
 
 #### What are relaxation, CEST, spin-spin coupling, asymmetric satellite peaks, etc.?
@@ -27,7 +29,9 @@ contains very useful information, presented in accordance with the periodic
 table.
 
   <h2 class="custom-heading">
-  💡- MS-related
+    <span class="icon-title">
+    {% include svg/icon/info-circle.svg %}
+  </span> MS-related
   </h2>
 
 ### Do I have the correct MS spectra?

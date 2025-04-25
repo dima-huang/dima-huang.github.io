@@ -5,7 +5,9 @@ layout: page
 
 <div class="page-text">
   <h2 class="custom-heading">
-  💡- Updates
+    <span class="icon-title">
+    {% include svg/icon/info-circle.svg %}
+  </span> Updates
   </h2>
   <ul>
     {% assign sorted_publications = site.publications | sort: "date" | reverse

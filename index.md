@@ -1,7 +1,8 @@
 ---
 layout: home
 paginate: 8
-message: 🧪Accepting new members🧪
+message: "Accepting new members"
+message_icon: "svg/icon/test-tube.svg"
 ---
 
 <div style="text-align: center;">

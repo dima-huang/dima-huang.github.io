@@ -4,7 +4,9 @@ layout: Contact
 ---
 
 <h2 class="custom-heading">
-💡- Find us at
+  <span class="icon-title">
+    {% include svg/icon/info-circle.svg %}
+  </span>Find us at
 </h2>
 The Department of Chemistry,
 No. 1, Dasyue Rd, East District, Tainan City, Taiwan 701

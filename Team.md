@@ -3,7 +3,9 @@ title: The Team
 layout: Custom
 ---
 <h2 class="custom-heading">
-💡- Meet the DH Lab
+  <span class="icon-title">
+    {% include svg/icon/info-circle.svg %}
+  </span> Meet the DH Lab
 </h2>
 <!-- Wrapper to ensure consistent table width -->
 <div class="team-table-wrapper">

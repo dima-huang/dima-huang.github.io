@@ -207,7 +207,8 @@ strong, b {
 
 .message-top-right {
 //  display: inline-block;
-  font-size: map-get($base, font-size);
+  font-size: map-get($base, font-size-h3);
+  font-weight: bold;
   color: green; /* Text color, I like this color */
   background-color: #e5f0d1;; /* light green */
 //  color: #fff;
@@ -305,14 +306,31 @@ strong, b {
 /* Global calendar‑icon sizing & color */
 .icon-calendar {
   color: #007bff;          // blue stroke via currentColor
-  margin-right: 0.3em;
-
+  margin-right: 0em;
   svg {
     width:   1.2em;
     height:  1.2em;
     stroke:       currentColor;
     stroke-width: 2;
     vertical-align: -0.25em;
+  }
+}
+.icon-title {
+  margin-right: 0em;
+  svg {
+    width: 1em;          // Adjust size smaller (1em for example)
+    height: 1em;         // Maintain aspect ratio
+    vertical-align: middle; // Ensures vertical alignment with text
+    color: green;        // Sets the icon color to green
+  }
+}
+.icon-test-tube {
+  margin-right: 0em;
+  svg {
+    width: 1.2em;              // Icon size (adjust as needed)
+    height: 1.2em;             // Aspect ratio maintained
+    vertical-align: middle;  // Aligns the icon vertically with the text
+    color: black;            // Sets the icon color to green
   }
 }
 
