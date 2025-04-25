@@ -9,7 +9,7 @@ layout: Custom
   </span> NMR-related
   </h2>
 
-#### What are relaxation, CEST, spin-spin coupling, asymmetric satellite peaks, etc.?
+### What are relaxation, CEST, spin-spin coupling, asymmetric satellite peaks, etc.?
 
 Dr. Glenn Facey retired from the University of Ottawa in 2020. During his tenure
 at the NMR facility, he documented numerous common and interesting topics
@@ -18,7 +18,7 @@ today!
 Check out
 the [University of Ottawa NMR Facility Blog](https://u-of-o-nmr-facility.blogspot.com/).
 
-#### What about Multinuclear NMR?
+### What about Multinuclear NMR?
 
 NMR-active nuclei are those with a non-zero nuclear spin quantum number (I ≠ 0).
 NMR spectroscopy is possible with almost any element of the periodic table,

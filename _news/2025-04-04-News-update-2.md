@@ -1,11 +1,14 @@
 ---
-title: We are accepting new students! 🧪🧪🧪
+title: We are accepting new students! 🧪🧪
 date: 2025-04-04
-excerpt: "Are you interested in synthesizing ligands or receptors for metals, growing crystals, conducting spectroscopic analysis of host-guest interactions, or developing functionalized materials? If so, come join us!
-!🧪🧪🧪"
+excerpt: "Are you interested in synthesizing ligands or receptors for metals,
+ growing crystals, conducting spectroscopic analysis of host-guest
+ interactions, or developing functionalized materials? If so, come join us!
+!🧪🧪"
 layout: article
 ---
 <div class="justify-text">
 Are you interested in synthesizing ligands or receptors for metals,
 growing crystals, conducting spectroscopic analysis of host-guest interactions,
-or developing functionalized materials? If so, come join us!</div>
+or developing functionalized materials? If so, come join us!🧪🧪
+</div>
