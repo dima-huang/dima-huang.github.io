@@ -213,13 +213,18 @@ body {
 .gradient-title {
   font-size: clamp(3rem, 5vw, 4rem);
   font-weight: bold;
-  background: linear-gradient(90deg, #0366d6, #00b4d8);//From bold GitHub blue to a bright aqua.
+  background: linear-gradient(90deg, #0366d6, #00b4d8);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+  width: 100%;
+  text-align: center;
   display: inline-block;
-  white-space: nowrap;
+  margin: 0 auto;
+}
+.home-page-header {
+  text-align: center;
 }
 
 .gradient-text {

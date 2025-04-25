@@ -3,11 +3,9 @@ layout: home
 paginate: 8
 message: "Accepting new members"
 message_icon: "svg/icon/test-tube.svg"
+title: Welcome
 ---
 
-<div style="text-align: center;">
-  <h1 class="gradient-title">Welcome</h1>
-</div>
 <div style="text-align: center;">
   <h2 class="gradient-text">The DH Lab studies the separation science of
 critical materials</h2>
