@@ -4,24 +4,24 @@
 {%- if include.html != false -%}
 
   {%- include snippets/assign.html
-    target=site.data.variables.default.page.show_title
-    source0=layout.show_title source1=include.article.show_title -%}
+      target=site.data.variables.default.page.show_title
+      source0=layout.show_title source1=include.article.show_title -%}
   {%- assign _show_title = __return -%}
 
   {%- include snippets/assign.html
-    target=site.data.variables.default.page.show_edit_on_github
-    source0=layout.show_edit_on_github source1=include.article.show_edit_on_github -%}
+      target=site.data.variables.default.page.show_edit_on_github
+      source0=layout.show_edit_on_github source1=include.article.show_edit_on_github -%}
   {%- assign _show_edit_on_github = __return -%}
 
   {%- if _show_title or _show_edit_on_github -%}
-    <div class="article__header{% if page.url == "/" %} home-page-header{% endif %}">
+    <div class="article__header" {% if page.url == "/" %}style="text-align: center;"{% endif %}>
       {%- if page.message -%}
         <div class="message-container">
           <div class="message-top-right">
             {%- if page.message_icon -%}
               <span class="icon-test-tube">
                 {% include svg/icon/test-tube.svg %}
-              </span> <!-- Icon before the message -->
+              </span>
             {%- endif -%}
 
             <span class="message-text">{{ page.message }}</span>
@@ -29,22 +29,20 @@
             {%- if page.message_icon -%}
               <span class="icon-test-tube">
                 {% include svg/icon/test-tube.svg %}
-              </span> <!-- Icon after the message -->
+              </span>
             {%- endif -%}
           </div>
         </div>
       {%- endif -%}
 
       {%- if _show_title -%}
-        {%- if page.url == "/" -%}
-          <header>
+        <header>
+          {%- if page.url == "/" -%}
             <h1 class="gradient-title">{{ _article_title }}</h1>
-          </header>
-        {%- else -%}
-          <header>
+          {%- else -%}
             <h1>{{ _article_title }}</h1>
-          </header>
-        {%- endif -%}
+          {%- endif -%}
+        </header>
       {%- endif -%}
 
       {%- if _show_edit_on_github -%}
