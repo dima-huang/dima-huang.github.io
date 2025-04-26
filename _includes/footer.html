@@ -1,15 +1,48 @@
 <footer class="footer py-4 js-page-footer">
-  <!-- Footer Info (Centered at the bottom) -->
+
+  <!-- Social icons row -->
+  {% assign pi = site.pages | where: "path", "PI-Page.md" | first %}
+  <div class="footer-social">
+    {% if pi.orcid %}
+      <a href="{{ pi.orcid }}" target="_blank" rel="noopener" class="social-link" title="ORCID">
+        <img src="{{ site.baseurl }}/assets/images/icons/ORCID.svg" alt="ORCID">
+      </a>
+    {% endif %}
+    {% if pi.line %}
+      <a href="{{ pi.line }}" target="_blank" rel="noopener" class="social-link" title="Line">
+        <img src="{{ site.baseurl }}/assets/images/icons/Line.svg" alt="Line">
+      </a>
+    {% endif %}
+    {% if pi.bluesky %}
+      <a href="{{ pi.bluesky }}" target="_blank" rel="noopener" class="social-link" title="Bluesky">
+        <img src="{{ site.baseurl }}/assets/images/icons/Bluesky.svg" alt="Bluesky">
+      </a>
+    {% endif %}
+    {% if pi.signal %}
+      <a href="{{ pi.signal }}" target="_blank" rel="noopener" class="social-link" title="Signal">
+        <img src="{{ site.baseurl }}/assets/images/icons/Signal.svg" alt="Signal">
+      </a>
+    {% endif %}
+    <!-- Email icon (uses your SVG include) -->
+    <a href="mailto:dilmahuk@gmail.com" class="social-link" title="Email">
+      {% include svg/icon/social/mail.svg %}
+    </a>
+  </div>
+
+  <!-- Copyright + “Made with Jekyll” line -->
   <div class="footer-info">
-    <!-- First line without the <p> tag -->
-    <a href="/" title="Go to Home Page">©DH@NCKU-Chemistry {{ "now" | date: "%Y" }}</a>
-    <!-- Second line with padding applied only here -->
-    <p style="padding-left: 10px;">
+    <a href="/" title="Go to Home Page">
+      ©DH@NCKU-Chemistry {{ "now" | date: "%Y" }}
+    </a>
+    <p>
       Made with
-      <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/">
+      <a href="http://jekyllrb.com/" title="Jekyll">
         Jekyll
       </a>
-      <img src="/assets/images/icons/jekyll.svg" alt="Jekyll logo" style="width: 55px; height: 55px; vertical-align: middle; margin-left: 0px; display: inline;" />
+      <img src="/assets/images/icons/jekyll.svg"
+           alt="Jekyll logo"
+           style="width:55px;height:55px;vertical-align:middle;margin-left:0;display:inline;">
     </p>
   </div>
+
 </footer>
