@@ -12,6 +12,22 @@ p {
   -ms-hyphens: auto;
   word-break: break-word;
 }
+/*Increase contrast for bold text*/
+$bold-text-color: rgba(#333333, 1); // Darker color for bold text
+strong, b {
+  color: $bold-text-color;  // Use a color that stands out, or modify the existing one
+  font-weight: bold;        // Ensures the text stays bold
+/*  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);*/ // Optional: adds a subtle shadow for better contrast
+}
+
+html {
+  overflow-y: scroll;
+}
+body {
+  padding-top: 70px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 
 /* Define the class for your heading that appears below page title */
 .custom-heading {
@@ -159,17 +175,6 @@ p {
     background-color: #FDF8E4;
     border-radius: 2px;
   }
-}
-
-/* General Styling */
-html {
-  overflow-y: scroll;
-}
-
-body {
-  padding-top: 70px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 //Home
