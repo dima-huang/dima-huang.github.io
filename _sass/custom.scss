@@ -215,34 +215,35 @@ body {
   margin: 4px 0;           // Small vertical margin (top/bottom: 4px, left/right: 0)
 }
 
-.gradient-title {
-  font-size: clamp(3rem, 5vw, 4rem);
+.home-title {
+  font-size: clamp(2.5rem, 5vw, 3rem);
   font-weight: bold;
-  background: linear-gradient(90deg, #0366d6, #00b4d8);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  text-align: center;
+  color: #0366d6;
   width: 100%;
-  text-align: center;
-  display: inline-block;
-  margin: 0 auto;
-}
-.home-page-header {
-  text-align: center;
+  margin: 0; /* removed auto centering */
 }
 
-.gradient-text {
-  font-size: clamp(1.4rem, 5vw, 1.8rem); /* responsive between 1.35rem and 1.8rem */
+.home-subtitle {
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
   font-weight: bold;
-  background: linear-gradient(90deg, #0366d6, #00b4d8);//From bold GitHub blue to a bright aqua.
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+  text-align: center;
+  color: #0366d6;
+  width: 100%;
+  margin: 0; /* removed auto centering */
 }
 
+.home-TOC {
+  width: 100%;         /* Still flexible */
+  max-width: 400px;    /* Limit size on large screens */
+  height: auto;        /* Maintain aspect ratio */
+  display: block;      /* Makes it block-level */
+  margin-left: auto;   /* Center horizontally */
+  margin-right: auto;  /* Center horizontally */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0 1rem;     /* Small side padding for smaller screens */
+}
 
 .home-image {
   width: 100%; /* Full width on smaller screens */
