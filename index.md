@@ -3,8 +3,8 @@ layout: home
 paginate: 8
 message: "Accepting new members"
 message_icon: "svg/icon/test-tube.svg"
-title: Welcome to the DH Lab
-subtitle: "- We study the separation of critical materials"
+title: Welcome!
+subtitle: "The DH Lab studies the separation of critical materials"
 toc_image: /assets/images/home_TOC.png
 ---
 Our group aims to develop sustainable methods for recovering and
