@@ -216,34 +216,36 @@ body {
 }
 
 .home-title {
-  font-size: clamp(2.5rem, 5vw, 3rem);
+//  font-size: clamp(2.5rem, 5vw, 3rem);
   font-weight: bold;
   text-align: center;
-  color: #0366d6;
+  color: black;//#0366d6
   width: 100%;
   margin: 0; /* removed auto centering */
 }
 
 .home-subtitle {
-  font-size: clamp(1.4rem, 5vw, 1.8rem);
+//  font-size: clamp(1.4rem, 5vw, 1.8rem);
   font-weight: bold;
   text-align: center;
-  color: #0366d6;
+  color: black;//#0366d6
   width: 100%;
   margin: 0; /* removed auto centering */
 }
 
-.home-TOC {
-  width: 100%;         /* Still flexible */
-  max-width: 400px;    /* Limit size on large screens */
-  height: auto;        /* Maintain aspect ratio */
-  display: block;      /* Makes it block-level */
-  margin-left: auto;   /* Center horizontally */
-  margin-right: auto;  /* Center horizontally */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 0 1rem;     /* Small side padding for smaller screens */
+.home-toc-image {
+  display: flex;
+  justify-content: center;
+//  margin: 1.5em 0;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
 }
+
+
 
 .home-image {
   width: 100%; /* Full width on smaller screens */
@@ -329,8 +331,8 @@ body {
 .icon-test-tube {
   margin-right: 0em;
   svg {
-    width: 1.2em;              // Icon size (adjust as needed)
-    height: 1.2em;             // Aspect ratio maintained
+    width: 1em;              // Icon size (adjust as needed)
+    height: 1em;             // Aspect ratio maintained
     vertical-align: middle;  // Aligns the icon vertically with the text
     color: black;            // Sets the icon color to green
   }
