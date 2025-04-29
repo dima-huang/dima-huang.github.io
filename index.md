@@ -5,7 +5,7 @@ message: "Accepting new members"
 message_icon: "svg/icon/test-tube.svg"
 title: Welcome to the DH Lab
 subtitle: "We study the separation science of critical materials"
-toc_image: /assets/images/home_TOC.svg
+toc_image: /assets/images/home_TOC.png
 ---
 We aim to develop sustainable methods for recovering and
 separating critical materials — elements that are vital to modern
