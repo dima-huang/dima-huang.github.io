@@ -3,16 +3,14 @@ layout: home
 paginate: 8
 message: "Accepting new members"
 message_icon: "svg/icon/test-tube.svg"
-title: Welcome!
-subtitle: "The DH Lab studies the separation of critical materials"
+title: Welcome to the DH Lab
 toc_image: /assets/images/home_TOC.png
 ---
-Our group aims to develop sustainable methods for recovering and
-separating critical materials — elements that are vital to modern
-technologies, yet are in limited supply and lack easy substitutes.
-We design selective receptors and functionalized materials to target
-these elements, enabling efficient catch-and-release in heterogeneous
-systems.
+**We study the separation science of critical materials.**
+Our group develops sustainable methods to recover and separate critical
+elements—those essential to modern technologies but are often scarce and difficult
+to replace. We design selective receptors and functionalized materials to target
+these elements, enabling efficient catch-and-release in heterogeneous systems.
 
 <img class="home-image" src="/assets/images/AboutDHLab.svg" alt="Home page image">
 
