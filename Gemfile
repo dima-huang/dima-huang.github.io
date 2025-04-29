@@ -11,3 +11,4 @@ group :jekyll_plugins do
 end
 gem 'tzinfo-data'
 gem 'github-pages'
+gem 'rake', '~> 12.3.3'
