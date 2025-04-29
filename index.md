@@ -7,7 +7,7 @@ title: Welcome to the DH Lab
 subtitle: "- We study the separation of critical materials"
 toc_image: /assets/images/home_TOC.png
 ---
-We aim to develop sustainable methods for recovering and
+Our group aims to develop sustainable methods for recovering and
 separating critical materials — elements that are vital to modern
 technologies, yet are in limited supply and lack easy substitutes.
 We design selective receptors and functionalized materials to target
