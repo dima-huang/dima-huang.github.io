@@ -8,6 +8,11 @@ layout: Contact
     {% include svg/icon/info-circle.svg %}
   </span>Find us at
 </h2>
+<h3 class="custom-subheading">
+  <span class="icon-subtitle">
+    {% include svg/icon/info-circle.svg %}
+  </span>I'm currently still in TX, USA
+</h3>
 The Department of Chemistry,
 No. 1, Dasyue Rd, East District, Tainan City, Taiwan 701
 

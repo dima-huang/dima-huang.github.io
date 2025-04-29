@@ -40,13 +40,16 @@ body {
   margin: 4px 0; /* Small vertical margin */
 //  border: 1px solid $main-color-1; /* Border with same color as background */
 }
-
-/* Navigation */
-.navigation a {
-  font-size: 1.125rem; /* 18px → rem */
-  font-weight: bold;
+.custom-subheading {
+  display: inline-block; /* Ensure the element's width is based on its content */
+  text-align: left;
+  color: red; /* Text color, I like this color */
+  background-color: #FFEEEE;; /* light red */
+  padding: 4px 8px; /* Smaller padding */
+  border-radius: 16px; /* Rounded corners */
+  margin: 4px 0; /* Small vertical margin */
+//  border: 1px solid $main-color-1; /* Border with same color as background */
 }
-
 /* Desktop: screens 992px and wider */
 @media (min-width: 992px) {
   /* Hide all toggle icons */
@@ -329,7 +332,15 @@ body {
     color: green;        // Sets the icon color to green
   }
 }
-
+.icon-subtitle {
+  margin-right: 0em;
+  svg {
+    width: 1em;          // Adjust size smaller (1em for example)
+    height: 1em;         // Maintain aspect ratio
+    vertical-align: middle; // Ensures vertical alignment with text
+    color: red;        // Sets the icon color to green
+  }
+}
 .icon-test-tube {
   margin-right: 0em;
   svg {
