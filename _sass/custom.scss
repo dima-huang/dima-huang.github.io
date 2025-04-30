@@ -29,16 +29,34 @@ body {
   overflow-wrap: break-word;
 }
 
+.content-frame {
+  background: #FFFFFF;
+  border-radius: 18px;
+  padding: 15px;
+/*    top  right bottom left */
+  margin: 0.5rem 0;
+}
+
 /* Define the class for your heading that appears below page title */
 .custom-heading {
-  display: inline-block; /* Ensure the element's width is based on its content */
-  text-align: left;
-  color: green; /* Text color, I like this color */
-  background-color: #e5f0d1;; /* light green */
-  padding: 4px 8px; /* Smaller padding */
-  border-radius: 16px; /* Rounded corners */
-  margin: 4px 0; /* Small vertical margin */
-//  border: 1px solid $main-color-1; /* Border with same color as background */
+  display: block; /* Make it span the width of its container */
+  position: relative;
+ color: $main-color-1;
+//  padding: 1px 0; /* Vertical padding only */
+//  margin: 16px 0; /* Space above and below */
+  border-radius: 0; /* Remove rounded corners */
+  /* Remove any border property */
+}
+.custom-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.1em; /* Adjust as needed to position the line */
+  height: 2px; /* Thickness of the line */
+  background: #e0e0e0; /* Light grey */
+  z-index: 0;
 }
 .custom-subheading {
   display: inline-block; /* Ensure the element's width is based on its content */
@@ -50,6 +68,7 @@ body {
   margin: 4px 0; /* Small vertical margin */
 //  border: 1px solid $main-color-1; /* Border with same color as background */
 }
+
 /* Desktop: screens 992px and wider */
 @media (min-width: 992px) {
   /* Hide all toggle icons */
@@ -191,7 +210,12 @@ body {
 }
 .home-main {
   width: 100%;
-  margin-bottom: 40px;
+//  margin-bottom: 40px;
+    background: #FFFFFF;
+  border-radius: 18px;
+  padding: 15px;
+/*    top  right bottom left */
+  margin: 0.5rem 0;
 }
 
 .home-bottom-flex {
@@ -227,19 +251,11 @@ body {
   margin: 0; /* removed auto centering */
 }
 
-.home-subtitle {
-//  font-size: clamp(1.4rem, 5vw, 1.8rem);
-  font-weight: bold;
-  text-align: center;
-  color: $text-color;//#0366d6
-  width: 100%;
-  margin: 0; /* removed auto centering */
-}
-
 .home-toc-image {
   display: flex;
   justify-content: center;
     margin-top: 1.25em;
+    margin-bottom: 1.0em;
 
   img {
     width: 100%;
@@ -265,22 +281,15 @@ body {
   }
 }
 
-.main-content-box {
-  background-color: #f8f9fa; /* light grey or any theme-matching color */
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 2rem;
-}
 
 .sidebar-box {
   flex: 1;
   min-width: 280px;
-  background: $background-box;
+  background: #FFFFFF; /* match .content-frame */
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 18px; /* match .content-frame */
+  margin: 0.5rem 0;     /* match .content-frame */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soften the shadow to match subtle style */
 }
 
 .sidebar-box ul {
@@ -327,18 +336,10 @@ body {
     width: 1em;          // Adjust size smaller (1em for example)
     height: 1em;         // Maintain aspect ratio
     vertical-align: middle; // Ensures vertical alignment with text
-    color: green;        // Sets the icon color to green
-  }
-}
-.icon-subtitle {
-  margin-right: 0em;
-  svg {
-    width: 1em;          // Adjust size smaller (1em for example)
-    height: 1em;         // Maintain aspect ratio
-    vertical-align: middle; // Ensures vertical alignment with text
     color: red;        // Sets the icon color to green
   }
 }
+
 .icon-test-tube {
   margin-right: 0em;
   svg {

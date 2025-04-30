@@ -4,12 +4,12 @@ titles:
 <!--  en: Home -->
 show_title: True
 articles:
-  data_source: paginator.posts
-  article_type: BlogPosting
-  show_cover: false
-  show_excerpt: true
-  show_readmore: true
-  show_info: true
+data_source: paginator.posts
+article_type: BlogPosting
+show_cover: false
+show_excerpt: true
+show_readmore: true
+show_info: true
 ---
 <div class="layout--home">
   <div class="home-container">
@@ -24,34 +24,44 @@ articles:
     <div class="home-bottom-flex">
       <!-- News Section -->
       <div class="sidebar-box">
-        <h3>News</h3>
+        <h2 class="custom-heading">{{ page.sidebar_title | default: "News"
+          }}</h2>
         <ul>
-          {% assign sorted_news = site.news | sort: "date" | reverse | slice: 0, 2 %}
+          {% assign sorted_news = site.news | sort: "date" | reverse | slice: 0,
+          2 %}
           {% for post in sorted_news %}
-            <li>
-              <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
-              <p>{{ post.excerpt }}</p>
-              <p><span class="date-badge">{{ post.date | date: "%m/%d/%Y" }}</span></p>
-            </li>
+          <li>
+            <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h4>
+            <p>{{ post.excerpt }}</p>
+            <p><span
+              class="date-badge">{{ post.date | date: "%m/%d/%Y" }}</span></p>
+          </li>
           {% endfor %}
         </ul>
-        <a href="{{ '/news' | relative_url }}" class="link-button">Go to News</a>
+        <a href="{{ '/news' | relative_url }}" class="link-button">Go to
+          News</a>
       </div>
 
       <!-- Publications Section -->
       <div class="sidebar-box">
-        <h3>Publications</h3>
+        <h2 class="custom-heading">{{ page.publications_title | default:
+          "Publications" }}</h2>
         <ul>
-          {% assign sorted_publications = site.publications | sort: "date" | reverse | slice: 0, 2 %}
+          {% assign sorted_publications = site.publications | sort: "date" |
+          reverse | slice: 0, 2 %}
           {% for post in sorted_publications %}
-            <li>
-              <h4><a href="{{ post.source_url }}" target="_blank">{{ post.title }}</a></h4>
-              <p>{{ post.excerpt }}</p>
-              <p><span class="date-badge">{{ post.date | date: "%m/%d/%Y" }}</span></p>
-            </li>
+          <li>
+            <h4><a href="{{ post.source_url }}" target="_blank">{{ post.title
+              }}</a></h4>
+            <p>{{ post.excerpt }}</p>
+            <p><span
+              class="date-badge">{{ post.date | date: "%m/%d/%Y" }}</span></p>
+          </li>
           {% endfor %}
         </ul>
-        <a href="{{ '/publications' | relative_url }}" class="link-button">Go to Publications</a>
+        <a href="{{ '/publications' | relative_url }}" class="link-button">Go to
+          Publications</a>
       </div>
 
     </div>

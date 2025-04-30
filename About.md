@@ -4,9 +4,7 @@ layout: Custom
 ---
 
 <h2 class="custom-heading">
-  <span class="icon-title">
-    {% include svg/icon/info-circle.svg %}
-  </span> We address challenges in critical materials separation
+Address challenges in critical materials separation
 </h2>
 **The overarching goal** of this research is to meet the urgent need for sustainable
 recovery of critical materials essential for advanced electronics and chip

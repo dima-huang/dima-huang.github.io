@@ -45,18 +45,15 @@ source0=layout.show_edit_on_github source1=include.article.show_edit_on_github -
   </div>
   {%- endif -%}
 
-  {%- if _show_title -%}
-  <header>
-    {%- if page.url == "/" -%}
-    <h2 class="home-title">{{ _article_title }}</h2>
-    {%- if page.subtitle -%}
-    <h3 class="home-subtitle">{{ page.subtitle }}</h3>
-    {%- endif -%}
-    {%- else -%}
-    <h1>{{ _article_title }}</h1>
-    {%- endif -%}
-  </header>
+{%- if _show_title -%}
+<header>
+  {%- if page.url == "/" -%}
+  <h2 class="home-title">{{ _article_title }}</h2>
+  {%- else -%}
+  <h1>{{ _article_title }}</h1>
   {%- endif -%}
+</header>
+{%- endif -%}
 
   {%- if _show_edit_on_github -%}
   {%- if site.repository and site.repository_tree -%}
