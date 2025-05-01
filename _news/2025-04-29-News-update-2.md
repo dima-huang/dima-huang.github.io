@@ -10,6 +10,6 @@ layout: article
 Are you interested in synthesizing ligands or receptors for metals,
 growing crystals, conducting spectroscopic analysis of host-guest interactions,
 or developing functionalized materials? If so, come join us! I'm currently still
-in TX, USA, but reachable by <a href="/Contact.html">email</a>. ✉️✉️
+in Texas, USA, but reachable by <a href="/Contact.html">email</a>. ✉️✉️
 </div>
 
