@@ -230,7 +230,7 @@ body {
 
 .message-top-right {
 //  display: inline-block;
-//  font-size: map-get($base, font-size-h3);
+  font-size: map-get($base, font-size-h3);
   font-weight: bold;
   color: green; /* Text color, I like this color */
   background-color: #e5f0d1;; /* light green */
@@ -330,17 +330,17 @@ body {
   }
 }
 //This is the info icon
-.icon-title {
+.icon-info {
   margin-right: 0em;
   svg {
-    width: 1em;          // Adjust size smaller (1em for example)
-    height: 1em;         // Maintain aspect ratio
+    width: 1.2em;          // Adjust size smaller (1em for example)
+    height: 1.2em;         // Maintain aspect ratio
     vertical-align: middle; // Ensures vertical alignment with text
-    color: red;        // Sets the icon color to green
+//    color: red;        // Sets the icon color to green
   }
 }
 
-.icon-test-tube {
+/*.icon-test-tube {
   margin-right: 0em;
   svg {
     width: 1em;              // Icon size (adjust as needed)
@@ -348,7 +348,7 @@ body {
     vertical-align: middle;  // Aligns the icon vertically with the text
     color: black;            // Sets the icon color to green
   }
-}
+} */
 
 /* News‑page only tweaks remain nested if you like… */
 .news-date {

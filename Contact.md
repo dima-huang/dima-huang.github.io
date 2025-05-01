@@ -1,14 +1,15 @@
 ---
 title: Contact us
 layout: Contact
+message_icon: "svg/icon/info-circle.svg"
 ---
 
 <h2 class="custom-heading">
 Find us at
 </h2>
 <h3 class="custom-subheading">
-  <span class="icon-title">
-    {% include svg/icon/info-circle.svg %}
+  <span class="icon-info">
+    {% include {{page.message_icon}} %}
   </span>I'm currently still in TX, USA
 </h3>
 The Department of Chemistry,

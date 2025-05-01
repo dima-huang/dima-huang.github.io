@@ -14,36 +14,29 @@ source0=layout.show_edit_on_github source1=include.article.show_edit_on_github -
 {%- assign _show_edit_on_github = __return -%}
 
 {%- if _show_title or _show_edit_on_github -%}
-<div class="article__header" {% if page.url == "/" %}style="text-align: center;"{% endif %}>
+<div class="article__header" {% if
+     page.url== "/" %}style="text-align: center;"{% endif %}>
 
-  {%- if page.message -%}
-  <div class="message-container">
-    <div class="message-top-right">
-      {%- if page.message_icon -%}
-      <span class="icon-test-tube">
-        {% include svg/icon/test-tube.svg %}
-      </span>
-      {%- endif -%}
-
-      <span class="message-text">{{ page.message }}</span>
-
-      {%- if page.message_icon -%}
-      <span class="icon-test-tube">
-        {% include svg/icon/test-tube.svg %}
-      </span>
-      {%- endif -%}
-    </div>
+{%- if page.message -%}
+<div class="message-container">
+  <div class="message-top-right">
+    <span class="icon-info">
+{% include {{ page.message_icon }} %}
+    </span>
+    <span class="message-text">{{ page.message }}</span>
   </div>
-  {%- endif -%}
+</div>
+{%- endif -%}
 
-  {%- comment -%}
-  Insert TOC image on home page only
-  {%- endcomment -%}
-  {%- if page.url == "/" and page.toc_image -%}
-  <div class="home-toc-image">
-    <img src="{{ page.toc_image }}" alt="Table of Contents">
-  </div>
-  {%- endif -%}
+
+{%- comment -%}
+Insert TOC image on home page only
+{%- endcomment -%}
+{%- if page.url == "/" and page.toc_image -%}
+<div class="home-toc-image">
+  <img src="{{ page.toc_image }}" alt="Table of Contents">
+</div>
+{%- endif -%}
 
 {%- if _show_title -%}
 <header>
@@ -55,34 +48,34 @@ source0=layout.show_edit_on_github source1=include.article.show_edit_on_github -
 </header>
 {%- endif -%}
 
-  {%- if _show_edit_on_github -%}
-  {%- if site.repository and site.repository_tree -%}
-  {%- include snippets/is_collection.html page=include.article -%}
-  {%- assign _is_article_collection = __return -%}
-  {%- include snippets/get-locale-string.html key='POST_ON_GITHUB' -%}
-  {%- assign _locale_post_on_github = __return -%}
-  {%- if _is_article_collection -%}
-  {%- include snippets/prepend-path.html
-  path=include.article.path
-  prepend_path=site.collections_dir -%}
-  {%- assign _article_path = __return -%}
-  {%- else -%}
-  {%- assign _article_path = include.article.path -%}
-  {%- endif -%}
-  {%- assign _github_path = site.repository
-    | append: '/tree/'
-    | append: site.repository_tree
-    | append: '/'
-    | append: _article_path
-    | replace: '//','/' -%}
-  <span class="split-space">&nbsp;</span>
-  <a class="edit-on-github"
-     title="{{ _locale_post_on_github }}"
-     href="https://github.com/{{ _github_path }}">
-    <i class="far fa-edit"></i>
-  </a>
-  {%- endif -%}
-  {%- endif -%}
+{%- if _show_edit_on_github -%}
+{%- if site.repository and site.repository_tree -%}
+{%- include snippets/is_collection.html page=include.article -%}
+{%- assign _is_article_collection = __return -%}
+{%- include snippets/get-locale-string.html key='POST_ON_GITHUB' -%}
+{%- assign _locale_post_on_github = __return -%}
+{%- if _is_article_collection -%}
+{%- include snippets/prepend-path.html
+path=include.article.path
+prepend_path=site.collections_dir -%}
+{%- assign _article_path = __return -%}
+{%- else -%}
+{%- assign _article_path = include.article.path -%}
+{%- endif -%}
+{%- assign _github_path = site.repository
+| append: '/tree/'
+| append: site.repository_tree
+| append: '/'
+| append: _article_path
+| replace: '//','/' -%}
+<span class="split-space">&nbsp;</span>
+<a class="edit-on-github"
+   title="{{ _locale_post_on_github }}"
+   href="https://github.com/{{ _github_path }}">
+  <i class="far fa-edit"></i>
+</a>
+{%- endif -%}
+{%- endif -%}
 
 </div>
 {%- else -%}
