@@ -42,6 +42,7 @@ body {
   display: block; /* Make it span the width of its container */
   position: relative;
  color: $main-color-1;
+ align: left;
 //  padding: 1px 0; /* Vertical padding only */
 //  margin: 16px 0; /* Space above and below */
   border-radius: 0; /* Remove rounded corners */
@@ -607,6 +608,12 @@ body {
   margin: 0 auto;
 }
 
+.contact-me-content {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  word-break: break-word;
+}
 /* Social Links Styling */
 .social-links {
   margin-top: 10px;

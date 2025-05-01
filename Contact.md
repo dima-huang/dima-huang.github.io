@@ -10,7 +10,7 @@ Find us at
 <h3 class="custom-subheading">
   <span class="icon-info">
     {% include {{page.message_icon}} %}
-  </span>I'm currently still in TX, USA
+  </span>I'm currently still in Texas, USA
 </h3>
 The Department of Chemistry,
 No. 1, Dasyue Rd, East District, Tainan City, Taiwan 701
