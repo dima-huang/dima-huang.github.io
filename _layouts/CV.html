@@ -8,13 +8,16 @@ layout: page
     <!-- Sidebar (Left Side) -->
     <aside class="pi-page-sidebar">
       <!-- Image -->
-      <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.name }}" class="pi-image">
+      <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.name }}"
+           class="pi-image">
 
       <!-- Role -->
       <h3 class="role">{{ page.role }}</h3> <!-- Added class "role" -->
-
+      <!-- Field -->
+      <h4 style="text-align: center;">{{ page.field }}</h4>
       <!-- Contact Information -->
-      <p><strong>Email:</strong> <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+      <p><strong>Email:</strong> <a href="mailto:{{ page.email }}">{{ page.email
+        }}</a></p>
       <p><strong>Phone 1:</strong> {{ page.phone_1 }}</p>
       <p><strong>Phone 2:</strong> {{ page.phone_2 }}</p>
 
@@ -24,37 +27,46 @@ layout: page
         {{ page.address.department }}<br>
         {{ page.address.street }}<br>
         {{ page.address.district }}<br>
-        {{ page.address.city }}, {{ page.address.postal_code }} {{ page.address.country }}
+        {{ page.address.city }}, {{ page.address.postal_code }} {{
+        page.address.country }}
       </div>
 
       <!-- Additional Contact Information (from front matter) -->
       {% if page.ContactMe %}
-        <div class="contact-info">
-          <p class="contact-me-content">{{ page.ContactMe }}</p>
-        </div>
+      <div class="contact-info">
+        <p class="contact-me-content">{{ page.ContactMe }}</p>
+      </div>
       {% endif %}
 
       <!-- Social Links (ORCID, Line, Bluesky, Signal) -->
       <div class="social-links">
         {% if page.orcid %}
-          <a href="{{ page.orcid }}" target="_blank" rel="noopener" class="social-link">
-            <img src="{{ site.baseurl }}/assets/images/icons/ORCID.svg" alt="ORCID" class="social-icon">
-          </a>
+        <a href="{{ page.orcid }}" target="_blank" rel="noopener"
+           class="social-link">
+          <img src="{{ site.baseurl }}/assets/images/icons/ORCID.svg"
+               alt="ORCID" class="social-icon">
+        </a>
         {% endif %}
         {% if page.line %}
-          <a href="{{ page.line }}" target="_blank" rel="noopener" class="social-link">
-            <img src="{{ site.baseurl }}/assets/images/icons/Line.svg" alt="Line" class="social-icon">
-          </a>
+        <a href="{{ page.line }}" target="_blank" rel="noopener"
+           class="social-link">
+          <img src="{{ site.baseurl }}/assets/images/icons/Line.svg" alt="Line"
+               class="social-icon">
+        </a>
         {% endif %}
         {% if page.bluesky %}
-          <a href="{{ page.bluesky }}" target="_blank" rel="noopener" class="social-link">
-            <img src="{{ site.baseurl }}/assets/images/icons/Bluesky.svg" alt="Bluesky" class="social-icon">
-          </a>
+        <a href="{{ page.bluesky }}" target="_blank" rel="noopener"
+           class="social-link">
+          <img src="{{ site.baseurl }}/assets/images/icons/Bluesky.svg"
+               alt="Bluesky" class="social-icon">
+        </a>
         {% endif %}
         {% if page.signal %}
-          <a href="{{ page.signal }}" target="_blank" rel="noopener" class="social-link">
-            <img src="{{ site.baseurl }}/assets/images/icons/Signal.svg" alt="Signal" class="social-icon">
-          </a>
+        <a href="{{ page.signal }}" target="_blank" rel="noopener"
+           class="social-link">
+          <img src="{{ site.baseurl }}/assets/images/icons/Signal.svg"
+               alt="Signal" class="social-icon">
+        </a>
         {% endif %}
       </div>
     </aside>

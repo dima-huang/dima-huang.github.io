@@ -1,7 +1,8 @@
 ---
 layout: CV
 name: Dr. Sheng-Yin Dima Huang
-role: Assistant Professor Physical Chemistry Inorganic Chemistry
+role: Assistant Professor
+field: Physical Chemistry Inorganic Chemistry
 image: /assets/images/Team/PI/DH.jpg
 ContactMe: The quickest way to reach me is via email. While I strive to respond
   as quickly as possible, if you have not heard back from me within a couple of hours,
@@ -41,10 +42,10 @@ Texas at Austin (2021–2025), he joined the Chemistry Department at NCKU.
 
 ## Research Interests
 
-1. Physical chemistry
+1. Physical Chemistry
 2. Extractive metallurgy
 3. Separation sciences
-4. Coordination chemistry
+4. Coordination Chemistry
 
 ## Education
 

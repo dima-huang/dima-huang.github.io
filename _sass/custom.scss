@@ -593,9 +593,17 @@ body {
 .pi-page-sidebar h3.role {
   text-align: center;
   margin-top: 0;
-  padding: 0;
+padding-top: 0.5em;
+padding-bottom: 0em;
+  // color: blue;
 }
 
+.pi-page-sidebar h4 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0; // optional, in case you want no space after this too
+  padding: 0;
+}
 .pi-page-sidebar .address {
     text-align: left;
 }
