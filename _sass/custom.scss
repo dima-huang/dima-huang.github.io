@@ -24,7 +24,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  padding-top: 70px;
+  padding-top: 65px; //-->it was 70 px, with a noticeable white gap.
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -77,28 +77,6 @@ body {
   .menu-toggle,
   .hamburger {
     display: none;
-  }
-
-  /* Show nav inline */
-  .navigation {
-    display: block;
-    position: static;
-    background-color: transparent;
-  }
-
-  .navigation ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navigation .navigation__item {
-    margin-right: 20px;
-  }
-
-  .search-button {
-    display: inline-block;
   }
 }
 
