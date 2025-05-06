@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: "Accepting new members"
+message: "Join Us - One spot remaining"
 message_icon: "svg/icon/info-circle.svg"
 title:
 toc_image: /assets/images/home_TOC.png
