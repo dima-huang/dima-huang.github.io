@@ -2,6 +2,7 @@
 title: The Team
 layout: Custom
 ---
+
 <h2 class="custom-heading">
 Meet the DH Lab
 </h2>
@@ -25,22 +26,24 @@ Meet the DH Lab
     </tbody>
   </table>
 
-  <!-- Table for Lab Members -->
-  {% for member in site.Lab-Members %}
-    <table class="team-table">
-      <tbody>
-        <tr>
-          <td>
-            <img src="{{ member.image }}" alt="{{ member.name }}">
-          </td>
-          <td>
-            <h3>{{ member.name }}</h3>
-            <h3>{{ member.role }}</h3>
-            <p>{{ member.description }}</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  {% endfor %}
+<!-- Table for Lab Members -->
+{% assign sorted_members = site.Lab-Members | sort: 'date' %}
+{% for member in sorted_members %}
+  <table class="team-table">
+    <tbody>
+      <tr>
+        <td>
+          <img src="{{ member.image }}" alt="{{ member.name }}">
+        </td>
+        <td>
+          <h3>{{ member.name }}</h3>
+          <h3>{{ member.role }}</h3>
+          <p>{{ member.description }}</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+{% endfor %}
+
 
 </div>
