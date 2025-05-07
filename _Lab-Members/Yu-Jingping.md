@@ -1,6 +1,6 @@
 ---
-name: Yu Jingping 余敬平
-role: grad student
+name: Yu Jingping (余敬平)
+role: Grad student
 date: 2025-05-07
 image: /assets/images/Team/Lab-Members/Yu-Jingping.png
 description: Outside of chemistry, traveling and enjoying great food are essential
