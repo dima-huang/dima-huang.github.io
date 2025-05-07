@@ -1,7 +1,7 @@
 ---
 name: Su Youyu (蘇宥珆)
 role: Grad student
-date: 2025-05-07W09
+date: 2025-05-07T09:00
 image: /assets/images/Team/Lab-Members/Su-Youyu.jpeg
 description: When I’m not immersed in chemistry, I’m probably planning my next
   trip—or at least packing in my head. I enjoy going out, trying new foods
