@@ -1,6 +1,6 @@
 ---
 title: Recruiting is finally over!! ⭐⭐
-date: 2025-05-10
+date: 2025-05-09
 excerpt: "The DH lab is full!! Thank you for your interest and inquiries."
 layout: article
 ---
