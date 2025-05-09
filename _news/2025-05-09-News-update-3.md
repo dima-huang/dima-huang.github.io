@@ -6,6 +6,7 @@ layout: article
 ---
 <div class="justify-text">
 The DH Lab is full!
-I'm grateful for your interest and inquiries. Looking forward to starting the new lab! 🧪🧪
+While I'm grateful for your interest and inquiries, I’ve had to make some difficult decisions.
+Looking forward to starting the new lab! 🧪🧪
 </div>
 
