@@ -63,7 +63,7 @@ body {
   display: inline-block; /* Ensure the element's width is based on its content */
   text-align: left;
   color: red; /* Text color, I like this color */
-  background-color: #FFEEEE;; /* light red */
+  background-color: #FFEEEE; /* light red */
   padding: 4px 8px; /* Smaller padding */
   border-radius: 16px; /* Rounded corners */
   margin: 4px 0; /* Small vertical margin */
@@ -209,8 +209,8 @@ body {
   align-items: center;
   font-size: map-get($base, font-size-h3);
   font-weight: bold;
-  color: green;
-  background-color: #e5f0d1;
+  color: red;
+  background-color:  #FFEEEE; /* light red, #e5f0d1 -> light green */
   padding: 4px 8px;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

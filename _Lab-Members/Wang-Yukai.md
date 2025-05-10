@@ -1,5 +1,5 @@
 ---
-name: Yu-Kai Wang(王育楷)
+name: Yu-Kai Wang (王育楷)
 role: Grad student
 date: 2025-05-09
 image: /assets/images/Team/Lab-Members/Wang-YuKai.jpg

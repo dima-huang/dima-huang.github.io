@@ -1,5 +1,5 @@
 ---
-name: You-Yu Su(蘇宥珆)
+name: You-Yu Su (蘇宥珆)
 role: Grad student
 date: 2025-05-07T09:00
 image: /assets/images/Team/Lab-Members/Su-Youyu.jpeg
