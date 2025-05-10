@@ -1,5 +1,5 @@
 ---
-name: Yu Jingping (余敬平)
+name: Jing-Ping Yu(余敬平)
 role: Grad student
 date: 2025-05-07T08:00
 image: /assets/images/Team/Lab-Members/Yu-Jingping.jpg
