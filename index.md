@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: "Recruiting-2025 is over!!"
+message: "Looking forward to the new lab!"
 message_icon: "svg/icon/info-circle.svg"
 title:
 toc_image: /assets/images/home_TOC.png
