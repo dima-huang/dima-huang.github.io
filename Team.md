@@ -39,11 +39,22 @@ Meet the DH Lab
           <h3>{{ member.name }}</h3>
           <h3>{{ member.role }}</h3>
           <p>{{ member.description }}</p>
+
+          {% if member.email %}
+
+<p style="display: inline-flex; align-items: center;">
+  <span style="width: 1.4em; height: 1.4em; margin-right: 0.3em; display: inline-flex; align-items: center;">
+    {% include svg/icon/social/mail.svg %}
+  </span>
+  <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+</p>
+          {% endif %}
         </td>
       </tr>
     </tbody>
   </table>
 {% endfor %}
+
 
 
 </div>
