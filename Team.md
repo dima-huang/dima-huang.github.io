@@ -42,12 +42,14 @@ Meet the DH Lab
 
           {% if member.email %}
 
-<p style="display: inline-flex; align-items: center;">
+<p style="display: inline-flex; align-items: center; color: rgba(67, 67, 67, 0.85); margin: 0;">
   <span style="width: 1.4em; height: 1.4em; margin-right: 0.3em; display: inline-flex; align-items: center;">
     {% include svg/icon/social/mail.svg %}
   </span>
   <a href="mailto:{{ member.email }}">{{ member.email }}</a>
 </p>
+
+
           {% endif %}
         </td>
       </tr>
