@@ -34,18 +34,18 @@ body {
   border-radius: 18px;                  // Rounded corners to match design
   padding: 15px;                       // Inner spacing
   margin: 0.5rem 0;                    // Vertical spacing around the element
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  // Subtle base shadow for slight depth
-  transition:
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); } // Subtle base shadow for slight depth
+/*  transition:
     transform 0.3s ease,               // Smoothly animate position changes (lift)
     box-shadow 0.3s ease,              // Smoothly animate shadow changes
-//    background-color 0.3s ease;       // Smoothly animate background color changes
+    background-color 0.3s ease;       // Smoothly animate background color changes
 }
 
 .content-frame:hover {
   transform: translateY(-6px);         // Slight upward lift on hover for "floating" feel
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);  // Stronger shadow on hover to enhance depth
 //  background-color: #FFFEFB;           // Slightly warmer background color on hover
-}
+}*/
 
 
 /* Define the class for your heading that appears below page title */
@@ -205,17 +205,18 @@ body {
   padding: 15px;                       // Inner spacing
   margin: 0.5rem 0;                    // Vertical margin
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  // Subtle shadow for base depth
-  transition:
+  }
+/*  transition:
     transform 0.3s ease,               // Smoothly animate position changes (lift)
     box-shadow 0.3s ease,              // Smoothly animate shadow changes
-//    background-color 0.3s ease;       // Smoothly animate background color changes
+    background-color 0.3s ease;       // Smoothly animate background color changes
 }
 
 .home-main:hover {
   transform: translateY(-6px);         // Lift up slightly on hover
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18); // Stronger shadow on hover
-//  background-color: #FFFDF8;            // Base background color (white)
-}
+  background-color: #FFFDF8;            // Base background color (white)
+}*/
 
 
 .home-bottom-flex {
@@ -299,15 +300,15 @@ body {
   padding: 15px;
   border-radius: 18px; /* match .content-frame */
   margin: 0.5rem 0;     /* match .content-frame */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soften the shadow to match subtle style */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+//  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soften the shadow to match subtle style */
+//  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.sidebar-box:hover {
+/*.sidebar-box:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
-  background-color: #FFFDF8; /* Very close to your original, but warmer/yellower */
-}
+  background-color: #FFFDF8;} /* Very close to your original, but warmer/yellower */
+
 
 .sidebar-box ul {
   list-style-type: none;
