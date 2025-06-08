@@ -6,20 +6,19 @@ layout: Custom
 <h2 class="custom-heading">
 Address challenges in critical materials separation
 </h2>
-**The overarching goal** of this research is to meet the urgent need for sustainable
-recovery of critical materials essential for advanced electronics and chip
-manufacturing. Central to the research program is **the challenge of rethinking
-the canonical design principles of extractants used in metallurgy**.
-This effort is motivated by the poor selectivity of metal extractants when
+**The overarching goal** of this research is to address the urgent need for sustainable
+recovery of critical materials—elements essential to advanced electronics and chip
+manufacturing. Central to the research program lies **the challenge of rethinking
+the canonical design principles of extractants used in metallurgical processes**.
+This effort stems from the poor selectivity of metal extractants when
 separating neighboring elements, particularly in complex substrates such as
-modern e-waste. The extractants currently used in most e-waste recycling
-processes are typically designed to target metal cations. However, the role of
-counter anions is often underappreciated. In material leachates, high
-concentrations of anions (e.g., chloride, nitrate) are known to associate with
-metal ions, affecting their apparent stability (Figure 1a). On the other hand,
+modern e-waste. Most extractants used in e-waste recycling target metal cations
+while overlooking the role of counter anions. In material leachates, high
+concentrations of anions (e.g., chloride, nitrate) often associate with
+metal ions, affecting their apparent stability (Figure 1a). Meanwhile,
 complexation within confined spaces can generate unique coordination modes with
 unrecognized potential for separations (Figure 1b). We believe that receptors
-exploiting these anion-metal interactions and constrained complexation will
+exploiting these anion-metal interactions and spatially constrained complexation will
 enhance selectivity in separations and reduce secondary waste generation.
 The targeted elements include Li, Mn, Co, Ni, and the lanthanides (Ln).
 
@@ -34,14 +33,14 @@ The targeted elements include Li, Mn, Co, Ni, and the lanthanides (Ln).
 
 Additionally, we aim to **explore novel mechanisms for achieving catch-and-release
 of critical materials**. For quite some time, complexation and decomplexation of
-bound ions have been achieved primarily through pH adjustments. However, this
-strategy limits receptor designs to ionic or amine-based scaffolds and has
-resulted in insufficient separation efficiencies between neighboring elements.
-Alternatives are needed. Stimuli-responsive receptors are particularly appealing
-because they enable different coordination modes to be mediated in response to
-specific stimuli, thereby facilitating the catch-and-release of targeted ions
-(Figure 1c). We believe that such receptors can expand the toolbox of receptor
-designs relevant to separation sciences.
+bound ions have relied on pH modulation. While effective in some cases,
+this approach constrains receptor design to ionic or amine-based scaffolds and
+often fails to deliver sufficient selectivity among chemically similar elements.
+Alternatives are needed. Stimuli-responsive receptors offer an attractive
+solution by enabling distinct coordination modes in response to
+external stimuli, thereby facilitating the catch-and-release of target ions
+(Figure 1c). We believe that judiciously designed receptors of this kind will expand the
+toolbox of extractants available to separation science.
 
 On this basis, three projects are proposed and outlined as follows:
 <div class="align-left">
