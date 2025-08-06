@@ -10,7 +10,7 @@ ContactMe: The quickest way to reach me is via email. While I strive to respond
 permalink: /PI-Page/
 bio: |
   Dr. Huang is the Principal Investigator of the DH Lab. His research focuses on X, Y, and Z.
-email: dilmahuk@gmail.com
+email: dimahuang@gs.ncku.edu.tw
 phone_1: NA
 phone_2: NA
 office: XXX

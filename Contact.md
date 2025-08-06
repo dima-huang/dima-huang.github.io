@@ -15,8 +15,8 @@ Find us at
 The Department of Chemistry,
 No. 1, Dasyue Rd, East District, Tainan City, Taiwan 701
 
-✉️ Email: dilmahuk@gmail.com
+✉️ Email: dimahuang@gs.ncku.edu.tw
 
-📞 Phone 1: NA
+📞 Phone 1: TBD
 
-📞 Phone 2: NA
+📞 Phone 2: TBD
