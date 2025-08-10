@@ -234,22 +234,10 @@ body {
   color: green;
   background-color: #e5f0d1; /* -> light green;  #FFEEEE light red,  */
   padding: 4px 8px;
-  border-radius: 6px;
+  border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   gap: 8px;
 
-/*  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 8px;
-    height: 100%;
-    background-color: green;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
-  padding-left: 12px; // Add extra space to avoid overlap with the bar */
 }
 
 
