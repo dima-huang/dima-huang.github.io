@@ -1,6 +1,11 @@
 body,
 html,
 .root,
+
+body {
+  background-color: $background-color;  // or your page background color
+}
+
 .layout--page {
   height: 100%;
 }
