@@ -43,26 +43,31 @@ show_info: true
           News</a>
       </div>
 
-      <!-- Publications Section -->
-      <div class="sidebar-box">
-        <h2 class="custom-heading">{{ page.publications_title | default:
-          "Publications" }}</h2>
-        <ul>
-          {% assign sorted_publications = site.publications | sort: "date" |
-          reverse | slice: 0, 2 %}
-          {% for post in sorted_publications %}
-          <li>
-            <h4><a href="{{ post.source_url }}" target="_blank">{{ post.title
-              }}</a></h4>
-            <p>{{ post.excerpt }}</p>
-            <p><span
-              class="date-badge">{{ post.date | date: "%m/%d/%Y" }}</span></p>
-          </li>
-          {% endfor %}
-        </ul>
-        <a href="{{ '/publications' | relative_url }}" class="link-button">Go to
-          Publications</a>
-      </div>
+<!-- Publications Section -->
+<div class="sidebar-box">
+  <h2 class="custom-heading">{{ page.publications_title | default: "Publications" }}</h2>
+  <ul>
+    {% assign sorted_publications = site.publications | sort: "date" | reverse | slice: 0, 2 %}
+    {% for post in sorted_publications %}
+      {% assign journal = site.data.journals[post.journal_id] %}
+      <li>
+        <h4>
+          <a href="{{ post.source_url }}" target="_blank">{{ post.title }}</a>
+        </h4>
+        <p>
+          {{ post.excerpt }}
+          {% if journal %}
+            (IF = {{ journal.impact_factor }}, {{ journal.year }})
+          {% endif %}
+        </p>
+        <p>
+          <span class="date-badge">{{ post.date | date: "%m/%d/%Y" }}</span>
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{{ '/publications' | relative_url }}" class="link-button">Go to Publications</a>
+</div>
 
     </div>
   </div>

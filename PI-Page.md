@@ -13,7 +13,7 @@ bio: |
 email: dimahuang@gs.ncku.edu.tw
 phone_1: NA
 phone_2: NA
-office: XXX
+office: 36409
 address:
   department: The Department of Chemistry
   street: No. 1, Dasyue Rd,

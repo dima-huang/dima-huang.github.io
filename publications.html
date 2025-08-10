@@ -8,8 +8,7 @@ layout: page
     Updates
   </h2>
   <ul>
-    {% assign sorted_publications = site.publications | sort: "date" | reverse
-    %}
+    {% assign sorted_publications = site.publications | sort: "date" | reverse %}
     {% for post in sorted_publications %}
     <li class="publication-item">
       <div class="publication-content">
@@ -19,30 +18,41 @@ layout: page
           <!-- Title with Link (Only if source_url is available) -->
           <h3 class="publication-title">
             {% if post.source_url %}
-            <a href="{{ post.source_url }}" target="_blank"
-               rel="noopener noreferrer">{{ post.title }}</a>
+              <a href="{{ post.source_url }}" target="_blank" rel="noopener noreferrer">
+                {{ post.title }}
+              </a>
             {% else %}
-            {{ post.title }}
+              {{ post.title }}
             {% endif %}
           </h3>
 
-          <!-- Excerpt with default font size -->
-          <p class="publication-excerpt">{{ post.excerpt }}</p>
+          <!-- Excerpt -->
+          <p class="publication-excerpt">
+            {{ post.excerpt }}
+          </p>
+
+          <!-- Journal Info -->
+          {% assign journal = site.data.journals[post.journal_id] %}
+          {% if journal %}
+            <p class="journal-info">
+              <strong>IF:</strong> {{ journal.impact_factor }},
+              <strong>Year:</strong> {{ journal.year }}
+            </p>
+          {% endif %}
 
           <!-- Date Badge -->
           <p>
-              <span class="date-badge">
-                {{ post.date | date: "%m/%d/%Y" }}
-              </span>
+            <span class="date-badge">
+              {{ post.date | date: "%m/%d/%Y" }}
+            </span>
           </p>
         </div>
 
         <!-- Right Side: TOC Image (If available) -->
         {% if post.toc_image %}
-        <div class="publication-image">
-          <img src="{{ post.toc_image | relative_url }}"
-               alt="TOC for {{ post.title }}">
-        </div>
+          <div class="publication-image">
+            <img src="{{ post.toc_image | relative_url }}" alt="TOC for {{ post.title }}">
+          </div>
         {% endif %}
 
       </div>
