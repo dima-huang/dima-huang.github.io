@@ -2,13 +2,15 @@
 layout: Custom
 title: Some Fun
 ---
-  <h2 class="custom-heading">
-Life in Tainan
-  </h2>
+<h2 class="custom-heading">
+  Life in Tainan
+</h2>
+
 <div class="photo-gallery">
-  {% for photo in site.data.photos %}
-    <div class="photo-item">
-      <div class="photo-image">
+  {% assign sorted_photos = site.data.photos | sort: "date" | reverse %}
+  {% for photo in sorted_photos %}
+    <div class="photo-item{% if photo.aspect_ratio == '4 / 3' %} landscape{% endif %}">
+      <div class="photo-image" style="aspect-ratio: {{ photo.aspect_ratio | default: '3 / 4' }}">
         <img src="/assets/photos/{{ photo.file }}" alt="{{ photo.description }}" />
       </div>
       <p class="photo-date">

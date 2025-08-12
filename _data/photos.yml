@@ -9,3 +9,13 @@
 - file: NCKU_Lake.jpeg
   date: 2025-02-09
   description: The Cheng Kung Lake!
+
+- file: DH_JLS.jpg
+  date: 2025-07-05
+  description: The Greatest Mentor JLS!
+  aspect_ratio: "4 / 3"
+
+- file: DH_Lab_2025.jpg
+  date: 2025-08-11
+  description: My first batch of students!
+  aspect_ratio: "4 / 3"
