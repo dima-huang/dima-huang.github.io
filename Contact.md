@@ -17,6 +17,6 @@ No. 1, Dasyue Rd, East District, Tainan City, Taiwan 701
 
 ✉️ Email: dimahuang@gs.ncku.edu.tw
 
-📞 Phone 1: TBD
+📞 Phone 1: (06)2757575-65356
 
 📞 Phone 2: TBD
