@@ -1,8 +1,8 @@
 ---
-name: You-Yu Su (蘇宥珆)
+name: You-Yi Su (蘇宥珆)
 role: Grad student
 date: 2025-05-07T09:00
-image: /assets/images/Team/Lab-Members/Su-Youyu.jpeg
+image: /assets/images/Team/Lab-Members/Su-Youyi.jpeg
 description: When I’m not immersed in chemistry, I’m probably planning my next
   trip—or at least packing in my head. I enjoy going out, trying new foods
   (especially the kind that won’t ruin my diet), and playing Pokémon whenever
