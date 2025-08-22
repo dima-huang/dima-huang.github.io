@@ -10,6 +10,16 @@
   date: 2025-02-09
   description: The Cheng Kung Lake!
 
+- file: Family_TS_Mall.jpg
+  date: 2025-08-23
+  description: Family meal at the TS Mall!
+  aspect_ratio: "4 / 3"
+
+- file: DH_YJ.jpg
+  date: 2025-07-05
+  description: My Lab buddy Jian!
+  aspect_ratio: "4 / 3"
+
 - file: DH_JLS.jpg
   date: 2025-07-05
   description: The Greatest Mentor JLS!
