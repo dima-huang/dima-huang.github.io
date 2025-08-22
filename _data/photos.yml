@@ -1,3 +1,28 @@
+- file: DH_Lab_2025.jpg
+  date: 2025-08-11
+  description: My first batch of students!
+  aspect_ratio: "4 / 3"
+
+- file: Family_TW_Ice.jpg
+  date: 2025-07-06
+  description: Ice cream time!
+  aspect_ratio: "4 / 3"
+
+- file: DH_TW_home.jpg
+  date: 2025-07-06
+  description: A Wonderful Meal with TW and Poyi!
+  aspect_ratio: "4 / 3"
+
+- file: DH_YJ.jpg
+  date: 2025-07-05
+  description: My Lab buddy Jian!
+  aspect_ratio: "4 / 3"
+
+- file: DH_JLS.jpg
+  date: 2025-07-05
+  description: The Greatest Mentor JLS!
+  aspect_ratio: "4 / 3"
+
 - file: Chemistry_Building.jpeg
   date: 2025-02-10
   description: Beautiful Chemistry Building!
@@ -13,19 +38,4 @@
 - file: Family_TS_Mall.jpg
   date: 2025-08-23
   description: Family meal at the TS Mall!
-  aspect_ratio: "4 / 3"
-
-- file: DH_YJ.jpg
-  date: 2025-07-05
-  description: My Lab buddy Jian!
-  aspect_ratio: "4 / 3"
-
-- file: DH_JLS.jpg
-  date: 2025-07-05
-  description: The Greatest Mentor JLS!
-  aspect_ratio: "4 / 3"
-
-- file: DH_Lab_2025.jpg
-  date: 2025-08-11
-  description: My first batch of students!
   aspect_ratio: "4 / 3"
