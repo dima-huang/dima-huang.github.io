@@ -4,6 +4,17 @@ layout: Custom
 ---
 
   <h2 class="custom-heading">
+Safety-related
+  </h2>
+<h3 style="text-align: left;">
+Lab safety is taken very seriously in the DH Lab!
+</h3>
+Each member of the lab contributes to making safety our highest priority. By adhering to best practices,
+we create a safe and productive environment for everyone. For additional guidance,
+we encourage you to explore the [University of Minnesota’s Safety Moments website](https://www.jst.umn.edu/safety-moments),
+an excellent resource for cultivating a strong culture of safety.
+
+  <h2 class="custom-heading">
 NMR-related
   </h2>
 
