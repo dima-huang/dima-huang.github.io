@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: "JACS Accepted! (postdoctoral work)"
+message: "The DH lab is under construction!"
 message_icon: "svg/icon/info-circle.svg"
 title:
 toc_image: /assets/images/home_TOC.png
