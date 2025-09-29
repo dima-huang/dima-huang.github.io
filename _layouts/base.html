@@ -10,7 +10,6 @@ layout: none
   {%- include analytics.html -%}
   {%- include head.html -%}
 
-  <!-- Viewport Meta Tag for Mobile Responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script>
@@ -30,6 +29,14 @@ layout: none
   <script>
     {%- include scripts/common.js -%}
   </script>
-</body>
+
+<script>
+  // Wait only for the HTML structure to be ready, NOT all images
+  document.addEventListener('DOMContentLoaded', function() {
+    // Apply the 'loaded' class to the body, starting the fade-in immediately
+    document.body.classList.add('loaded');
+  });
+</script>
+  </body>
 
 </html>

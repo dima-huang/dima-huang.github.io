@@ -24,9 +24,20 @@ html {
   overflow-y: scroll;
 }
 body {
-  padding-top: 65px; //-->it was 70 px, with a noticeable white gap.
+  padding-top: 65px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+
+  /* --- NEW STYLES FOR FADE-IN --- */
+  /* 1. Initial State: Start invisible */
+  opacity: 0.1;
+  /* 2. Transition: Animate the opacity change over 1 second (adjust time as desired) */
+  transition: opacity 0.1s ease-in-out;
+}
+
+/* 3. Final State: When this class is added, the page fades to fully visible */
+body.loaded {
+  opacity: 1;
 }
 
 .content-frame {
