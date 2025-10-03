@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: "The DH lab is under construction!"
+message: "The DH lab is officially established!"
 message_icon: "svg/icon/info-circle.svg"
 title:
 toc_image: /assets/images/home_TOC.png
