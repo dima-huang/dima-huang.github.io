@@ -28,7 +28,7 @@ show_info: true
           }}</h2>
         <ul>
           {% assign sorted_news = site.news | sort: "date" | reverse | slice: 0,
-          2 %}
+          3 %}
           {% for post in sorted_news %}
           <li>
             <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a>
