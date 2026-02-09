@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheng-Yin Dima Huang | NCKU</title>
     <style>
-        :root { --ncku-red: #8B0000; --ncku-blue: #003d79; }
+        :root { --ncku-blue: #003d79; --yushan-gold: #b8860b; }
         body { font-family: -apple-system, system-ui, sans-serif; background: #f0f2f5; color: #333; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
         .card { background: white; padding: 35px 25px; border-radius: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); width: 300px; text-align: center; border-top: 8px solid var(--ncku-blue); }
         .avatar { width: 110px; height: 110px; border-radius: 50%; background: #eee; margin: 0 auto 20px; border: 3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         h1 { font-size: 1.4rem; margin: 0; color: #111; }
         .title { color: var(--ncku-blue); font-weight: 600; margin: 8px 0 2px; font-size: 1rem; }
+        .yushan { color: var(--yushan-gold); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px; }
         .dept { color: #666; font-size: 0.85rem; margin-bottom: 20px; line-height: 1.4; }
         .links { text-align: left; margin-bottom: 25px; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 15px; }
-        .links div { margin: 8px 0; display: flex; align-items: center; }
+        .links div { margin: 8px 0; display: flex; align-items: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .btn { display: block; background: var(--ncku-blue); color: white; text-decoration: none; padding: 16px; border-radius: 15px; font-weight: 600; box-shadow: 0 4px 12px rgba(0,61,121,0.3); }
         .btn:active { transform: scale(0.97); }
+        a { color: inherit; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -24,11 +26,12 @@
         
         <h1>Sheng-Yin Dima Huang</h1>
         <p class="title">Assistant Professor</p>
+        <p class="yushan">Yushan Young Scholar</p>
         <p class="dept">National Cheng Kung University<br>Department of Chemistry</p>
         
         <div class="links">
-            <div>📍 Tainan, Taiwan</div>
-            <div>🔗 <a href="https://dima-huang.github.io/" style="color: inherit;">dima-huang.github.io</a></div>
+            <div>✉️ <a href="mailto:dimahuang@gs.ncku.edu.tw">dimahuang@gs.ncku.edu.tw</a></div>
+            <div>🔗 <a href="https://dima-huang.github.io/">dima-huang.github.io</a></div>
         </div>
 
         <a href="../contact.vcf" class="btn">📥 Add to Contacts</a>
