@@ -1,6 +1,7 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Sheng-Yin Dima Huang
-TITLE:Assistant Professor
+FN:Dima Huang
+TITLE:Your Professional Title
+TEL;TYPE=CELL:+1234567890
 URL:https://dima-huang.github.io/
 END:VCARD
