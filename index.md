@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: "The 2025 academic year has officially concluded!🍾🍾"
+message: "Looking Forward to Year of The Horse!🐎🐎"
 message_icon: "svg/icon/info-circle.svg"
 title:
 toc_image: /assets/images/home_TOC.png
