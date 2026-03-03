@@ -18,7 +18,7 @@ these elements, enabling efficient catch-and-release in heterogeneous systems.
 <img class="home-image" src="/assets/images/AboutDHLab2.svg" alt="Home page image">
 
 <div align="center">
-Common critical materials seen in modern technology.
+Receptor-mediated separation of critical materials.
 </div>
 In the lab, we design, synthesize, and evaluate ligands, and study
 their immobilization onto materials such as polymers. Beyond organic
