@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: "Looking Forward to Year of The Horse!🐎🐎"
+message: "We are taking new MS students!"
 message_icon: "svg/icon/info-circle.svg"
 title:
 toc_image: /assets/images/home_TOC.png
@@ -15,7 +15,7 @@ elements—those essential to modern technologies but are often scarce and diffi
 to replace. We design selective receptors and functionalized materials to target
 these elements, enabling efficient catch-and-release in heterogeneous systems.
 
-<img class="home-image" src="/assets/images/AboutDHLab.svg" alt="Home page image">
+<img class="home-image" src="/assets/images/AboutDHLab2.svg" alt="Home page image">
 
 <div align="center">
 Common critical materials seen in modern technology.
