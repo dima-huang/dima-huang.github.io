@@ -68,6 +68,13 @@ layout: page
                alt="Signal" class="social-icon">
         </a>
         {% endif %}
+        {% if page.email %}
+<a href="mailto:{{ page.email }}" target="_blank" rel="noopener"
+   class="social-link" title="Email">
+  <img src="{{ site.baseurl }}/assets/images/icons/mail.svg"
+       alt="Email" class="social-icon">
+</a>
+{% endif %}
       </div>
     </aside>
 
