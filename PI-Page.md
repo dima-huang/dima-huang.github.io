@@ -11,7 +11,7 @@ permalink: /PI-Page/
 bio: |
   Dr. Huang is the Principal Investigator of the DH Lab. His research focuses on X, Y, and Z.
 email: dimahuang@gs.ncku.edu.tw
-phone_1: NA
+phone_1: 06-2757575 #65356
 phone_2: NA
 office: 36409
 address:
@@ -23,7 +23,8 @@ address:
   country: Taiwan
 orcid: https://orcid.org/0000-0002-3278-3826
 line: https://line.me/ti/p/RMTbT1TvgB
-bluesky: https://bsky.app/profile/dimahuang.bsky.social
+<!-- bluesky: https://bsky.app/profile/dimahuang.bsky.social -->
+
 signal: |
   https://signal.me/#eu/2Rvb0UOshHc8GBFLY8Hzykj9QnGZQfPU8w6OwW3BcHJdbtwiKXVOMYMsrqyuI_Ow
 
@@ -55,12 +56,12 @@ Texas at Austin (2021–2025), he joined the Chemistry Department at NCKU.
 4. BS - Chemical Engineering, National Cheng Kung University, Tainan (2007-2011, mentor: Mei-Jywan Syu)
 
 ## Award
-
-1. Huang, S.-Y. Domino The Cat Traveling Award from the University of Texas at Austin. 2024
-2. Huang, S.-Y. Doctoral Dissertation Fellowship from the University of Minnesota. 2020-2021
-3. Huang, S.-Y. John Wertz Fellowship from the Department of Chemistry of the University of Minnesota. 2019-2020
-4. Huang, S.-Y. Luminescent lanthanide complexes for anion sensing in water. Paul and Gerda Gassman Award, Outstanding Research and Presentations, oral presentation, University of Minnesota, June 4, 2019
-5. Huang, S.-Y. Government Scholarship to Study Abroad, Ministry of Education, Taiwan, 2016-2018
+1. Huang, S.-Y. Yushan Young Scholar Award. 2025
+2. Huang, S.-Y. Domino The Cat Traveling Award from the University of Texas at Austin. 2024
+3. Huang, S.-Y. Doctoral Dissertation Fellowship from the University of Minnesota. 2020-2021
+4. Huang, S.-Y. John Wertz Fellowship from the Department of Chemistry of the University of Minnesota. 2019-2020
+5. Huang, S.-Y. Luminescent lanthanide complexes for anion sensing in water. Paul and Gerda Gassman Award, Outstanding Research and Presentations, oral presentation, University of Minnesota, June 4, 2019
+6. Huang, S.-Y. Government Scholarship to Study Abroad, Ministry of Education, Taiwan, 2016-2018
 
 ## Presentation
 
