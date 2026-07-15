@@ -237,8 +237,8 @@ body.loaded {
   align-items: center;
   font-size: map-get($base, font-size-h3);
   font-weight: bold;
-  color: green;
-  background-color: #e5f0d1; /* -> light green;  #FFEEEE light red,  */
+  color: red;
+  background-color: #FFEEEE; /* -> light green;  #FFEEEE light red,  */
   padding: 4px 8px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
