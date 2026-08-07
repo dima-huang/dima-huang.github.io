@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: "We are not accepting new students at this time."
+message: "We welcome the newly joined grad students, Yu-An, Hsin-Lin, and Po-Kai."
 message_icon: "svg/icon/info-circle.svg"
 title:
 toc_image: /assets/images/home_TOC.png
