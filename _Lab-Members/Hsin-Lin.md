@@ -2,7 +2,7 @@
 name: Hsin-Lin Wu (吳昕霖)
 role: Grad student
 date: 2026-08-8S7:50
-image: /assets/images/Team/Lab-Members/Team-flask.png
+image: /assets/images/Team/Lab-Members/Yu-HsinLin.jpg
 description: Outside of my studies, I enjoy exploring new places and staying
   active through sports. I also love discovering local foods and cuisines,
   listening to music, and enjoying the simple pleasures of life.
