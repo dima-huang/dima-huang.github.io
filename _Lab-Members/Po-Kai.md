@@ -1,5 +1,5 @@
 ---
-name: Yu-An Chou (方柏凱)
+name: Po-Kai Fang (方柏凱)
 role: Grad student
 date: 2026-08-7F21:23
 image: /assets/images/Team/Lab-Members/Fang-PoKai.jpg
