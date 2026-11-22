@@ -1,7 +1,7 @@
 ---
 layout: home
 paginate: 8
-message: "We Welcome Our New Graduate Students for the 2026 Academic Year!"
+message: "We are taking 2-3 new students."
 message_icon: "svg/icon/info-circle.svg"
 title:
 toc_image: /assets/images/home_TOC.png
